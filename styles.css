@@ -1,6 +1,6 @@
 :root{
   --bg:#0b0f14;
-  --card:#121926;
+  --card:#151f2e;
   --muted:#9aa4b2;
   --text:#e6edf3;
   --line:#223045;
@@ -68,7 +68,7 @@ h2{margin:0 0 12px;font-size:18px}
   padding:12px 12px;
   border-radius:14px;
   border:1px solid var(--line);
-  background:rgba(0,0,0,0.22);
+  background:rgba(255,255,255,0.04);
   cursor:pointer;
   font-weight:650;
 }
@@ -86,9 +86,26 @@ h2{margin:0 0 12px;font-size:18px}
 .field{display:flex;flex-direction:column;gap:6px}
 .field span{color:var(--muted);font-size:12px}
 select{
-  background:rgba(0,0,0,0.22);
+  background:rgba(255,255,255,0.04);
   border:1px solid var(--line);
   color:var(--text);
   border-radius:12px;
   padding:10px;
+}
+
+
+/* --- Readability fixes --- */
+.choice{ color: var(--text); }
+.choice:disabled{ color: var(--text); opacity: 1; }
+.choice.correct{
+  background: rgba(31,157,85,0.18);
+  border-color: rgba(31,157,85,0.95);
+}
+.choice.wrong{
+  background: rgba(214,69,69,0.18);
+  border-color: rgba(214,69,69,0.95);
+}
+.choice:focus-visible{
+  outline: 2px solid rgba(207,227,255,0.7);
+  outline-offset: 2px;
 }

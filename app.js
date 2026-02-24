@@ -254,7 +254,7 @@ const QuizApp = (() => {
         const b = document.createElement("button");
         b.type = "button";
         b.className = "choice";
-        b.textContent = opt.text;
+        b.textContent = (opt.text ?? '').toString();
         b.addEventListener("click", () => {
           if (pendingAdvance) return;
           pendingAdvance = true;
