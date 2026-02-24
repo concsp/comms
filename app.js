@@ -100,6 +100,27 @@ const QuizApp = (() => {
     return out.join(" ");
   }
 
+  function tweakNumbers(s){
+    // Adjust first integer found (+/- 1 or 10) to make plausible wrong limits/durations.
+    const m = s.match(/\b(\d+)\b/);
+    if (!m) return null;
+    const n = parseInt(m[1], 10);
+    const candidates = [n+1, Math.max(0,n-1), n+10, Math.max(0,n-10)];
+    const pick = candidates[Math.floor(Math.random()*candidates.length)];
+    return s.replace(m[1], String(pick));
+  }
+
+  function perturbAnswer(ans){
+    // Create a plausible wrong answer by word swaps / small perturbations / number tweaks.
+    const n = tweakNumbers(ans);
+    if (n && n !== ans) return n;
+    const a1 = makeFakeExpansion(ans);
+    if (a1 && a1 !== ans) return a1;
+    const a2 = smallPerturb(ans);
+    if (a2 && a2 !== ans) return a2;
+    return null;
+  }
+
   function buildOptions(deck, item, dir, nChoices){
     // dir q2a => question=item.q choices are answers
     // dir a2q => question=item.a choices are questions
@@ -113,16 +134,25 @@ const QuizApp = (() => {
     // Start with some random distractors from pool
     let distractors = shuffle(pool).slice(0, Math.max(0, nChoices-1));
 
-    // If this is acronym deck and we're asking "Acronym -> expansion", inject more realistic fakes
+    // Inject more realistic fakes derived from the correct answer (works for all decks)
+    // For acronym decks (q2a), these look like plausible expansions. For QA decks, they create near-miss definitions/limits.
+    const f1 = perturbAnswer(correct);
+    const f2 = perturbAnswer(correct);
+    const injected = [f1, f2].filter(x => x && x !== correct);
+
     if (deck.mode === "acronyms" && dir === "q2a"){
-      const fake1 = makeFakeExpansion(item.a);
-      const fake2 = smallPerturb(item.a);
-      distractors = [fake1, fake2, ...distractors].filter(x => x && x !== correct);
-      // keep unique
-      const seen = new Set();
-      distractors = distractors.filter(x => (seen.has(x) ? false : (seen.add(x), true)));
-      distractors = distractors.slice(0, nChoices-1);
+      // prioritize injected fakes first
+      distractors = [...injected, ...distractors].filter(x => x && x !== correct);
+    } else {
+      // for normal QA decks, still add 1–2 near-miss distractors
+      distractors = [...injected, ...distractors].filter(x => x && x !== correct);
     }
+
+    // keep unique
+    const seen = new Set();
+    distractors = distractors.filter(x => (seen.has(x) ? false : (seen.add(x), true)));
+    distractors = distractors.slice(0, nChoices-1);
+  }
 
     // Ensure we have enough distractors
     if (distractors.length < nChoices-1){

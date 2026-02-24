@@ -5,240 +5,440 @@
       "mode": "qa",
       "items": [
         {
-          "q": "What is the mission of Naval Communications?",
+          "q": "Mission of Naval Communications",
           "a": "Provide and maintain reliable, secure, and rapid communications based on wartime requirements to support Naval Operating Forces."
         },
         {
-          "q": "Naval communications must satisfy what systems?",
+          "q": "Naval Communications must satisfy what systems?",
           "a": "Defense Communications System (DCS) and National Communications System (NCS)."
         },
         {
-          "q": "Define Telecommunications.",
+          "q": "Define Telecommunications",
           "a": "All information systems using electric or electromagnetic signals to transmit information between or among points."
         },
         {
-          "q": "Define Naval Telecommunications System (NTS).",
+          "q": "Define Naval Telecommunications System (NTS)",
           "a": "All end terminal processing equipment, transmission, switching, cryptographic, and control devices used to transmit operational Navy information."
         },
         {
-          "q": "List the core components of the NTS.",
-          "a": "End terminal processing equipment; transmission systems; switching systems; cryptographic devices; control devices."
+          "q": "List NTS components",
+          "a": "End terminal processing; transmission; switching; cryptographic devices; control devices."
         },
         {
-          "q": "What does DCS stand for?",
+          "q": "DCS stands for",
           "a": "Defense Communications System."
         },
         {
-          "q": "What is the purpose of DCS?",
-          "a": "Provide long-haul, worldwide, point-to-point circuits supporting DoD."
+          "q": "Purpose of DCS",
+          "a": "Long-haul, worldwide, point-to-point circuits supporting DoD."
         },
         {
-          "q": "Who provides operational direction to DCS?",
-          "a": "Defense Information Systems Agency (DISA)."
+          "q": "DISA stands for",
+          "a": "Defense Information Systems Agency."
         },
         {
-          "q": "Who appoints the DISA director?",
+          "q": "DISA role",
+          "a": "Provides operational direction to DCS and ensures improvement."
+        },
+        {
+          "q": "DISA director appointed by",
           "a": "Secretary of Defense."
         },
         {
-          "q": "List the primary Navy network enclaves.",
-          "a": "NIPRNET, SIPRNET, JWICS."
-        },
-        {
-          "q": "What does NIPRNET stand for?",
-          "a": "Unclassified but Sensitive Internet Protocol Router Network."
-        },
-        {
-          "q": "NIPRNET classification is what?",
-          "a": "Unclassified but Sensitive."
-        },
-        {
-          "q": "What does SIPRNET stand for?",
-          "a": "Secret Internet Protocol Router Network."
-        },
-        {
-          "q": "SIPRNET classification is what?",
-          "a": "Secret."
-        },
-        {
-          "q": "What does JWICS stand for?",
-          "a": "Joint Worldwide Intelligence Communications System."
-        },
-        {
-          "q": "JWICS classification is what?",
-          "a": "Top Secret / Sensitive Compartmented Information (SCI)."
-        },
-        {
-          "q": "JWICS supports what kinds of services?",
-          "a": "Voice, text, graphics, data, and video teleconferencing for SCI exchange."
-        },
-        {
-          "q": "What does DISN stand for?",
+          "q": "DISN stands for",
           "a": "Defense Information Systems Network."
         },
         {
-          "q": "NIPRNET/SIPRNET/JWICS are part of what?",
-          "a": "DISN (Defense Information Systems Network)."
+          "q": "List Navy network enclaves",
+          "a": "NIPRNET; SIPRNET; JWICS."
         },
         {
-          "q": "What does NCTAMS stand for?",
+          "q": "NIPRNET stands for",
+          "a": "Non-classified (Unclassified but Sensitive) Internet Protocol Router Network."
+        },
+        {
+          "q": "NIPRNET classification",
+          "a": "Unclassified but Sensitive."
+        },
+        {
+          "q": "NIPRNET supports",
+          "a": "Unclassified IP data communications for DoD operations."
+        },
+        {
+          "q": "SIPRNET stands for",
+          "a": "Secret Internet Protocol Router Network."
+        },
+        {
+          "q": "SIPRNET classification",
+          "a": "Secret."
+        },
+        {
+          "q": "SIPRNET primary use",
+          "a": "Classified C2 network supporting GCCS, DMS, and warfighter applications."
+        },
+        {
+          "q": "JWICS stands for",
+          "a": "Joint Worldwide Intelligence Communications System."
+        },
+        {
+          "q": "JWICS classification",
+          "a": "Top Secret / Sensitive Compartmented Information (SCI)."
+        },
+        {
+          "q": "JWICS supports",
+          "a": "Voice, text, graphics, data, video teleconferencing."
+        },
+        {
+          "q": "All three enclaves operate under",
+          "a": "DISN."
+        },
+        {
+          "q": "USFFC stands for",
+          "a": "United States Fleet Forces Command."
+        },
+        {
+          "q": "USFFC supports",
+          "a": "CNO and Combatant Commanders with ready naval forces."
+        },
+        {
+          "q": "NAVIFOR stands for",
+          "a": "Naval Information Forces."
+        },
+        {
+          "q": "NAVIFOR mission",
+          "a": "Generate combat-ready Information Warfare forces."
+        },
+        {
+          "q": "NETWARCOM stands for",
+          "a": "Naval Network Warfare Command."
+        },
+        {
+          "q": "NETWARCOM role",
+          "a": "Central operational authority for Navy networks, IT, IO, and space."
+        },
+        {
+          "q": "NCDOC stands for",
+          "a": "Navy Cyber Defense Operations Command."
+        },
+        {
+          "q": "NCDOC mission",
+          "a": "24/7 defense of Navy computer networks."
+        },
+        {
+          "q": "CYBERFOR stands for",
+          "a": "Navy Cyber Forces."
+        },
+        {
+          "q": "CYBERFOR role",
+          "a": "Type Commander for Navy cyber workforce."
+        },
+        {
+          "q": "NCMS stands for",
+          "a": "Navy Communications Security Material System."
+        },
+        {
+          "q": "NCMS purpose",
+          "a": "Accountability, distribution, security, and handling of COMSEC."
+        },
+        {
+          "q": "NCTAMS stands for",
           "a": "Navy Computer and Telecommunications Area Master Station."
         },
         {
-          "q": "Two NCTAMS locations are where?",
-          "a": "Norfolk (LANT) and Wahiawa (PAC)."
+          "q": "Mission of NCTAMS",
+          "a": "Provide secure, reliable C4I telecommunications worldwide."
         },
         {
-          "q": "NCTAMS mission (core).",
-          "a": "Provide secure, reliable voice, messaging, video, and data telecommunications supporting C4I worldwide."
+          "q": "Two NCTAMS locations",
+          "a": "Norfolk (LANT); Wahiawa (PAC)."
         },
         {
-          "q": "What does NCTS stand for?",
+          "q": "NCTS stands for",
           "a": "Navy Computer and Telecommunications Station."
         },
         {
-          "q": "How is NCTS related to NCTAMS?",
-          "a": "NCTS are smaller stations that answer to their regional NCTAMS."
+          "q": "NCTS relationship",
+          "a": "Smaller stations reporting to regional NCTAMS."
         },
         {
-          "q": "What does NIOC stand for?",
+          "q": "NIOC stands for",
           "a": "Naval Information Operations Command."
         },
         {
-          "q": "NIOC primary responsibility.",
-          "a": "Cryptologic and related functions of the Navy."
+          "q": "NIOC responsibility",
+          "a": "Cryptologic and related Navy functions."
         },
         {
-          "q": "AUTODIN is what type of system?",
+          "q": "FLTNOC stands for",
+          "a": "Fleet Network Operations Center."
+        },
+        {
+          "q": "AUTODIN stands for",
+          "a": "Automatic Digital Network."
+        },
+        {
+          "q": "AUTODIN function",
           "a": "Worldwide store-and-forward communications system."
         },
         {
-          "q": "What does AMHS do?",
-          "a": "Processes, stores, and disseminates legacy AUTODIN and DMS messages."
+          "q": "AMHS stands for",
+          "a": "Automated Message Handling System."
         },
         {
-          "q": "What is DMS?",
-          "a": "Defense Message System: global DoD message delivery/electronic directory system (secure, reliable)."
+          "q": "AMHS function",
+          "a": "Process/store/disseminate AUTODIN and DMS messages."
         },
         {
-          "q": "What does DMDS do?",
-          "a": "Receives encrypted e-mail at message center, decrypts it, and distributes to local users."
+          "q": "DMS stands for",
+          "a": "Defense Message System."
         },
         {
-          "q": "GateGuard is best described as what?",
-          "a": "An AUTODIN Interface Terminal gateway and security device."
+          "q": "DMS description",
+          "a": "Global DoD electronic mail message delivery system."
         },
         {
-          "q": "NAVMACS is what?",
+          "q": "DMS characteristics",
+          "a": "Rapid; Reliable; Secure."
+        },
+        {
+          "q": "DMDS stands for",
+          "a": "Defense Message Distribution System."
+        },
+        {
+          "q": "DMDS function",
+          "a": "Receives encrypted mail, decrypts, distributes locally."
+        },
+        {
+          "q": "NAVMACS stands for",
+          "a": "Naval Modular Automated Communications System."
+        },
+        {
+          "q": "NAVMACS purpose",
           "a": "Shipboard message processing system."
         },
         {
-          "q": "Who is responsible for communications at a command?",
+          "q": "GateGuard definition",
+          "a": "AUTODIN Interface Terminal gateway and security device."
+        },
+        {
+          "q": "Ultimate communications authority aboard ship",
           "a": "Commanding Officer (CO)."
         },
         {
-          "q": "What is the COMMO responsible for?",
-          "a": "Organization, supervision, and coordination of exterior communications."
+          "q": "CO responsibility",
+          "a": "Proper handling of message traffic."
         },
         {
-          "q": "What is the RO responsible for (summary)?",
-          "a": "Supervise comm center; manage comm plan; allocate equipment; maintain watchbill; training; SOPs."
+          "q": "COMMO stands for",
+          "a": "Communications Officer."
         },
         {
-          "q": "What is the CWO responsible for (summary)?",
-          "a": "Ensure traffic handled rapidly/accurately and compliance with directives; monitor watch performance."
+          "q": "COMMO responsibility",
+          "a": "Organization, supervision, coordination of exterior communications."
         },
         {
-          "q": "CMS Custodian is responsible to whom?",
-          "a": "Commanding Officer."
+          "q": "RO stands for",
+          "a": "Radio Officer."
         },
         {
-          "q": "TPI stands for what?",
+          "q": "RO duties",
+          "a": "Supervise comm center; manage COMMPLAN; allocate equipment; prepare watchbill; conduct training."
+        },
+        {
+          "q": "CWO stands for",
+          "a": "Communications Watch Officer."
+        },
+        {
+          "q": "CWO duties",
+          "a": "Ensure rapid/accurate traffic handling and compliance with directives."
+        },
+        {
+          "q": "Comm Center Supervisor responsibility",
+          "a": "Supervise message processing and notify CWO of urgent matters."
+        },
+        {
+          "q": "CMS Custodian responsibility",
+          "a": "Accountability and physical security of COMSEC material."
+        },
+        {
+          "q": "PQS stands for",
+          "a": "Personnel Qualification Standards."
+        },
+        {
+          "q": "Purpose of PQS",
+          "a": "Qualify Sailors for watchstations."
+        },
+        {
+          "q": "SOP stands for",
+          "a": "Standard Operating Procedure."
+        },
+        {
+          "q": "Purpose of SOP",
+          "a": "Detailed written procedures for routine and emergent operations."
+        },
+        {
+          "q": "Examples of comm SOP topics",
+          "a": "Visitors in radio; going aloft; MINIMIZE procedures; guard shifts; HF/UHF voice; NAVMACS; message drafting."
+        },
+        {
+          "q": "TPI stands for",
           "a": "Two-Person Integrity."
         },
         {
-          "q": "When is TPI required?",
-          "a": "When handling Top Secret COMSEC material."
+          "q": "Define TPI",
+          "a": "Security measure preventing single-person access to Top Secret COMSEC."
         },
         {
-          "q": "How do you correct a comms log entry?",
-          "a": "Single line through error so it remains legible; initial the correction."
+          "q": "TPI required for",
+          "a": "Top Secret COMSEC handling."
         },
         {
-          "q": "MSL stands for what?",
+          "q": "TPI accomplished by",
+          "a": "Two authorized persons present; dual locks; no single-person key access."
+        },
+        {
+          "q": "Inventory at watch turnover",
+          "a": "Visually inventory equipment; account for keying material; page-check publications; both sign."
+        },
+        {
+          "q": "CMS 1 defines",
+          "a": "Minimum requirements for COMSEC inventory."
+        },
+        {
+          "q": "Are erasures allowed in logs?",
+          "a": "No."
+        },
+        {
+          "q": "Proper log correction",
+          "a": "Single-line cross-out; initials added; original entry legible."
+        },
+        {
+          "q": "MSL stands for",
           "a": "Master Station Log."
         },
         {
-          "q": "MSL retention period.",
+          "q": "MSL purpose",
+          "a": "Official narrative record of comm center events."
+        },
+        {
+          "q": "MSL retention period",
           "a": "12 months."
         },
         {
-          "q": "Central Message Log contains what key fields?",
-          "a": "Originator, DTG, precedence, classification, receipt/file/delivery times."
+          "q": "Central Message Log contains",
+          "a": "Originator; DTG; precedence; classification; receipt time; file time; delivery time."
         },
         {
-          "q": "Define MINIMIZE.",
-          "a": "Mandatory drastic reduction of normal traffic so vital messages are not delayed."
+          "q": "Examples of MSL events",
+          "a": "New Radio Day; watch turnover; outages; power failure; HAZCON; inventories."
         },
         {
-          "q": "Who can impose MINIMIZE?",
-          "a": "CNO, Fleet Commanders in Chief, and Area Coordinators."
+          "q": "COMMPLAN definition",
+          "a": "Communications plan specifying circuits, channels, facilities, policies, and assigned tasks."
         },
         {
-          "q": "FLASH max word count during MINIMIZE.",
-          "a": "100 words."
+          "q": "COMMPLAN developed by",
+          "a": "Numbered Fleet, Battle Group, or Task Force Commander."
         },
         {
-          "q": "IMMEDIATE max word count during MINIMIZE.",
-          "a": "200 words."
+          "q": "OPTASK COMMS used for",
+          "a": "Developing ship COMMPLAN."
         },
         {
-          "q": "Purpose of Q & Z signals.",
-          "a": "Shorten and clarify communications; indicate actions to be taken."
+          "q": "Communications Status Board displays",
+          "a": "Current COMMPLAN and circuit/equipment status."
         },
         {
-          "q": "How do you indicate a question using Q/Z signals?",
-          "a": "Insert prosign INT before the signal."
+          "q": "ACP 131 governs",
+          "a": "Allied Communications Procedures; Q & Z signals."
         },
         {
-          "q": "Meaning of QSL.",
+          "q": "Purpose of Q & Z signals",
+          "a": "Shorten and clarify communications."
+        },
+        {
+          "q": "How to ask question with signal",
+          "a": "Insert INT before signal."
+        },
+        {
+          "q": "QSL meaning",
           "a": "Acknowledge receipt."
         },
         {
-          "q": "Meaning of QRT.",
+          "q": "QRT meaning",
           "a": "Stop sending."
         },
         {
-          "q": "Meaning of QRL.",
+          "q": "QRL meaning",
           "a": "I am busy."
         },
         {
-          "q": "Meaning of ZUG.",
+          "q": "QRK measures",
+          "a": "Signal intelligibility (1\u20135 scale)."
+        },
+        {
+          "q": "ZUG meaning",
           "a": "Negative."
         },
         {
-          "q": "Meaning of ZUJ.",
+          "q": "ZUJ meaning",
           "a": "Stand by."
         },
         {
-          "q": "Meaning of \u201c55555\u201d.",
+          "q": "ZBZ meaning",
+          "a": "Printing acceptability of signals."
+        },
+        {
+          "q": "\u201c55555\u201d means",
           "a": "Loud and clear."
         },
         {
-          "q": "Define COMMPLAN.",
-          "a": "Specifies circuits/channels/facilities, policies/procedures, and assigns communications tasks."
+          "q": "Define MINIMIZE",
+          "a": "Mandatory drastic reduction of normal traffic to prevent delay of vital messages."
         },
         {
-          "q": "What develops COMMPLAN?",
-          "a": "OPTASK COMMS message (from fleet/battle group/task force commander)."
+          "q": "Who can impose MINIMIZE?",
+          "a": "CNO; Fleet Commanders in Chief; Area Coordinators."
         },
         {
-          "q": "What is a Communications Status Board?",
-          "a": "Reference display of current comm plan plus updated circuit/equipment status."
+          "q": "FLASH limit during MINIMIZE",
+          "a": "100 words."
         },
         {
-          "q": "Fleet Chat is used for what?",
-          "a": "Real-time operational/tactical collaboration and troubleshooting."
+          "q": "IMMEDIATE limit during MINIMIZE",
+          "a": "200 words."
+        },
+        {
+          "q": "During MINIMIZE",
+          "a": "Message releasers minimized and designated in writing."
+        },
+        {
+          "q": "Message User",
+          "a": "Authorized to draft, release, or process messages."
+        },
+        {
+          "q": "Originator",
+          "a": "Individual/command that originates the message."
+        },
+        {
+          "q": "Drafter",
+          "a": "Person who composes the message."
+        },
+        {
+          "q": "Releaser",
+          "a": "Official authorizing release of the message."
+        },
+        {
+          "q": "Dual-role example",
+          "a": "A communications officer may draft and release a message."
+        },
+        {
+          "q": "Fleet Chat purpose",
+          "a": "Real-time operational coordination and tactical information exchange."
+        },
+        {
+          "q": "Operational benefit of chat",
+          "a": "Rapid collaboration; troubleshooting; situation updates."
         }
       ]
     },
@@ -247,16 +447,36 @@
       "mode": "qa",
       "items": [
         {
-          "q": "What are the three Naval message categories covered?",
+          "q": "Lesson 3 enabling objectives (list)",
+          "a": "Define categories of Naval Messages; Identify Naval Message Procedures; Identify Special Categories and Handling."
+        },
+        {
+          "q": "What are the three Naval message categories covered in Lesson 3?",
           "a": "GENSER; DSSCS; CRITIC."
         },
         {
-          "q": "Define GENSER.",
-          "a": "Most widely used DoD message format; usually UNCLASSIFIED but can be up to TOP SECRET."
+          "q": "GENSER stands for",
+          "a": "General Service."
         },
         {
-          "q": "Define DSSCS.",
-          "a": "Worldwide special purpose communications system used to process record message traffic."
+          "q": "DSSCS stands for",
+          "a": "Defense Special Security Communications System(s)."
+        },
+        {
+          "q": "What is a CRITIC message?",
+          "a": "A message used to report critical information with essential facts to senior government decision makers (the President)."
+        },
+        {
+          "q": "Define GENSER (Lesson 3 definition)",
+          "a": "Most widely used DoD message format; usually UNCLASSIFIED but can be classified up to TOP SECRET."
+        },
+        {
+          "q": "GENSER typical classification",
+          "a": "Most are UNCLASSIFIED (can be up to TOP SECRET)."
+        },
+        {
+          "q": "Define DSSCS",
+          "a": "Worldwide, special purpose communications system used to process record message traffic."
         },
         {
           "q": "DSSCS can contain what types of information?",
@@ -267,232 +487,700 @@
           "a": "AUTODIN."
         },
         {
-          "q": "CRITIC messages are used for what?",
-          "a": "Report critical information with essential facts to senior decision makers (the President)."
+          "q": "DSSCS can communicate with what units?",
+          "a": "Shore, Sea, and Air units."
+        },
+        {
+          "q": "CRITIC message purpose",
+          "a": "Report critical information with essential facts about an event/situation to senior decision makers (the President)."
         },
         {
           "q": "CRITIC uses what format?",
           "a": "Modified SI message format."
         },
         {
-          "q": "Message user (definition).",
-          "a": "Individual authorized to draft, release, and/or process electronically transmitted messages."
+          "q": "CRITIC messages are typically what length/type?",
+          "a": "Short, specifically formatted messages."
         },
         {
-          "q": "Naval message roles.",
+          "q": "CRITIC messages are sent at what priority?",
+          "a": "Highest priority."
+        },
+        {
+          "q": "CRITIC messages transmitted via what?",
+          "a": "Most rapid communications paths available."
+        },
+        {
+          "q": "Define \u201cmessage user\u201d (Lesson 3)",
+          "a": "Any individual authorized to draft, release, and/or process electronically transmitted messages."
+        },
+        {
+          "q": "Naval message procedure roles (Lesson 3 list)",
           "a": "Originator; Drafter; Releaser."
         },
         {
-          "q": "Originator (definition).",
-          "a": "Authority in whose name the message is sent (presumed CO)."
+          "q": "Can message responsibilities overlap?",
+          "a": "Yes; one person may serve dual capacity (e.g., communications officer drafts and releases)."
         },
         {
-          "q": "Drafter (definition).",
-          "a": "Person who composes the message."
+          "q": "Define Originator (Naval messaging)",
+          "a": "The authority (command/activity) in whose name the message is sent."
         },
         {
-          "q": "Releaser (definition).",
-          "a": "Designated individual authorized to release messages for transmission in the name of the command."
+          "q": "Who is presumed to be the originator?",
+          "a": "The Commanding Officer of the command/activity."
         },
         {
-          "q": "After release, a message goes where?",
-          "a": "To the telecommunications/message center for transmission."
+          "q": "Originator and releaser relationship (most often)",
+          "a": "Most often the originator and the releaser are the same."
         },
         {
-          "q": "Special handling markings include what (examples)?",
-          "a": "Caveat, RD, FRD, LIMDIS, FOUO, EFTO, SPECAT, PERSONAL FOR, NATO RESTRICTED, ALLIED RESTRICTED."
+          "q": "Example where originator=drafter=releaser",
+          "a": "If the CO drafts a message, they are drafter and releasing authority (and originator authority)."
         },
         {
-          "q": "FOUO stands for what?",
-          "a": "For Official Use Only."
+          "q": "Define Drafter",
+          "a": "The person who actually composes the message."
         },
         {
-          "q": "How do you mark FOUO in an unclassified message?",
-          "a": "Place \u201cFOUO\u201d after \u201cUNCLAS\u201d."
+          "q": "Drafter responsibility: addressing",
+          "a": "Proper addressing and correct use of Plain Language Address (PLA) designators."
         },
         {
-          "q": "EFTO stands for what?",
-          "a": "Encrypted For Transmission Only."
+          "q": "Drafter responsibility: writing style",
+          "a": "Clear, concise composition."
         },
         {
-          "q": "SPECAT stands for what?",
-          "a": "Special Category."
+          "q": "Drafter responsibility: precedence",
+          "a": "Select the precedence."
         },
         {
-          "q": "RD stands for what?",
+          "q": "Drafter responsibility: format",
+          "a": "Ensure the proper format."
+        },
+        {
+          "q": "Drafter responsibility: classification",
+          "a": "Assign the proper classification."
+        },
+        {
+          "q": "Drafter responsibility: downgrading/declass",
+          "a": "Apply downgrading and declassification instructions to classified messages (except RD/FRD)."
+        },
+        {
+          "q": "Define Releaser",
+          "a": "Properly designated individual authorized to release messages for transmission in the name of the command/activity."
+        },
+        {
+          "q": "Releaser checks what?",
+          "a": "Ensures the drafter complied with applicable instructions."
+        },
+        {
+          "q": "What does the releaser\u2019s signature affirm?",
+          "a": "Compliance with message drafting instructions and validates contents."
+        },
+        {
+          "q": "What does the releaser\u2019s signature authorize?",
+          "a": "Authorizes the message for transmission."
+        },
+        {
+          "q": "After release, where does message go?",
+          "a": "Delivered to telecommunications/message center for transmission."
+        },
+        {
+          "q": "Releaser authorization rule",
+          "a": "List of authorized releasers must be adhered to; do not assume someone can sign without written authorization."
+        },
+        {
+          "q": "Outgoing message process (high-level flow)",
+          "a": "Drafter drafts \u2192 chain of command approval/changes \u2192 drafter updates \u2192 final approval \u2192 delivered to message center \u2192 operator releases \u2192 message released and logged."
+        },
+        {
+          "q": "Incoming message process (high-level flow)",
+          "a": "Message received \u2192 queued/sorted using profilers \u2192 routed by profiler to specific people \u2192 logged and filed onboard."
+        },
+        {
+          "q": "Special handling markings (Lesson 3 list)",
+          "a": "Caveat; RD; FRD; LIMDIS; FOUO; EFTO; SPECAT; PERSONAL FOR; NATO RESTRICTED; ALLIED RESTRICTED."
+        },
+        {
+          "q": "Define \u201ccaveat\u201d (special-handling)",
+          "a": "Warning by authoritative orders directing protection of an element (usually special message traffic)."
+        },
+        {
+          "q": "Caveat examples in notes",
+          "a": "SCI; NATO."
+        },
+        {
+          "q": "RD stands for",
           "a": "Restricted Data."
         },
         {
-          "q": "FRD stands for what?",
+          "q": "FRD stands for",
           "a": "Formerly Restricted Data."
         },
         {
-          "q": "COMMSHIFT message is required when?",
+          "q": "Define Restricted Data (RD)",
+          "a": "Data about design, manufacture, or use of nuclear weapons; includes special nuclear material used in energy production."
+        },
+        {
+          "q": "Define Formerly Restricted Data (FRD)",
+          "a": "Defense information removed from RD category but still safeguarded as classified defense info."
+        },
+        {
+          "q": "FRD release limitation",
+          "a": "Cannot be released to foreign nationals except under specific international agreement."
+        },
+        {
+          "q": "FOUO stands for",
+          "a": "For Official Use Only."
+        },
+        {
+          "q": "Define FOUO",
+          "a": "Official information not requiring classification but must be protected from public release."
+        },
+        {
+          "q": "How mark FOUO in unclassified messages?",
+          "a": "Place \u201cFOUO\u201d after \u201cUNCLAS.\u201d"
+        },
+        {
+          "q": "EFTO stands for",
+          "a": "Encrypted For Transmission Only."
+        },
+        {
+          "q": "Define EFTO",
+          "a": "Protect certain unclassified messages with potential value if analyzed during electrical transmission."
+        },
+        {
+          "q": "Is EFTO required on unclassified messages?",
+          "a": "No (not required)."
+        },
+        {
+          "q": "SPECAT stands for",
+          "a": "SPEcial CATegory."
+        },
+        {
+          "q": "Define SPECAT",
+          "a": "Classified messages tied to special project/subject requiring extra handling beyond normal classification procedures."
+        },
+        {
+          "q": "Four SPECAT categories",
+          "a": "Limited Distribution (LIMDIS); Personal For; NATO Restricted; Allied Restricted."
+        },
+        {
+          "q": "LIMDIS stands for",
+          "a": "LIMitied DIStribution."
+        },
+        {
+          "q": "Define PERSONAL FOR (as marking)",
+          "a": "A special handling/passing instruction indicating personal delivery/handling (as listed)."
+        },
+        {
+          "q": "Define NATO RESTRICTED (as marking)",
+          "a": "Special handling marking for NATO restricted material (as listed)."
+        },
+        {
+          "q": "Define ALLIED RESTRICTED (as marking)",
+          "a": "Special handling marking for allied restricted material (as listed)."
+        },
+        {
+          "q": "COMMSHIFT stands for",
+          "a": "Communications Guard Shift message."
+        },
+        {
+          "q": "When is a COMMSHIFT message required?",
           "a": "When a command shifts guard from one broadcast/servicing comm center to another."
         },
         {
-          "q": "Preferred COMMSHIFT effective time.",
+          "q": "Preferred COMMSHIFT effective time",
           "a": "0001Z of the new radio day (when possible)."
         },
         {
-          "q": "COMMSPOT purpose.",
-          "a": "Report situations causing significant disruption of tactical communications."
+          "q": "COMMSHIFT sent to whom?",
+          "a": "NCTAMS of the comm areas from which old and new broadcasts originate."
         },
         {
-          "q": "PLA stands for what?",
+          "q": "Why are COMMSHIFT messages necessary?",
+          "a": "Operational considerations or changes in deployment schedule."
+        },
+        {
+          "q": "COMMSPOT stands for",
+          "a": "Communications Spot Report."
+        },
+        {
+          "q": "Purpose of COMMSPOT",
+          "a": "Advise of situations causing significant disruption of tactical communications."
+        },
+        {
+          "q": "Who submits COMMSPOT?",
+          "a": "All ships when communications difficulties are encountered."
+        },
+        {
+          "q": "When must COMMSPOT be submitted?",
+          "a": "As soon as difficulties are experienced to minimize further deterioration."
+        },
+        {
+          "q": "PLA stands for",
           "a": "Plain Language Address."
         },
         {
-          "q": "AIG stands for what?",
+          "q": "Define PLA",
+          "a": "Station address written so it\u2019s easily understood when read."
+        },
+        {
+          "q": "Examples of PLA",
+          "a": "USS YORKTOWN; COMDESRON TEN; COMSECONDFLT (as shown)."
+        },
+        {
+          "q": "AIG stands for",
           "a": "Address Indicator Group."
         },
         {
-          "q": "CAD stands for what?",
+          "q": "Define AIG",
+          "a": "Address designator representing a collection of 16 or more frequently occurring PLAs."
+        },
+        {
+          "q": "CAD stands for",
           "a": "Collective Address Designator."
         },
         {
-          "q": "3 components of a message.",
+          "q": "Define CAD",
+          "a": "Address designator representing 4 or more PLAs sharing a common operational and/or administrative chain of command."
+        },
+        {
+          "q": "CAD examples (from notes)",
+          "a": "ENTSTRKGRU; TRUSTKGRU."
+        },
+        {
+          "q": "Lesson 4 enabling objectives (list)",
+          "a": "Identify the GENSER message; Describe format lines of a GENSER message; Prepare a GENSER message."
+        },
+        {
+          "q": "Define GENSER (Lesson 4)",
+          "a": "Most widely used DoD message format; usually UNCLASSIFIED but can be up to TOP SECRET."
+        },
+        {
+          "q": "Why are GENSER messages broken down by format lines?",
+          "a": "Format lines help drafter/originator/software handle and route messages based on the info in the lines."
+        },
+        {
+          "q": "3 components of a message",
           "a": "Header; Body; Footer."
         },
         {
-          "q": "Format Line 1 name.",
+          "q": "GENSER Format Line 1 name",
           "a": "Transmission Identification."
+        },
+        {
+          "q": "Format Line 1 typically inserted by whom?",
+          "a": "Message handling system (usually)."
         },
         {
           "q": "What does VZCZC indicate?",
           "a": "Start of a message."
         },
         {
-          "q": "Format Line 2 name.",
+          "q": "Format Line 1 station/channel designator purpose",
+          "a": "Identifies station/channel (e.g., YKN=USS YORKTOWN)."
+        },
+        {
+          "q": "Format Line 1 sequential number meaning",
+          "a": "3-digit sequential number of transmissions."
+        },
+        {
+          "q": "GENSER Format Line 2 name",
           "a": "Message Header Information (Message Header)."
         },
         {
-          "q": "Precedence codes.",
+          "q": "Format Line 2 first character meaning",
+          "a": "Precedence indicator (must match throughout message)."
+        },
+        {
+          "q": "Precedence codes (as listed)",
           "a": "R=Routine; P=Priority; O=Immediate; Z=Flash."
         },
         {
-          "q": "Header classification codes.",
+          "q": "Format Line 2 characters 2\u20133 meaning",
+          "a": "Language Media Format (LMF) indicator."
+        },
+        {
+          "q": "Format Line 2 4th character meaning",
+          "a": "Message classification (U/C/S/T)."
+        },
+        {
+          "q": "Classification codes in header",
           "a": "U=Unclassified; C=Confidential; S=Secret; T=Top Secret."
         },
         {
-          "q": "LMF stands for what?",
-          "a": "Language Media Format."
-        },
-        {
-          "q": "CIC stands for what?",
-          "a": "Content Indicator Code."
+          "q": "Content Indicator Code (CIC) definition",
+          "a": "Indicates what type of information is contained in the message."
         },
         {
           "q": "ZYUW indicates what?",
-          "a": "Narrative message."
+          "a": "Narrative message (per example)."
         },
         {
-          "q": "OSRI stands for what?",
+          "q": "Format Line 2 character 9 meaning",
+          "a": "Separator space (required)."
+        },
+        {
+          "q": "OSRI stands for",
           "a": "Originating Station\u2019s Routing Indicator."
         },
         {
-          "q": "SSN stands for what?",
+          "q": "OSRI purpose",
+          "a": "Identifies who drafted/transmitted; unique per command."
+        },
+        {
+          "q": "SSN stands for",
           "a": "Station Serial Number."
         },
         {
-          "q": "Julian date is what?",
-          "a": "Day-of-year number (001\u2013365; 366 on leap year)."
+          "q": "SSN format in header",
+          "a": "4-digit number from 0001 through 9998 (runs consecutively)."
         },
         {
-          "q": "Format Line 4 name.",
+          "q": "Julian date in Format Line 2",
+          "a": "Three digits: 001 on 1 Jan through 365 (or 366 leap year)."
+        },
+        {
+          "q": "Time field in Format Line 2",
+          "a": "4-digit time received by originator comm center; expressed in GMT/Zulu."
+        },
+        {
+          "q": "Classification redundancy in header",
+          "a": "Single hyphen then classification character repeated 4 times (e.g., UUUU, CCCC, SSSS, TTTT)."
+        },
+        {
+          "q": "Routing indicators begin with what?",
+          "a": "\u201c--\u201d start of routing information signal."
+        },
+        {
+          "q": "End of routing signal character",
+          "a": "\u201c.\u201d (period) used when last routing indicator inserted."
+        },
+        {
+          "q": "GENSER Format Line 4 name",
           "a": "Security Warning."
         },
         {
-          "q": "OPSIG stands for what?",
-          "a": "Operating Signal."
+          "q": "Format Line 4 structure",
+          "a": "3-letter operating signal + classification character repeated five times."
         },
         {
-          "q": "ZNR is used for what traffic?",
-          "a": "Unclassified message traffic (e.g., ZNR UUUUU)."
+          "q": "OPSIG definition (as described)",
+          "a": "3-letter group code used to convey orders/instructions/requests/reports to speed communications."
         },
         {
-          "q": "ZNY is used for what traffic?",
-          "a": "Confidential or higher traffic (e.g., ZNY CCCCC)."
+          "q": "OPSIG used for unclassified traffic",
+          "a": "ZNR UUUUU."
         },
         {
-          "q": "Format Line 5 name.",
+          "q": "OPSIG used for Confidential or higher example",
+          "a": "ZNY CCCCC."
+        },
+        {
+          "q": "GENSER Format Line 5 name",
           "a": "Date-Time Group (DTG)."
         },
         {
-          "q": "DTG begins with what?",
-          "a": "Message precedence letter followed by a space."
+          "q": "DTG line starts with what?",
+          "a": "Message precedence + space."
         },
         {
-          "q": "DTG Z means what?",
-          "a": "Zulu (GMT)."
+          "q": "DTG components (example meaning)",
+          "a": "Day (DD), Time (HHMM), Z (Zulu/GMT), Month (MMM), Year (YY)."
         },
         {
-          "q": "Format Line 6 keyword.",
-          "a": "FM (originator PLA)."
+          "q": "GENSER Format Line 6 name",
+          "a": "Originator."
         },
         {
-          "q": "Format Line 7 keyword.",
-          "a": "TO (action addressee)."
+          "q": "What does \u201cFM\u201d indicate?",
+          "a": "Message originator line (FROM)."
         },
         {
-          "q": "Format Line 8 keyword.",
-          "a": "INFO (information addressee)."
+          "q": "Format Line 6 contains what?",
+          "a": "Originator PLA (where message is coming from)."
         },
         {
-          "q": "BT prosign means what?",
+          "q": "GENSER Format Line 7 name",
+          "a": "Action Addressee."
+        },
+        {
+          "q": "What does \u201cTO\u201d indicate?",
+          "a": "Action addressee (who must take action)."
+        },
+        {
+          "q": "Format Line 7 contains what?",
+          "a": "Action addressee PLA (where message is going to for action)."
+        },
+        {
+          "q": "GENSER Format Line 8 name",
+          "a": "Information Addressee."
+        },
+        {
+          "q": "What does \u201cINFO\u201d indicate?",
+          "a": "Addressee informed only; no action required."
+        },
+        {
+          "q": "Format Line 8 contains what?",
+          "a": "INFO addressee PLA(s)."
+        },
+        {
+          "q": "GENSER Format Line 11 name",
           "a": "Break."
         },
         {
-          "q": "Format Line 12 is what?",
-          "a": "Text (includes security designation, SSIC, subject, references, remarks)."
+          "q": "Format Line 11 prosign",
+          "a": "BT."
         },
         {
-          "q": "SSIC stands for what?",
+          "q": "BT meaning",
+          "a": "Break between header and text/body."
+        },
+        {
+          "q": "GENSER Format Line 12 name",
+          "a": "Text."
+        },
+        {
+          "q": "First word of Format Line 12 indicates what?",
+          "a": "Security designation (overall classification of the message text)."
+        },
+        {
+          "q": "If message contains no classified data, use what?",
+          "a": "UNCLAS."
+        },
+        {
+          "q": "How to write classification in text when classified",
+          "a": "Spell out completely with a space between each character (e.g., S E C R E T)."
+        },
+        {
+          "q": "SSIC stands for",
           "a": "Standard Subject Identification Code."
         },
         {
-          "q": "SSIC is how many digits?",
+          "q": "SSIC purpose",
+          "a": "Aids automated internal routing and filing; required on Navy/Marine Corps letters/messages/directives/forms/reports."
+        },
+        {
+          "q": "SSIC length",
           "a": "4 or 5 digits."
         },
         {
-          "q": "MSGID indicates what?",
+          "q": "SSIC manual reference (as listed)",
+          "a": "SECNAV M-5210.2."
+        },
+        {
+          "q": "Passing instructions are placed where?",
+          "a": "After SSIC in Format Line 12 when needed (FOR/FROM/PASS TO etc.)."
+        },
+        {
+          "q": "MSGID in Format Line 12 indicates what?",
           "a": "Message identification for GENSER messages."
         },
         {
-          "q": "SUBJ line starts and ends with what?",
-          "a": "Starts with SUBJ/ and ends with //."
+          "q": "Subject line format",
+          "a": "Starts with \u201cSUBJ/\u201d and ends with \u201c//\u201d."
         },
         {
-          "q": "REF type codes include what?",
-          "a": "CON, DOC, LTR, MSG, TEL."
+          "q": "When subject is unclassified but message is classified, mark subject how?",
+          "a": "End subject with (U)."
         },
         {
-          "q": "AMPN is used for what?",
-          "a": "Amplifying information about references when required."
+          "q": "If subject contains classified info, mark with what?",
+          "a": "Appropriate classification symbol (C), (S), or (TS)."
         },
         {
-          "q": "RMKS section is used for what?",
+          "q": "REF line purpose",
+          "a": "Identify pertinent references (message/document/meeting/telcon/etc.)."
+        },
+        {
+          "q": "Reference type codes (as listed)",
+          "a": "CON (conference/meeting); DOC (document/publication); LTR (letter/email/etc.); MSG (record message); TEL (telephone conversation)."
+        },
+        {
+          "q": "AMPN meaning",
+          "a": "Amplifying information line for references when needed."
+        },
+        {
+          "q": "When use AMPN (as stated)",
+          "a": "When only one reference and it requires additional discussion OR it is one of TEL/CON/DOC/MSG/LTR."
+        },
+        {
+          "q": "RMKS purpose",
           "a": "Explain the purpose of the message."
         },
         {
-          "q": "Format Line 14 name.",
+          "q": "Downgrading/declassification rule (as stated)",
+          "a": "Naval messages automatically downgraded after 10 years unless exempt; apply downgrading and declassification marks to all classified messages."
+        },
+        {
+          "q": "DECL/X1 category",
+          "a": "Intel source/method/activity or cryptologic system/activity."
+        },
+        {
+          "q": "DECL/X2 category",
+          "a": "Assists development/use of weapons of mass destruction."
+        },
+        {
+          "q": "DECL/X3 category",
+          "a": "Impairs development/use of technology within a US weapons system."
+        },
+        {
+          "q": "DECL/X4 category",
+          "a": "US military plans or national security emergency preparedness plans."
+        },
+        {
+          "q": "DECL/X5 category",
+          "a": "Foreign government information."
+        },
+        {
+          "q": "DECL/X6 category",
+          "a": "Damages foreign relations/reveals confidential source/undermines ongoing diplomacy."
+        },
+        {
+          "q": "DECL/X7 category",
+          "a": "Impairs protection of President/VP/others protected for national security."
+        },
+        {
+          "q": "DECL/X8 category",
+          "a": "Violates statute, treaty, or international agreement."
+        },
+        {
+          "q": "GENSER Format Line 13 name",
+          "a": "Break (between text and footer)."
+        },
+        {
+          "q": "Format Line 13 prosign",
+          "a": "BT."
+        },
+        {
+          "q": "Format Line 13 purpose",
+          "a": "Break between body text and footer."
+        },
+        {
+          "q": "GENSER Format Line 14 name",
           "a": "Validation."
+        },
+        {
+          "q": "Format Line 14 example",
+          "a": "#0001."
         },
         {
           "q": "Validation duplicates what?",
           "a": "SSN from Format Line 2."
         },
         {
-          "q": "Validation prevents what issue?",
-          "a": "Detects incomplete/straggler messages."
+          "q": "Purpose of validation",
+          "a": "Verifies message complete and not a straggler."
         },
         {
-          "q": "Define straggler.",
-          "a": "Beginning of one message combined with end of another."
+          "q": "Define \u201cstraggler\u201d (as stated)",
+          "a": "Combination of two different messages where beginning of one is combined with end of another."
         },
         {
-          "q": "Format Line 16 end marker.",
-          "a": "NNNN (after 8 line feeds)."
+          "q": "GENSER Format Line 16 name",
+          "a": "Ending Sign (End of Message)."
+        },
+        {
+          "q": "End of message marker",
+          "a": "NNNN."
+        },
+        {
+          "q": "End of message structure",
+          "a": "8 carriage returns/line feeds then NNNN."
+        },
+        {
+          "q": "Why 8 blank lines?",
+          "a": "Provide physical separation between messages."
+        },
+        {
+          "q": "Why \u201cNNNN\u201d?",
+          "a": "Unique characters recognized by systems as end of a message."
+        },
+        {
+          "q": "To identify Format Line 1, look for what?",
+          "a": "VZCZC + 3-letter station/channel + 3-digit sequence."
+        },
+        {
+          "q": "To identify Format Line 2, what does it begin with?",
+          "a": "A precedence letter (R/P/O/Z) followed by header groups."
+        },
+        {
+          "q": "To identify Format Line 4, what does it start with?",
+          "a": "3-letter OPSIG (e.g., ZNR or ZNY)."
+        },
+        {
+          "q": "To identify Format Line 5, what starts the DTG line?",
+          "a": "Precedence letter + space then DDHHMMZ MMM YY."
+        },
+        {
+          "q": "To identify originator line, what keyword is used?",
+          "a": "FM."
+        },
+        {
+          "q": "To identify action addressee line, what keyword is used?",
+          "a": "TO."
+        },
+        {
+          "q": "To identify info addressee line, what keyword is used?",
+          "a": "INFO."
+        },
+        {
+          "q": "Header-to-body break prosign",
+          "a": "BT (Format Line 11)."
+        },
+        {
+          "q": "Body-to-footer break prosign",
+          "a": "BT (Format Line 13)."
+        },
+        {
+          "q": "How to confirm message completeness quickly",
+          "a": "Check Validation (# + SSN) matches SSN in header and message ends with NNNN."
+        },
+        {
+          "q": "GENSER vs DSSCS (key distinction)",
+          "a": "GENSER is common DoD format; DSSCS is special purpose worldwide system for record traffic that can contain SI/SCI."
+        },
+        {
+          "q": "CRITIC vs routine messaging (key distinction)",
+          "a": "CRITIC reports critical info to senior decision makers; highest priority; fastest paths; modified SI format."
+        },
+        {
+          "q": "AIG vs CAD (difference)",
+          "a": "AIG is 16+ PLAs grouped; CAD is 4+ PLAs with common chain of command."
+        },
+        {
+          "q": "Action addressee vs INFO addressee",
+          "a": "Action must act; INFO is informed only."
+        },
+        {
+          "q": "Originator vs drafter vs releaser",
+          "a": "Originator is sending authority; drafter composes; releaser authorizes transmission."
+        },
+        {
+          "q": "Where does message go after release?",
+          "a": "Telecommunications/message center for transmission."
+        },
+        {
+          "q": "Z in DTG stands for",
+          "a": "Zulu (GMT)."
+        },
+        {
+          "q": "Julian date is what?",
+          "a": "Day-of-year number 001\u2013365 (366 leap year)."
+        },
+        {
+          "q": "What does \u201cU\u201d in header classification position mean?",
+          "a": "Unclassified."
+        },
+        {
+          "q": "What does \u201cT\u201d in header classification position mean?",
+          "a": "Top Secret."
+        },
+        {
+          "q": "Purpose of classification redundancy",
+          "a": "Repeats classification to reduce error/mismatch."
         }
       ]
     },
@@ -518,7 +1206,7 @@
         },
         {
           "q": "NIPRNET",
-          "a": "Unclassified but Sensitive Internet Protocol Router Network"
+          "a": "Non-classified (Unclassified but Sensitive) Internet Protocol Router Network"
         },
         {
           "q": "SIPRNET",
@@ -537,6 +1225,34 @@
           "a": "Sensitive Information"
         },
         {
+          "q": "USFFC",
+          "a": "United States Fleet Forces Command"
+        },
+        {
+          "q": "NAVIFOR",
+          "a": "Naval Information Forces"
+        },
+        {
+          "q": "NETWARCOM",
+          "a": "Naval Network Warfare Command"
+        },
+        {
+          "q": "NCDOC",
+          "a": "Navy Cyber Defense Operations Command"
+        },
+        {
+          "q": "CYBERFOR",
+          "a": "Navy Cyber Forces"
+        },
+        {
+          "q": "NCMS",
+          "a": "Navy Communications Security Material System"
+        },
+        {
+          "q": "DCMS",
+          "a": "Director, Communications Security Material System"
+        },
+        {
           "q": "NCTAMS",
           "a": "Navy Computer and Telecommunications Area Master Station"
         },
@@ -545,12 +1261,32 @@
           "a": "Navy Computer and Telecommunications Station"
         },
         {
+          "q": "NAVCOMTELSTA",
+          "a": "Naval Computer and Telecommunications Station"
+        },
+        {
           "q": "NIOC",
           "a": "Naval Information Operations Command"
         },
         {
           "q": "FLTNOC",
           "a": "Fleet Network Operations Center"
+        },
+        {
+          "q": "NSOC",
+          "a": "Navy Satellite Operations Center"
+        },
+        {
+          "q": "CSMS",
+          "a": "Communications Security Material System"
+        },
+        {
+          "q": "COMSEC",
+          "a": "Communications Security"
+        },
+        {
+          "q": "C4I",
+          "a": "Command, Control, Communications, Computers, and Intelligence"
         },
         {
           "q": "AUTODIN",
@@ -573,28 +1309,44 @@
           "a": "Naval Modular Automated Communications System"
         },
         {
-          "q": "CO",
-          "a": "Commanding Officer"
+          "q": "GENSER",
+          "a": "General Service Message"
         },
         {
-          "q": "COMMO",
-          "a": "Communications Officer"
+          "q": "DSSCS",
+          "a": "Defense Special Security Communications System"
         },
         {
-          "q": "RO",
-          "a": "Radio Officer"
+          "q": "CRITIC",
+          "a": "Critical Intelligence Message"
         },
         {
-          "q": "CWO",
-          "a": "Communications Watch Officer"
+          "q": "PLA",
+          "a": "Plain Language Address"
         },
         {
-          "q": "CMS",
-          "a": "Communications Security Material System"
+          "q": "AIG",
+          "a": "Address Indicator Group"
         },
         {
-          "q": "COMSEC",
-          "a": "Communications Security"
+          "q": "CAD",
+          "a": "Collective Address Designator"
+        },
+        {
+          "q": "COMMSHIFT",
+          "a": "Communications Guard Shift"
+        },
+        {
+          "q": "COMMSPOT",
+          "a": "Communications Spot Report"
+        },
+        {
+          "q": "PQS",
+          "a": "Personnel Qualification Standards"
+        },
+        {
+          "q": "SOP",
+          "a": "Standard Operating Procedure"
         },
         {
           "q": "TPI",
@@ -605,20 +1357,20 @@
           "a": "Master Station Log"
         },
         {
-          "q": "DTG",
-          "a": "Date-Time Group"
-        },
-        {
-          "q": "OSRI",
-          "a": "Originating Station\u2019s Routing Indicator"
+          "q": "SSIC",
+          "a": "Standard Subject Identification Code"
         },
         {
           "q": "SSN",
           "a": "Station Serial Number"
         },
         {
-          "q": "SSIC",
-          "a": "Standard Subject Identification Code"
+          "q": "OSRI",
+          "a": "Originating Station\u2019s Routing Indicator"
+        },
+        {
+          "q": "DTG",
+          "a": "Date-Time Group"
         },
         {
           "q": "OPSIG",
@@ -677,44 +1429,36 @@
           "a": "Chief of Naval Operations"
         },
         {
-          "q": "PQS",
-          "a": "Personnel Qualification Standards"
+          "q": "CO",
+          "a": "Commanding Officer"
         },
         {
-          "q": "SOP",
-          "a": "Standard Operating Procedure"
+          "q": "XO",
+          "a": "Executive Officer"
         },
         {
-          "q": "GENSER",
-          "a": "General Service"
+          "q": "COMMO",
+          "a": "Communications Officer"
         },
         {
-          "q": "DSSCS",
-          "a": "Defense Special Security Communications System(s)"
+          "q": "RO",
+          "a": "Radio Officer"
         },
         {
-          "q": "CRITIC",
-          "a": "Critical Intelligence Message"
+          "q": "CWO",
+          "a": "Communications Watch Officer"
         },
         {
-          "q": "PLA",
-          "a": "Plain Language Address"
+          "q": "ATG",
+          "a": "Afloat Training Group"
         },
         {
-          "q": "AIG",
-          "a": "Address Indicator Group"
+          "q": "INSURV",
+          "a": "Board of Inspection and Survey"
         },
         {
-          "q": "CAD",
-          "a": "Collective Address Designator"
-        },
-        {
-          "q": "COMMSHIFT",
-          "a": "Communications Guard Shift"
-        },
-        {
-          "q": "COMMSPOT",
-          "a": "Communications Spot Report"
+          "q": "IAW",
+          "a": "In Accordance With"
         },
         {
           "q": "MSGID",
@@ -730,7 +1474,7 @@
         },
         {
           "q": "AMPN",
-          "a": "Amplifying Information"
+          "a": "Amplification"
         },
         {
           "q": "RMKS",
@@ -743,6 +1487,10 @@
         {
           "q": "GMT",
           "a": "Greenwich Mean Time"
+        },
+        {
+          "q": "ZULU",
+          "a": "Zulu Time (GMT)"
         }
       ]
     }
