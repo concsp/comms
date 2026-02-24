@@ -152,7 +152,6 @@ const QuizApp = (() => {
     const seen = new Set();
     distractors = distractors.filter(x => (seen.has(x) ? false : (seen.add(x), true)));
     distractors = distractors.slice(0, nChoices-1);
-  }
 
     // Ensure we have enough distractors
     if (distractors.length < nChoices-1){
