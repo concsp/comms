@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Deck</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="wrap headrow">
+    <div>
+      <a class="back" href="index.html">← Back</a>
+      <h1 id="deckTitle">Deck</h1>
+      <p class="sub" id="deckMeta"></p>
+    </div>
+    <div class="controls">
+      <button class="btn" id="modeFlash" type="button">Flashcards</button>
+      <button class="btn" id="modeQuiz" type="button">Multiple Choice</button>
+      <button class="btn danger" id="resetDeck" type="button">Reset deck</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="row space">
+        <div class="pill" id="modePill">Flashcards</div>
+        <div class="muted" id="counter"></div>
+      </div>
+
+      <div class="qa">
+        <div class="q" id="question"></div>
+        <div class="a hidden" id="answer"></div>
+      </div>
+
+      <div id="choices" class="choices hidden"></div>
+
+      <div class="row space">
+        <button class="btn" id="show" type="button">Show answer</button>
+        <div class="row">
+          <button class="btn good" id="right" type="button">Right</button>
+          <button class="btn danger" id="wrong" type="button">Wrong</button>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div class="dash">
+        <div class="metric">
+          <div class="label">Attempts</div>
+          <div class="value" id="dAttempts">0</div>
+        </div>
+        <div class="metric">
+          <div class="label">Correct</div>
+          <div class="value" id="dCorrect">0</div>
+        </div>
+        <div class="metric">
+          <div class="label">Accuracy</div>
+          <div class="value" id="dAcc">0%</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Study Settings</h2>
+      <div class="settings">
+        <label class="field">
+          <span>Order</span>
+          <select id="order">
+            <option value="shuffle">Shuffle</option>
+            <option value="due">Due-first (spaced-ish)</option>
+            <option value="linear">In order</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Question direction</span>
+          <select id="direction">
+            <option value="term2def">Term → Definition</option>
+            <option value="def2term">Definition → Term</option>
+            <option value="mix">Mixed</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Quiz choices</span>
+          <select id="choicesN">
+            <option value="4">4 choices</option>
+            <option value="5">5 choices</option>
+          </select>
+        </label>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    FlashApp.initDeckPage();
+  </script>
+</body>
+</html>

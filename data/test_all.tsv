@@ -1,0 +1,125 @@
+Mission of Naval Communications	Provide and maintain reliable, secure, and rapid communications based on wartime requirements to support Naval Operating Forces.
+Naval communications must satisfy what systems?	Defense Communications System (DCS) and National Communications System (NCS).
+Telecommunications (definition)	All information systems using electric or electromagnetic signals to transmit information between or among points.
+NTS stands for	Naval Telecommunications System.
+Define Naval Telecommunications System (NTS)	All end terminal processing equipment, transmission, switching, cryptographic, and control devices used to transmit operational information in the Navy.
+DCS stands for	Defense Communications System.
+DISA stands for	Defense Information Systems Agency.
+DISA role	Provides operational direction to DCS.
+List the network enclaves	NIPRNET; SIPRNET; JWICS.
+NIPRNET stands for	Unclassified but Sensitive Internet Protocol Router Network.
+SIPRNET stands for	Secret Internet Protocol Router Network.
+JWICS stands for	Joint Worldwide Intelligence Communications System.
+DISN stands for	Defense Information Systems Network.
+NCTAMS stands for	Navy Computer and Telecommunications Area Master Station.
+NCTS stands for	Navy Computer and Telecommunications Station.
+NIOC stands for	Naval Information Operations Command.
+FLTNOC stands for	Fleet Network Operations Center.
+AUTODIN stands for	Automatic Digital Network.
+AMHS stands for	Automated Message Handling System.
+DMS stands for	Defense Message System.
+DMDS stands for	Defense Message Distribution System.
+NAVMACS stands for	Naval Modular Automated Communications System.
+CO stands for	Commanding Officer.
+COMMO stands for	Communications Officer.
+RO stands for	Radio Officer.
+CWO stands for	Communications Watch Officer.
+PQS stands for	Personnel Qualification Standards.
+SOP stands for	Standard Operating Procedure.
+TPI stands for	Two-Person Integrity.
+MSL stands for	Master Station Log.
+Define MINIMIZE	Mandatory drastic reduction of normal message and telephone traffic so vital traffic is not delayed.
+Who can impose MINIMIZE?	Chief of Naval Operations (CNO), fleet commanders in chief, and area coordinators.
+ACP 131(F) is	Allied Communications Procedures 131 (Q & Z signals).
+QSL means	Acknowledge receipt.
+QRT means	Stop sending.
+QRL means	I am busy; please do not interfere.
+ZUG means	Negative (No).
+ZUJ means	Stand by.
+COMMPLAN (definition)	Specifies circuits/channels/facilities and policies/procedures; assigns comm tasks.
+OPTASK COMMS used for	Developing ship COMMPLAN.
+Naval message categories covered	GENSER; DSSCS; CRITIC.
+GENSER stands for	General Service.
+DSSCS stands for	Defense Special Security Communications System(s).
+CRITIC message purpose	Report critical information to senior government decision makers (the President).
+Originator (definition)	Authority in whose name message is sent; presumed to be the CO.
+Drafter (definition)	Person who composes the message.
+Releaser (definition)	Designated individual authorized to release messages for transmission.
+Special handling markings (list)	Caveat; RD; FRD; LIMDIS; FOUO; EFTO; SPECAT; PERSONAL FOR; NATO RESTRICTED; ALLIED RESTRICTED.
+FOUO stands for	For Official Use Only.
+EFTO stands for	Encrypted For Transmission Only.
+SPECAT stands for	Special Category.
+COMMSHIFT stands for	Communications Guard Shift.
+COMMSPOT stands for	Communications Spot Report.
+PLA stands for	Plain Language Address.
+AIG stands for	Address Indicator Group.
+CAD stands for	Collective Address Designator.
+GENSER (definition)	Most widely used DoD message format; usually UNCLASSIFIED but can be up to TOP SECRET.
+Format Line 1	Transmission Identification.
+VZCZC indicates	Start of a message.
+Format Line 2	Message Header Information.
+Precedence codes	R=Routine; P=Priority; O=Immediate; Z=Flash.
+LMF stands for	Language Media Format.
+CIC stands for	Content Indicator Code.
+OSRI stands for	Originating Station’s Routing Indicator.
+SSN stands for	Station Serial Number.
+DTG stands for	Date-Time Group.
+OPSIG stands for	Operating Signal.
+BT means	Break.
+SSIC stands for	Standard Subject Identification Code.
+MSGID indicates	Message identification for GENSER messages.
+SUBJ line	Subject line starts with SUBJ/ and ends with //.
+REF codes	CON; DOC; LTR; MSG; TEL.
+AMPN means	Amplifying information for references.
+RMKS means	Remarks section explains the purpose of the message.
+DECL means	Declassification marker for exemption categories.
+NNNN indicates	End of a message (after 8 blank lines).
+NTS	Naval Telecommunications System
+DCS	Defense Communications System
+DISA	Defense Information Systems Agency
+DISN	Defense Information Systems Network
+NIPRNET	Unclassified but Sensitive Internet Protocol Router Network
+SIPRNET	Secret Internet Protocol Router Network
+JWICS	Joint Worldwide Intelligence Communications System
+NCTAMS	Navy Computer and Telecommunications Area Master Station
+NCTS	Navy Computer and Telecommunications Station
+NIOC	Naval Information Operations Command
+FLTNOC	Fleet Network Operations Center
+AUTODIN	Automatic Digital Network
+AMHS	Automated Message Handling System
+DMS	Defense Message System
+DMDS	Defense Message Distribution System
+NAVMACS	Naval Modular Automated Communications System
+CO	Commanding Officer
+COMMO	Communications Officer
+RO	Radio Officer
+CWO	Communications Watch Officer
+PQS	Personnel Qualification Standards
+SOP	Standard Operating Procedure
+TPI	Two-Person Integrity
+MSL	Master Station Log
+CNO	Chief of Naval Operations
+ACP	Allied Communications Publication
+GENSER	General Service Message
+DSSCS	Defense Special Security Communications System(s)
+CRITIC	Critical Intelligence Message
+FOUO	For Official Use Only
+EFTO	Encrypted For Transmission Only
+SPECAT	Special Category
+COMMSHIFT	Communications Guard Shift
+COMMSPOT	Communications Spot Report
+PLA	Plain Language Address
+AIG	Address Indicator Group
+CAD	Collective Address Designator
+LMF	Language Media Format
+CIC	Content Indicator Code
+OSRI	Originating Station’s Routing Indicator
+SSN	Station Serial Number
+DTG	Date-Time Group
+OPSIG	Operating Signal
+SSIC	Standard Subject Identification Code
+MSGID	Message Identification
+AMPN	Amplifying Information
+RMKS	Remarks
+DECL	Declassification
+GMT	Greenwich Mean Time

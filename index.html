@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Comms IT Navy – Study</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="wrap">
+    <h1>Comms IT Navy – Study</h1>
+    <p class="sub">Choose a deck. Progress saves locally in this browser (no login).</p>
+  </header>
+
+  <main class="wrap grid">
+    <section class="card">
+      <h2>Decks</h2>
+      <ul class="decklist">
+        <li><a href="deck.html#data/lesson1.tsv">Lesson 1</a></li>
+        <li><a href="deck.html#data/lesson2.tsv">Lesson 2</a></li>
+        <li><a href="deck.html#data/lesson3.tsv">Lesson 3</a></li>
+        <li><a href="deck.html#data/lesson4.tsv">Lesson 4</a></li>
+        <li><a href="deck.html#data/acronyms.tsv">Acronyms Only</a></li>
+        <li><a href="deck.html#data/test_all.tsv">Test All (1–4 + Acronyms)</a></li>
+      </ul>
+      <p class="hint">Inside each deck: switch between <b>Flashcards</b> and <b>Multiple Choice</b>. Use “Due-first” to see missed cards sooner.</p>
+    </section>
+
+    <section class="card">
+      <h2>Overall Progress</h2>
+      <div class="dash">
+        <div class="metric">
+          <div class="label">Total attempts</div>
+          <div class="value" id="mAttempts">0</div>
+        </div>
+        <div class="metric">
+          <div class="label">Correct</div>
+          <div class="value" id="mCorrect">0</div>
+        </div>
+        <div class="metric">
+          <div class="label">Accuracy</div>
+          <div class="value" id="mAcc">0%</div>
+        </div>
+      </div>
+      <div class="row">
+        <button id="resetAll" class="btn danger" type="button">Reset all progress</button>
+      </div>
+      <p class="hint">Tip: Acronyms → speed. Lesson decks → comprehension. Test All → readiness.</p>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <small>Static site. Host on GitHub Pages or open locally.</small>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    FlashApp.renderDashboard();
+    document.getElementById('resetAll').addEventListener('click', () => {
+      if (confirm('Reset ALL progress for ALL decks on this browser?')) {
+        FlashApp.resetAllProgress();
+        FlashApp.renderDashboard();
+      }
+    });
+  </script>
+</body>
+</html>
