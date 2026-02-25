@@ -135,3 +135,19 @@ mark{
 pre.msg mark{background: rgba(110,168,255,.22); color: var(--text); padding: 0 .15em; border-radius: .35em;}
 
 h1, h2, h3, .badge span { color:#ffffff; }
+
+
+/* Matching exercise */
+.imgWrap{margin-top:1rem; display:flex; justify-content:center;}
+.matchImg{max-width:520px; width:100%; border-radius:14px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.02);}
+.matchTable{display:flex; flex-direction:column; gap:.75rem; margin-top:1rem;}
+.matchRow{display:grid; grid-template-columns: 90px 1fr 44px; gap:.75rem; align-items:center; padding:.75rem; border-radius:14px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.02);}
+.matchRow.ok{border-color: rgba(34,197,94,.55); box-shadow: 0 0 0 1px rgba(34,197,94,.12) inset;}
+.matchRow.bad{border-color: rgba(239,68,68,.55); box-shadow: 0 0 0 1px rgba(239,68,68,.12) inset;}
+.matchNum{font-weight:800; color:#ffffff; font-size:1.05rem; text-align:center;}
+.matchSelect{width:100%; padding:.75rem .85rem; border-radius:12px; border:1px solid rgba(255,255,255,.15); background:rgba(0,0,0,.25); color:#ffffff; font-weight:600;}
+.matchSelect option{background:#0b1220; color:#ffffff;}
+.matchStatus{font-size:1.25rem; font-weight:900; text-align:center; color:#ffffff;}
+.matchHeader{display:grid; grid-template-columns: 90px 1fr 44px; gap:.75rem; margin-top:1rem; opacity:.9;}
+.matchNumHead,.matchDescHead,.matchStatusHead{color:#ffffff; font-weight:700; font-size:.9rem;}
+.btnRow{display:flex; gap:.75rem; margin-top:1rem;}
