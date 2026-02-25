@@ -773,4 +773,109 @@ const ACRONYM_BANK = [
       "CND"
     ]
   }
+
+    {
+    "id": "a57",
+    "prompt": "In a GENSER header, what does CIC stand for?",
+    "options": [
+      "Content Indicator Code",
+      "Communications Integration Code",
+      "Command Identification Code",
+      "Circuit Indicator Classification"
+    ],
+    "correctIndex": 0,
+    "explanation": "CIC stands for Content Indicator Code and indicates what type of information is in the message.",
+    "tags": ["GENSER", "CIC"]
+  },
+  {
+    "id": "a58",
+    "prompt": "What is the purpose of the Content Indicator Code (CIC) in a GENSER message?",
+    "options": [
+      "To indicate the type of information contained in the message",
+      "To assign transmission precedence",
+      "To identify the originating station",
+      "To indicate the message classification level"
+    ],
+    "correctIndex": 0,
+    "explanation": "Per Lesson 4, the CIC indicates what type of information is in a message.",
+    "tags": ["GENSER", "CIC"]
+  },
+  {
+    "id": "a59",
+    "prompt": "In Format Line 2 of a GENSER message, the CIC is located in which character positions (Lesson 4)?",
+    "options": [
+      "Characters 5–8",
+      "Characters 4–9",
+      "Characters 10–16",
+      "Characters 1–4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 4: Character 5–8 in Format Line 2 is the Content Indicator Code (CIC).",
+    "tags": ["GENSER", "Header", "CIC"]
+  },
+  {
+    "id": "a60",
+    "prompt": "Which Content Indicator Code (CIC) indicates a Narrative Message / General Text (Lesson 4)?",
+    "options": [
+      "ZYUW",
+      "ZYVW",
+      "NGCN",
+      "ZDKW"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 4: ZYUW = Narrative Message / General Text.",
+    "tags": ["CIC", "ZYUW"]
+  },
+  {
+    "id": "a61",
+    "prompt": "Which Content Indicator Code (CIC) indicates CASREP / Casualty Reports (Lesson 4)?",
+    "options": [
+      "NGCN",
+      "ZYUW",
+      "ZDKW",
+      "NBAT"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 4: NGCN = CASREP / Casualty Reports.",
+    "tags": ["CIC", "NGCN"]
+  },
+  {
+    "id": "a62",
+    "prompt": "Which Content Indicator Code (CIC) indicates Service Messages (Lesson 4)?",
+    "options": [
+      "ZYVW",
+      "ZYUW",
+      "NBAT",
+      "ZDKW"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 4: ZYVW = Service Messages.",
+    "tags": ["CIC", "ZYVW"]
+  },
+  {
+    "id": "a63",
+    "prompt": "Which Content Indicator Code (CIC) indicates Retransmission (Lesson 4)?",
+    "options": [
+      "ZDKW",
+      "NGCN",
+      "ZYVW",
+      "NBAT"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 4: ZDKW = Retransmission.",
+    "tags": ["CIC", "ZDKW"]
+  },
+  {
+    "id": "a64",
+    "prompt": "Which Content Indicator Code (CIC) indicates Ammo (Naval Battery) (Lesson 4)?",
+    "options": [
+      "NBAT",
+      "ZDKW",
+      "ZYUW",
+      "NGCN"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 4: NBAT = Ammo (Naval Battery).",
+    "tags": ["CIC", "NBAT"]
+  }
 ];
