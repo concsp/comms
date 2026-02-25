@@ -1,27 +1,75 @@
-(() => {
-  const root = document.getElementById("matchRoot");
-  const scorePill = document.getElementById("scorePill");
+/* GENSER Format Line Matching
+   - No image
+   - Reference GENSER text included at top
+   - Per-row instant feedback + Check All
+*/
 
-  // Format line set (12 items)
-  const PAIRS = [
-    { line: "1",  desc: "Transmission Identification" },
-    { line: "2",  desc: "Message Header Information" },
-    { line: "4",  desc: "Security Warning" },
-    { line: "5",  desc: "Date Time Group" },
-    { line: "6",  desc: "Originator" },
-    { line: "7",  desc: "Action Addressee" },
-    { line: "8",  desc: "Information Addressee" },
-    { line: "11", desc: "Break" },
-    { line: "12", desc: "Text" },
-    { line: "13", desc: "Break" },
-    { line: "14", desc: "Validation" },
-    { line: "16", desc: "Ending Sign" },
+(function () {
+  const REF_MSG = `VZCZCYKN001
+RTTUZYUW RHBCYKN0001 0331200-UUUU--RUDOSAB RULYCUR.
+ZNR UUUUU
+R 021200Z FEB 02
+FM USS YORKTOWN
+TO USS CURTIS
+INFO SPCC MECHANICSBURG PA
+DESRON TEN
+AIG 1123
+USS TICONDEROGA
+BT
+UNCLAS //N03207// PERSONAL FOR COMMANDING OFFICERS
+MSGID/GENADMIN/YORKTOWN/-/FEB//
+SUBJ/(U)NAVY WIDE GOLF TOURNAMENT//
+REF/A/TELCON/RADM STORM/01FEB02//
+AMPN/REF A IS A TELEPHONE CONVERSATION BETWEEN CDR KERNO AND RADM STORM IRT ALLNAV GOLF TOURNAMENT ON
+THE MS GULF COAST.//
+RMKS/1. IAW REF A, PLEASE DISPERSE INFORMATION TO YOUR CREWS IRT THE ALLNAV GOLF TOURNAMENT ON 14 FEB 2002. THE TOURNAMENT WILL TAKE PLACE AT PINE WOODS RESORT IN BILOXI MS, AT 1000L. HOPE TO SEE ALL THERE.//
+BT
+#0001
+
+
+NNNN`;
+
+  // Format lines to match (from your Lesson 4 table)
+  const MATCH_ITEMS = [
+    { line: 1,  answer: "Transmission Identification" },
+    { line: 2,  answer: "Message Header Information" },
+    { line: 4,  answer: "Security Warning" },
+    { line: 5,  answer: "Date Time Group" },
+    { line: 6,  answer: "Originator" },
+    { line: 7,  answer: "Action Addressee" },
+    { line: 8,  answer: "Information Addressee" },
+    { line: 11, answer: "Break" },
+    { line: 12, answer: "Text" },
+    { line: 13, answer: "Break" },
+    { line: 14, answer: "Validation" },
+    { line: 16, answer: "Ending Sign" },
   ];
 
-  const ALL_DESCS = PAIRS.map(p => p.desc);
+  // Option pool (unique labels). Note: Break appears twice but should only be one option label.
+  const OPTION_POOL = [
+    "Transmission Identification",
+    "Message Header Information",
+    "Security Warning",
+    "Date Time Group",
+    "Originator",
+    "Action Addressee",
+    "Information Addressee",
+    "Break",
+    "Text",
+    "Validation",
+    "Ending Sign",
+  ];
 
+  const refMsgEl = document.getElementById("refMsg");
+  const matchTableEl = document.getElementById("matchTable");
+  const scoreLabelEl = document.getElementById("scoreLabel");
+  const statusBoxEl = document.getElementById("statusBox");
+  const checkAllBtn = document.getElementById("checkAllBtn");
+  const resetBtn = document.getElementById("resetBtn");
+
+  // --- helpers ---
   function shuffle(arr) {
-    const a = [...arr];
+    const a = arr.slice();
     for (let i = a.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [a[i], a[j]] = [a[j], a[i]];
@@ -29,220 +77,150 @@
     return a;
   }
 
-  let shuffledOptions = shuffle(ALL_DESCS);
-  let locked = false;
-
-  function el(tag, attrs = {}, children = []) {
-    const n = document.createElement(tag);
-    for (const [k, v] of Object.entries(attrs)) {
-      if (k === "class") n.className = v;
-      else if (k === "text") n.textContent = v;
-      else if (k.startsWith("on") && typeof v === "function") n.addEventListener(k.slice(2), v);
-      else n.setAttribute(k, v);
-    }
-    for (const c of children) n.appendChild(c);
-    return n;
+  function setScore(score, total) {
+    scoreLabelEl.textContent = `Score: ${score} / ${total}`;
   }
 
-  function build() {
-    root.innerHTML = "";
-    locked = false;
-    setScore(0);
-
-    // Header row
-    const header = el("div", { class: "matchHeaderRow" }, [
-      el("div", { class: "matchColHead", text: "Format Line #" }),
-      el("div", { class: "matchColHead", text: "Line Description / Title" }),
-    ]);
-
-    const list = el("div", { class: "matchList" });
-
-    const rows = PAIRS.map(pair => {
-      const select = el("select", { class: "matchSelect" });
-      select.appendChild(el("option", { value: "", text: "Select…" }));
-
-      for (const opt of shuffledOptions) {
-        select.appendChild(el("option", { value: opt, text: opt }));
-      }
-
-      const feedback = el("div", { class: "matchInlineFeedback" });
-
-      const row = el("div", { class: "matchRow" }, [
-        el("div", { class: "matchLine", text: pair.line }),
-        el("div", { class: "matchControl" }, [
-          select,
-          feedback
-        ])
-      ]);
-
-      return { pair, row, select, feedback };
-    });
-
-    rows.forEach(r => list.appendChild(r.row));
-
-    // Buttons
-    const btnRow = el("div", { class: "matchBtnRow" });
-    const btnCheck = el("button", {
-      class: "btn",
-      text: "Check Answers",
-      onclick: () => {
-        if (locked) return;
-        grade(rows);
-      },
-    });
-
-    const btnReset = el("button", {
-      class: "btn btnSecondary",
-      text: "Restart",
-      onclick: () => reset(),
-    });
-
-    btnRow.appendChild(btnCheck);
-    btnRow.appendChild(btnReset);
-
-    root.appendChild(header);
-    root.appendChild(list);
-    root.appendChild(btnRow);
-
-    // light, safe styling if your CSS doesn’t already have these classes
-    injectFallbackStyles();
+  function clearStatusBox() {
+    statusBoxEl.style.display = "none";
+    statusBoxEl.textContent = "";
   }
 
-  function reset() {
-    shuffledOptions = shuffle(ALL_DESCS);
-    build();
+  function showStatusBox(msg) {
+    statusBoxEl.style.display = "block";
+    statusBoxEl.textContent = msg;
   }
 
-  function grade(rows) {
-    locked = true;
+  // Track correctness per row id
+  const state = {
+    // key: row index -> { selected: string|null, isCorrect: boolean|null }
+    rows: [],
+  };
 
+  function computeScore() {
     let correct = 0;
+    for (const r of state.rows) {
+      if (r && r.isCorrect === true) correct++;
+    }
+    return correct;
+  }
 
-    for (const r of rows) {
-      const chosen = r.select.value;
-      const isCorrect = chosen === r.pair.desc;
+  function updateScoreUI() {
+    setScore(computeScore(), MATCH_ITEMS.length);
+  }
 
-      // lock
-      r.select.disabled = true;
+  function gradeRow(idx, rowEl, selectEl) {
+    const item = MATCH_ITEMS[idx];
+    const selected = selectEl.value || "";
 
-      // clear old state
-      r.row.classList.remove("isCorrect", "isWrong");
+    // reset visuals
+    rowEl.classList.remove("ok", "bad");
+    const statusEl = rowEl.querySelector(".matchStatus");
+    statusEl.textContent = "";
 
-      if (isCorrect) {
-        correct += 1;
-        r.row.classList.add("isCorrect");
-        r.feedback.textContent = "✓";
-      } else {
-        r.row.classList.add("isWrong");
-        if (!chosen) {
-          r.feedback.textContent = `✗ Correct: ${r.pair.desc}`;
-        } else {
-          r.feedback.textContent = `✗ Correct: ${r.pair.desc}`;
-        }
-      }
+    if (!selected) {
+      state.rows[idx] = { selected: "", isCorrect: null };
+      updateScoreUI();
+      return;
     }
 
-    setScore(correct);
+    const isCorrect = selected === item.answer;
+    state.rows[idx] = { selected, isCorrect };
+
+    if (isCorrect) {
+      rowEl.classList.add("ok");
+      statusEl.textContent = "✓";
+    } else {
+      rowEl.classList.add("bad");
+      statusEl.textContent = "✕";
+    }
+
+    updateScoreUI();
   }
 
-  function setScore(n) {
-    if (scorePill) scorePill.textContent = `Score: ${n} / 12`;
-  }
+  function buildRow(idx, options) {
+    const item = MATCH_ITEMS[idx];
 
-  // If your global CSS already defines these classes, this does nothing harmful.
-  function injectFallbackStyles() {
-    if (document.getElementById("genserMatchFallbackStyles")) return;
+    const row = document.createElement("div");
+    row.className = "matchRow";
+    row.dataset.idx = String(idx);
 
-    const css = `
-      .matchHeaderRow{
-        display:grid;
-        grid-template-columns: 120px 1fr;
-        gap: 14px;
-        padding: 10px 8px;
-        opacity: .9;
-      }
-      .matchColHead{ font-weight: 700; }
-      .matchList{ display:flex; flex-direction:column; gap: 12px; margin-top: 6px; }
-      .matchRow{
-        display:grid;
-        grid-template-columns: 120px 1fr;
-        gap: 14px;
-        padding: 14px;
-        border-radius: 16px;
-        border: 1px solid rgba(255,255,255,0.08);
-        background: rgba(0,0,0,0.18);
-      }
-      .matchLine{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        font-size: 18px;
-        font-weight: 800;
-      }
-      .matchControl{ display:flex; flex-direction:column; gap: 10px; }
-      .matchSelect{
-        width: 100%;
-        padding: 12px 12px;
-        border-radius: 14px;
-        background: rgba(0,0,0,0.22);
-        border: 1px solid rgba(255,255,255,0.12);
-        color: #fff;
-        font-weight: 650;
-      }
-      .matchInlineFeedback{
-        font-size: 14px;
-        opacity: .95;
-      }
-      .matchBtnRow{
-        display:flex;
-        gap: 12px;
-        margin-top: 14px;
-      }
-      /* result states */
-      .matchRow.isCorrect{
-        border-color: rgba(0, 255, 170, 0.35);
-        box-shadow: 0 0 0 1px rgba(0, 255, 170, 0.10) inset;
-      }
-      .matchRow.isWrong{
-        border-color: rgba(255, 80, 80, 0.35);
-        box-shadow: 0 0 0 1px rgba(255, 80, 80, 0.10) inset;
-      }
-      /* reference message box */
-      .messageBox{
-        margin-top: 10px;
-        margin-bottom: 14px;
-        padding: 14px;
-        border-radius: 16px;
-        border: 1px solid rgba(255,255,255,0.08);
-        background: rgba(0,0,0,0.18);
-      }
-      .messageBoxTitle{
-        font-weight: 800;
-        margin-bottom: 10px;
-        opacity: .95;
-      }
-      .messagePre{
-        margin: 0;
-        white-space: pre;
-        overflow: auto;
-        max-height: 260px;
-        padding: 12px;
-        border-radius: 14px;
-        border: 1px solid rgba(255,255,255,0.08);
-        background: rgba(0,0,0,0.30);
-        color: #fff;
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-        font-size: 13px;
-        line-height: 1.35;
-      }
+    const num = document.createElement("div");
+    num.className = "matchNum";
+    num.textContent = String(item.line);
+
+    const select = document.createElement("select");
+    select.className = "matchSelect";
+    select.innerHTML = `
+      <option value="">Select...</option>
+      ${options.map(o => `<option value="${escapeHtml(o)}">${escapeHtml(o)}</option>`).join("")}
     `;
 
-    const style = document.createElement("style");
-    style.id = "genserMatchFallbackStyles";
-    style.textContent = css;
-    document.head.appendChild(style);
+    const status = document.createElement("div");
+    status.className = "matchStatus";
+
+    row.appendChild(num);
+    row.appendChild(select);
+    row.appendChild(status);
+
+    select.addEventListener("change", () => {
+      clearStatusBox();
+      gradeRow(idx, row, select);
+    });
+
+    return row;
   }
 
-  // init
-  build();
+  function escapeHtml(s) {
+    return String(s)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  function init() {
+    // Reference text
+    refMsgEl.textContent = REF_MSG;
+
+    // Reset state
+    state.rows = Array(MATCH_ITEMS.length).fill(null);
+    clearStatusBox();
+    setScore(0, MATCH_ITEMS.length);
+
+    // Build matching UI
+    matchTableEl.innerHTML = "";
+    const options = shuffle(OPTION_POOL);
+
+    for (let i = 0; i < MATCH_ITEMS.length; i++) {
+      const row = buildRow(i, options);
+      matchTableEl.appendChild(row);
+    }
+
+    // Buttons
+    checkAllBtn.onclick = () => {
+      clearStatusBox();
+
+      const rowEls = Array.from(matchTableEl.querySelectorAll(".matchRow"));
+      rowEls.forEach((rowEl) => {
+        const idx = Number(rowEl.dataset.idx);
+        const selectEl = rowEl.querySelector("select");
+        gradeRow(idx, rowEl, selectEl);
+      });
+
+      const score = computeScore();
+      const total = MATCH_ITEMS.length;
+
+      if (score === total) {
+        showStatusBox("Perfect — all format lines matched correctly.");
+      } else {
+        showStatusBox(`Checked all. Current score: ${score} / ${total}. Fix the rows marked with ✕.`);
+      }
+    };
+
+    resetBtn.onclick = () => init();
+  }
+
+  init();
 })();
