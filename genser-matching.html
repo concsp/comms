@@ -1,30 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GENSER Format Line Matching</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GENSER Match • Naval Communications Quiz Bank</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="topbar">
-      <div>
-        <div class="brand">Naval Communications Quiz Bank</div>
-        <div class="subbrand">Lessons 1–4 • Built for realistic MCQs (no punctuation traps)</div>
+  <!-- Top header / nav (matches the rest of the site pattern) -->
+  <header class="topbar">
+    <div class="container topbarInner">
+      <div class="brand">
+        <div class="brandTitle">Naval Communications Quiz Bank</div>
+        <div class="brandSubtitle">Lessons 1–4 • Built for realistic MCQs (no punctuation traps)</div>
       </div>
-      <div class="nav">
-        <a class="btn" href="index.html">Home</a>
-        <a class="btn" href="acronym-test.html">Acronyms</a>
-        <a class="btn" href="comprehensive-test.html">Main Exam</a>
-        <a class="btn" href="genser-format-test.html">GENSER Format</a>
-        <a class="btn primary" href="genser-matching.html">GENSER Match</a>
-      </div>
+
+      <nav class="nav">
+        <a class="navBtn" href="index.html">Home</a>
+        <a class="navBtn" href="acronym-test.html">Acronyms</a>
+        <a class="navBtn" href="comprehensive-test.html">Practice 1 - 4</a>
+        <a class="navBtn" href="genser-format-test.html">GENSER Format</a>
+        <a class="navBtn active" href="genser-matching.html">GENSER Match</a>
+      </nav>
     </div>
+  </header>
 
-    <div id="app"></div>
+  <main class="page">
+    <div class="container">
+      <section class="hero">
+        <h1 class="pageTitle">GENSER Format Line Matching</h1>
+        <p class="pageSubtitle">Match each format line number to its correct description.</p>
+      </section>
 
-    <script src="js/genser-matching.js"></script>
-  </div>
+      <section class="card">
+        <div class="cardHeaderRow">
+          <div class="pill">GENSER • Matching</div>
+          <div class="scorePill" id="scorePill">Score: 0 / 12</div>
+        </div>
+
+        <!-- Reference message (always visible, no highlight) -->
+        <div class="messageBox">
+          <div class="messageBoxTitle">Reference GENSER Example (Lesson 4)</div>
+          <pre class="messagePre" aria-label="GENSER reference message">
+VZCZCYKN001
+RTTUZYUW RHBCYKN0001 0331200-UUUU--RUDOSAB RULYCUR.
+ZNR UUUUU
+R 021200Z FEB 02
+FM USS YORKTOWN
+TO USS CURTIS
+INFO SPCC MECHANICSBURG PA
+DESRON TEN
+AIG 1123
+USS TICONDEROGA
+BT
+UNCLAS //N03207// PERSONAL FOR COMMANDING OFFICERS
+MSGID/GENADMIN/YORKTOWN/-/FEB//
+SUBJ/(U)NAVY WIDE GOLF TOURNAMENT//
+REF/A/TELCON/RADM STORM/01FEB02//
+AMPN/REF A IS A TELEPHONE CONVERSATION BETWEEN CDR KERNO AND RADM STORM IRT ALLNAV GOLF TOURNAMENT ON THE MS GULF COAST.//
+RMKS/1. IAW REF A, PLEASE DISPERSE INFORMATION TO YOUR CREWS IRT THE ALLNAV GOLF TOURNAMENT ON 14 FEB 2002. THE TOURNAMENT WILL TAKE PLACE AT PINE WOODS RESORT IN BILOXI MS, AT 1000L. HOPE TO SEE ALL THERE.//
+BT
+#0001
+
+
+NNNN
+          </pre>
+        </div>
+
+        <div id="matchRoot"></div>
+      </section>
+    </div>
+  </main>
+
+  <script defer src="js/genser-matching.js"></script>
 </body>
 </html>
