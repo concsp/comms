@@ -47,10 +47,6 @@
     scorePill
   ]);
 
-  const imgWrap = el("div", { class: "imgWrap" }, [
-    el("img", { src: "img/genser_format_lines.png", alt: "GENSER format line table", class: "matchImg" })
-  ]);
-
   const options = shuffle(LINES.map(x => x.label));
   const table = el("div", { class: "matchTable" });
 
@@ -120,7 +116,6 @@
   });
 
   card.appendChild(head);
-  card.appendChild(imgWrap);
   card.appendChild(el("div", { class: "divider" }));
   card.appendChild(el("div", { class: "matchHeader" }, [
     el("div", { class: "matchNumHead" }, ["Format Line #"]),
