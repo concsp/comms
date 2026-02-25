@@ -1,33 +1,27 @@
+(() => {
+  const root = document.getElementById("matchRoot");
+  const scorePill = document.getElementById("scorePill");
 
-(function () {
-  const LINES = [
-    { n: "1",  label: "Transmission Identification" },
-    { n: "2",  label: "Message Header Information" },
-    { n: "4",  label: "Security Warning" },
-    { n: "5",  label: "Date Time Group" },
-    { n: "6",  label: "Originator" },
-    { n: "7",  label: "Action Addressee" },
-    { n: "8",  label: "Information Addressee" },
-    { n: "11", label: "Break" },
-    { n: "12", label: "Text" },
-    { n: "13", label: "Break" },
-    { n: "14", label: "Validation" },
-    { n: "16", label: "Ending Sign" }
+  // Format line set (12 items)
+  const PAIRS = [
+    { line: "1",  desc: "Transmission Identification" },
+    { line: "2",  desc: "Message Header Information" },
+    { line: "4",  desc: "Security Warning" },
+    { line: "5",  desc: "Date Time Group" },
+    { line: "6",  desc: "Originator" },
+    { line: "7",  desc: "Action Addressee" },
+    { line: "8",  desc: "Information Addressee" },
+    { line: "11", desc: "Break" },
+    { line: "12", desc: "Text" },
+    { line: "13", desc: "Break" },
+    { line: "14", desc: "Validation" },
+    { line: "16", desc: "Ending Sign" },
   ];
 
-  function el(tag, attrs = {}, children = []) {
-    const node = document.createElement(tag);
-    for (const [k, v] of Object.entries(attrs)) {
-      if (k === "class") node.className = v;
-      else if (k === "html") node.innerHTML = v;
-      else node.setAttribute(k, v);
-    }
-    for (const c of children) node.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
-    return node;
-  }
+  const ALL_DESCS = PAIRS.map(p => p.desc);
 
   function shuffle(arr) {
-    const a = arr.slice();
+    const a = [...arr];
     for (let i = a.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [a[i], a[j]] = [a[j], a[i]];
@@ -35,96 +29,220 @@
     return a;
   }
 
-  const app = document.getElementById("app");
-  const card = el("div", { class: "card" });
-
-  const title = el("h1", { class: "pageTitle" }, ["GENSER Format Line Matching"]);
-  const subtitle = el("div", { class: "pageSubtitle" }, ["Match each format line number to its correct description."]);
-  const scorePill = el("div", { class: "scorePill" }, ["Score: ", el("span", { id: "score" }, ["0"]), " / ", String(LINES.length)]);
-
-  const head = el("div", { class: "headerRow" }, [
-    el("div", {}, [title, subtitle]),
-    scorePill
-  ]);
-
-  const options = shuffle(LINES.map(x => x.label));
-  const table = el("div", { class: "matchTable" });
-
-  const rows = [];
-  for (const line of LINES) {
-    const select = el("select", { class: "matchSelect" });
-    select.appendChild(el("option", { value: "" }, ["Select…"]));
-    for (const opt of options) select.appendChild(el("option", { value: opt }, [opt]));
-    const row = el("div", { class: "matchRow" }, [
-      el("div", { class: "matchNum" }, [line.n]),
-      select,
-      el("div", { class: "matchStatus" }, [""])
-    ]);
-    rows.push({ line, select, row, status: row.children[2] });
-    table.appendChild(row);
-  }
-
-  const btnRow = el("div", { class: "btnRow" });
-  const checkBtn = el("button", { class: "btn primary", type: "button" }, ["Check"]);
-  const resetBtn = el("button", { class: "btn", type: "button" }, ["Restart"]);
-  btnRow.appendChild(checkBtn);
-  btnRow.appendChild(resetBtn);
-
-  const explain = el("div", { class: "explain", id: "explain" }, [""]);
-
+  let shuffledOptions = shuffle(ALL_DESCS);
   let locked = false;
 
-  function compute() {
-    let score = 0;
-    for (const r of rows) {
-      const chosen = r.select.value;
-      const ok = chosen === r.line.label;
-      if (ok) score++;
+  function el(tag, attrs = {}, children = []) {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === "class") n.className = v;
+      else if (k === "text") n.textContent = v;
+      else if (k.startsWith("on") && typeof v === "function") n.addEventListener(k.slice(2), v);
+      else n.setAttribute(k, v);
     }
-    return score;
+    for (const c of children) n.appendChild(c);
+    return n;
   }
 
-  function renderResult() {
-    const score = compute();
-    document.getElementById("score").textContent = String(score);
+  function build() {
+    root.innerHTML = "";
+    locked = false;
+    setScore(0);
+
+    // Header row
+    const header = el("div", { class: "matchHeaderRow" }, [
+      el("div", { class: "matchColHead", text: "Format Line #" }),
+      el("div", { class: "matchColHead", text: "Line Description / Title" }),
+    ]);
+
+    const list = el("div", { class: "matchList" });
+
+    const rows = PAIRS.map(pair => {
+      const select = el("select", { class: "matchSelect" });
+      select.appendChild(el("option", { value: "", text: "Select…" }));
+
+      for (const opt of shuffledOptions) {
+        select.appendChild(el("option", { value: opt, text: opt }));
+      }
+
+      const feedback = el("div", { class: "matchInlineFeedback" });
+
+      const row = el("div", { class: "matchRow" }, [
+        el("div", { class: "matchLine", text: pair.line }),
+        el("div", { class: "matchControl" }, [
+          select,
+          feedback
+        ])
+      ]);
+
+      return { pair, row, select, feedback };
+    });
+
+    rows.forEach(r => list.appendChild(r.row));
+
+    // Buttons
+    const btnRow = el("div", { class: "matchBtnRow" });
+    const btnCheck = el("button", {
+      class: "btn",
+      text: "Check Answers",
+      onclick: () => {
+        if (locked) return;
+        grade(rows);
+      },
+    });
+
+    const btnReset = el("button", {
+      class: "btn btnSecondary",
+      text: "Restart",
+      onclick: () => reset(),
+    });
+
+    btnRow.appendChild(btnCheck);
+    btnRow.appendChild(btnReset);
+
+    root.appendChild(header);
+    root.appendChild(list);
+    root.appendChild(btnRow);
+
+    // light, safe styling if your CSS doesn’t already have these classes
+    injectFallbackStyles();
+  }
+
+  function reset() {
+    shuffledOptions = shuffle(ALL_DESCS);
+    build();
+  }
+
+  function grade(rows) {
+    locked = true;
+
+    let correct = 0;
 
     for (const r of rows) {
       const chosen = r.select.value;
-      const ok = chosen === r.line.label;
-      r.row.classList.remove("ok", "bad");
-      if (chosen) r.row.classList.add(ok ? "ok" : "bad");
-      r.status.textContent = chosen ? (ok ? "✓" : "✗") : "";
+      const isCorrect = chosen === r.pair.desc;
+
+      // lock
+      r.select.disabled = true;
+
+      // clear old state
+      r.row.classList.remove("isCorrect", "isWrong");
+
+      if (isCorrect) {
+        correct += 1;
+        r.row.classList.add("isCorrect");
+        r.feedback.textContent = "✓";
+      } else {
+        r.row.classList.add("isWrong");
+        if (!chosen) {
+          r.feedback.textContent = `✗ Correct: ${r.pair.desc}`;
+        } else {
+          r.feedback.textContent = `✗ Correct: ${r.pair.desc}`;
+        }
+      }
     }
 
-    const e = document.getElementById("explain");
-    if (score === LINES.length) e.textContent = "Perfect. All format lines matched correctly.";
-    else e.textContent = `You got ${score}/${LINES.length}. Fix the red rows and check again.`;
+    setScore(correct);
   }
 
-  checkBtn.addEventListener("click", () => {
-    renderResult();
-  });
+  function setScore(n) {
+    if (scorePill) scorePill.textContent = `Score: ${n} / 12`;
+  }
 
-  resetBtn.addEventListener("click", () => {
-    for (const r of rows) {
-      r.select.value = "";
-      r.row.classList.remove("ok", "bad");
-      r.status.textContent = "";
-    }
-    document.getElementById("score").textContent = "0";
-    document.getElementById("explain").textContent = "";
-  });
+  // If your global CSS already defines these classes, this does nothing harmful.
+  function injectFallbackStyles() {
+    if (document.getElementById("genserMatchFallbackStyles")) return;
 
-  card.appendChild(head);
-  card.appendChild(el("div", { class: "divider" }));
-  card.appendChild(el("div", { class: "matchHeader" }, [
-    el("div", { class: "matchNumHead" }, ["Format Line #"]),
-    el("div", { class: "matchDescHead" }, ["Line Description / Title"]),
-    el("div", { class: "matchStatusHead" }, [""])
-  ]));
-  card.appendChild(table);
-  card.appendChild(btnRow);
-  card.appendChild(explain);
+    const css = `
+      .matchHeaderRow{
+        display:grid;
+        grid-template-columns: 120px 1fr;
+        gap: 14px;
+        padding: 10px 8px;
+        opacity: .9;
+      }
+      .matchColHead{ font-weight: 700; }
+      .matchList{ display:flex; flex-direction:column; gap: 12px; margin-top: 6px; }
+      .matchRow{
+        display:grid;
+        grid-template-columns: 120px 1fr;
+        gap: 14px;
+        padding: 14px;
+        border-radius: 16px;
+        border: 1px solid rgba(255,255,255,0.08);
+        background: rgba(0,0,0,0.18);
+      }
+      .matchLine{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size: 18px;
+        font-weight: 800;
+      }
+      .matchControl{ display:flex; flex-direction:column; gap: 10px; }
+      .matchSelect{
+        width: 100%;
+        padding: 12px 12px;
+        border-radius: 14px;
+        background: rgba(0,0,0,0.22);
+        border: 1px solid rgba(255,255,255,0.12);
+        color: #fff;
+        font-weight: 650;
+      }
+      .matchInlineFeedback{
+        font-size: 14px;
+        opacity: .95;
+      }
+      .matchBtnRow{
+        display:flex;
+        gap: 12px;
+        margin-top: 14px;
+      }
+      /* result states */
+      .matchRow.isCorrect{
+        border-color: rgba(0, 255, 170, 0.35);
+        box-shadow: 0 0 0 1px rgba(0, 255, 170, 0.10) inset;
+      }
+      .matchRow.isWrong{
+        border-color: rgba(255, 80, 80, 0.35);
+        box-shadow: 0 0 0 1px rgba(255, 80, 80, 0.10) inset;
+      }
+      /* reference message box */
+      .messageBox{
+        margin-top: 10px;
+        margin-bottom: 14px;
+        padding: 14px;
+        border-radius: 16px;
+        border: 1px solid rgba(255,255,255,0.08);
+        background: rgba(0,0,0,0.18);
+      }
+      .messageBoxTitle{
+        font-weight: 800;
+        margin-bottom: 10px;
+        opacity: .95;
+      }
+      .messagePre{
+        margin: 0;
+        white-space: pre;
+        overflow: auto;
+        max-height: 260px;
+        padding: 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(255,255,255,0.08);
+        background: rgba(0,0,0,0.30);
+        color: #fff;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 13px;
+        line-height: 1.35;
+      }
+    `;
 
-  app.appendChild(card);
+    const style = document.createElement("style");
+    style.id = "genserMatchFallbackStyles";
+    style.textContent = css;
+    document.head.appendChild(style);
+  }
+
+  // init
+  build();
 })();
