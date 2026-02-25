@@ -271,53 +271,6 @@ const ACRONYM_BANK = [
     ]
   },
   {
-    "id": "a18",
-    "prompt": "In a GENSER header, what does CIC refer to?",
-    "options": [
-      "Content Indicator Code",
-      "Circuit Identification Code",
-      "Command Integration Code",
-      "Communications Interoperability Class"
-    ],
-    "correctIndex": 0,
-    "explanation": "CIC indicates what type of information is in the message (e.g., ZYUW narrative).",
-    "tags": [
-      "GENSER",
-      "CIC"
-    ]
-  },
-  {
-    "id": "a19",
-    "prompt": "Which CIC corresponds to a narrative/general text message (per Lesson 4)?",
-    "options": [
-      "ZYUW",
-      "ZYVW",
-      "NGCN",
-      "ZDKW"
-    ],
-    "correctIndex": 0,
-    "explanation": "ZYUW indicates a narrative message / general text.",
-    "tags": [
-      "CIC"
-    ]
-  },
-  {
-    "id": "a20",
-    "prompt": "Which CIC corresponds to CASREP/casualty reports (per Lesson 4)?",
-    "options": [
-      "NGCN",
-      "NBAT",
-      "ZYVW",
-      "ZDKW"
-    ],
-    "correctIndex": 0,
-    "explanation": "NGCN is used for CASREP / casualty reports.",
-    "tags": [
-      "CIC",
-      "CASREP"
-    ]
-  },
-  {
     "id": "a21",
     "prompt": "Which handling marker refers to nuclear weapon design/manufacture/use data?",
     "options": [
@@ -474,51 +427,6 @@ const ACRONYM_BANK = [
     ]
   },
   {
-    "id": "a31",
-    "prompt": "Which CIC corresponds to service messages (per Lesson 4)?",
-    "options": [
-      "ZYVW",
-      "ZYUW",
-      "ZDKW",
-      "NGCN"
-    ],
-    "correctIndex": 0,
-    "explanation": "ZYVW indicates service messages.",
-    "tags": [
-      "CIC"
-    ]
-  },
-  {
-    "id": "a32",
-    "prompt": "Which CIC corresponds to retransmission (per Lesson 4)?",
-    "options": [
-      "ZDKW",
-      "ZYVW",
-      "NBAT",
-      "ZYUW"
-    ],
-    "correctIndex": 0,
-    "explanation": "ZDKW indicates retransmission.",
-    "tags": [
-      "CIC"
-    ]
-  },
-  {
-    "id": "a33",
-    "prompt": "Which CIC corresponds to ammunition-related traffic (per Lesson 4)?",
-    "options": [
-      "NBAT",
-      "NGCN",
-      "ZYVW",
-      "ZDKW"
-    ],
-    "correctIndex": 0,
-    "explanation": "NBAT corresponds to ammo (Naval Battery) per Lesson 4 note list.",
-    "tags": [
-      "CIC"
-    ]
-  },
-  {
     "id": "a34",
     "prompt": "In a GENSER message, what does OSRI stand for?",
     "options": [
@@ -548,6 +456,321 @@ const ACRONYM_BANK = [
     "tags": [
       "GENSER",
       "Header"
+    ]
+  },
+  {
+    "id": "a36",
+    "prompt": "What does NIOC stand for?",
+    "options": [
+      "Naval Information Operations Command",
+      "Navy Integrated Operations Center",
+      "Naval Intelligence Operations Cell",
+      "Network Information Operations Command"
+    ],
+    "correctIndex": 0,
+    "explanation": "NIOC = Navy Information Operations Command.",
+    "tags": [
+      "NIOC"
+    ]
+  },
+  {
+    "id": "a37",
+    "prompt": "What does NAVIFOR stand for?",
+    "options": [
+      "Naval Information Forces",
+      "Naval Aviation Forces",
+      "Navy Infrastructure Force",
+      "Naval Integrated Fleet Operations"
+    ],
+    "correctIndex": 0,
+    "explanation": "NAVIFOR = Naval Information Forces.",
+    "tags": [
+      "NAVIFOR"
+    ]
+  },
+  {
+    "id": "a38",
+    "prompt": "What does NETWARCOM stand for?",
+    "options": [
+      "Naval Network Warfare Command",
+      "Network Warfare Communications Command",
+      "Naval Enterprise Warfare Command",
+      "Naval Network Warfighting Center"
+    ],
+    "correctIndex": 0,
+    "explanation": "NETWARCOM = Naval Network Warfare Command.",
+    "tags": [
+      "NETWARCOM"
+    ]
+  },
+  {
+    "id": "a39",
+    "prompt": "What does NCDOC stand for?",
+    "options": [
+      "Navy Cyber Defense Operations Center",
+      "Naval Cyber Defense Operations Command",
+      "Navy Cyber Defensive Operations Cell",
+      "National Cyber Defense Operations Center"
+    ],
+    "correctIndex": 0,
+    "explanation": "NCDOC = Navy Cyber Defense Operations Center.",
+    "tags": [
+      "NCDOC"
+    ]
+  },
+  {
+    "id": "a40",
+    "prompt": "What does NCMS stand for (as used in Lesson 1)?",
+    "options": [
+      "Navy Communications Security Material System",
+      "Naval Cryptologic Material System",
+      "Navy Cybersecurity Management System",
+      "Naval Communications Material Station"
+    ],
+    "correctIndex": 0,
+    "explanation": "NCMS = Navy Communications Security Material System.",
+    "tags": [
+      "NCMS"
+    ]
+  },
+  {
+    "id": "a41",
+    "prompt": "In this training, CMS most directly refers to:",
+    "options": [
+      "Communications Security Material System",
+      "Central Message Service",
+      "Command Messaging System",
+      "Communications Management Segment"
+    ],
+    "correctIndex": 0,
+    "explanation": "CMS refers to Communications Security Material System (COMSEC account/material management).",
+    "tags": [
+      "CMS"
+    ]
+  },
+  {
+    "id": "a42",
+    "prompt": "What does KMI stand for?",
+    "options": [
+      "Key Management Infrastructure",
+      "Keyed Messaging Interface",
+      "Knowledge Management Integration",
+      "Key Material Inventory"
+    ],
+    "correctIndex": 0,
+    "explanation": "KMI = Key Management Infrastructure.",
+    "tags": [
+      "KMI"
+    ]
+  },
+  {
+    "id": "a43",
+    "prompt": "What does EKMS stand for?",
+    "options": [
+      "Electronic Key Management System",
+      "Encrypted Key Management Standard",
+      "Electronic Knowledge Management System",
+      "Encrypted Key Messaging Service"
+    ],
+    "correctIndex": 0,
+    "explanation": "EKMS = Electronic Key Management System.",
+    "tags": [
+      "EKMS"
+    ]
+  },
+  {
+    "id": "a44",
+    "prompt": "What does PKI stand for?",
+    "options": [
+      "Public Key Infrastructure",
+      "Private Key Integration",
+      "Protected Key Interface",
+      "Public Key Interoperability"
+    ],
+    "correctIndex": 0,
+    "explanation": "PKI = Public Key Infrastructure.",
+    "tags": [
+      "PKI"
+    ]
+  },
+  {
+    "id": "a45",
+    "prompt": "What does GCCS stand for?",
+    "options": [
+      "Global Command and Control System",
+      "Global Communications Control Segment",
+      "General Command and Control Service",
+      "Global Combat Communications System"
+    ],
+    "correctIndex": 0,
+    "explanation": "GCCS = Global Command and Control System.",
+    "tags": [
+      "GCCS"
+    ]
+  },
+  {
+    "id": "a46",
+    "prompt": "What does C4I stand for?",
+    "options": [
+      "Command, Control, Communications, Computers, and Intelligence",
+      "Control, Command, Communications, and Intelligence",
+      "Command, Control, Communications, and Information",
+      "Combat, Control, Communications, Computers, and Intelligence"
+    ],
+    "correctIndex": 0,
+    "explanation": "C4I = Command, Control, Communications, Computers, and Intelligence.",
+    "tags": [
+      "C4I"
+    ]
+  },
+  {
+    "id": "a47",
+    "prompt": "What does AOR stand for?",
+    "options": [
+      "Area of Responsibility",
+      "Area of Routing",
+      "Authority of Release",
+      "Action Operations Region"
+    ],
+    "correctIndex": 0,
+    "explanation": "AOR = Area of Responsibility.",
+    "tags": [
+      "AOR"
+    ]
+  },
+  {
+    "id": "a48",
+    "prompt": "What does PQS stand for?",
+    "options": [
+      "Personnel Qualification Standards",
+      "Program Qualification System",
+      "Professional Qualification Study",
+      "Personnel Quality Survey"
+    ],
+    "correctIndex": 0,
+    "explanation": "PQS = Personnel Qualification Standards.",
+    "tags": [
+      "PQS"
+    ]
+  },
+  {
+    "id": "a49",
+    "prompt": "What does SOP stand for?",
+    "options": [
+      "Standard Operating Procedures",
+      "Standard Operations Plan",
+      "System Operating Protocol",
+      "Service Operations Procedure"
+    ],
+    "correctIndex": 0,
+    "explanation": "SOP = Standard Operating Procedures.",
+    "tags": [
+      "SOP"
+    ]
+  },
+  {
+    "id": "a50",
+    "prompt": "What does MSL stand for in comm center logging?",
+    "options": [
+      "Master Station Log",
+      "Message Status Ledger",
+      "Main Systems Log",
+      "Master Security Log"
+    ],
+    "correctIndex": 0,
+    "explanation": "MSL = Master Station Log.",
+    "tags": [
+      "MSL"
+    ]
+  },
+  {
+    "id": "a51",
+    "prompt": "What does CML stand for in comm center logging?",
+    "options": [
+      "Central Message Log",
+      "Command Message Ledger",
+      "Circuit Message List",
+      "Central Monitoring Log"
+    ],
+    "correctIndex": 0,
+    "explanation": "CML = Central Message Log.",
+    "tags": [
+      "CML"
+    ]
+  },
+  {
+    "id": "a52",
+    "prompt": "In the security warning line context, OPSIG refers to the:",
+    "options": [
+      "Operating Signal",
+      "Operational Signature",
+      "Operator Signal Guard",
+      "Operations Signal Indicator Group"
+    ],
+    "correctIndex": 0,
+    "explanation": "OPSIG = operating signal (e.g., ZNR/ZNY).",
+    "tags": [
+      "OPSIG"
+    ]
+  },
+  {
+    "id": "a53",
+    "prompt": "What does DTG stand for?",
+    "options": [
+      "Date-Time Group",
+      "Data Transmission Gateway",
+      "Distribution Tag Group",
+      "Digital Timing Group"
+    ],
+    "correctIndex": 0,
+    "explanation": "DTG = Date-Time Group.",
+    "tags": [
+      "DTG"
+    ]
+  },
+  {
+    "id": "a54",
+    "prompt": "What does SSIC stand for?",
+    "options": [
+      "Standard Subject Identification Code",
+      "Standard Signal Identification Code",
+      "Station Subject Index Code",
+      "Security Subject Indicator Code"
+    ],
+    "correctIndex": 0,
+    "explanation": "SSIC = Standard Subject Identification Code.",
+    "tags": [
+      "SSIC"
+    ]
+  },
+  {
+    "id": "a55",
+    "prompt": "What does RDT&E stand for?",
+    "options": [
+      "Research, Development, Test and Evaluation",
+      "Rapid Development, Testing and Execution",
+      "Research, Design, Training and Education",
+      "Readiness, Deployment, Test and Evaluation"
+    ],
+    "correctIndex": 0,
+    "explanation": "RDT&E = Research, Development, Test and Evaluation.",
+    "tags": [
+      "RDT&E"
+    ]
+  },
+  {
+    "id": "a56",
+    "prompt": "What does CND stand for (as listed under NIOC support)?",
+    "options": [
+      "Computer Network Defense",
+      "Communications Network Division",
+      "Critical Network Design",
+      "Cyber Network Deployment"
+    ],
+    "correctIndex": 0,
+    "explanation": "CND = Computer Network Defense.",
+    "tags": [
+      "CND"
     ]
   }
 ];

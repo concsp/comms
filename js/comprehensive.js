@@ -613,5 +613,615 @@ const COMPREHENSIVE_BANK = [
     "tags": [
       "SOP"
     ]
+  },
+  {
+    "id": "c41",
+    "prompt": "Naval communications must satisfy requirements of which two systems (per Lesson 1)?",
+    "options": [
+      "Defense Communications System (DCS) and National Communications System (NCS)",
+      "Defense Information Systems Network (DISN) and AUTODIN",
+      "DSSCS and NAVMACS",
+      "NIPRNET and SIPRNET"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 1: Naval communications must satisfy DCS and NCS requirements.",
+    "tags": [
+      "Mission",
+      "Systems"
+    ]
+  },
+  {
+    "id": "c42",
+    "prompt": "The Naval Telecommunications System (NTS) includes:",
+    "options": [
+      "Terminal processing equipment plus transmission, switching, crypto, and control devices",
+      "Only radio transmitter rooms and antenna couplers",
+      "Only DISN enclaves used for IP networking",
+      "Only message logs and publication libraries"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 1: NTS comprises terminals, transmission/switching, crypto, and control devices used for signals between points.",
+    "tags": [
+      "NTS"
+    ]
+  },
+  {
+    "id": "c43",
+    "prompt": "Which best describes the Defense Communications System (DCS) (Lesson 1)?",
+    "options": [
+      "A single communications system combining service elements to support DoD activities",
+      "The unclassified IP enclave supporting MILDEPs",
+      "A shipboard record message processor tailored to mission needs",
+      "A regional IP gateway that provides fleet network services"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 1: DCS combines elements of the services into one comm system supporting DoD activities.",
+    "tags": [
+      "DCS"
+    ]
+  },
+  {
+    "id": "c44",
+    "prompt": "NIPRNET is best described as:",
+    "options": [
+      "A global long-haul IP network supporting unclassified DoD data communications",
+      "The DoD’s largest interoperable C2 data network supporting GCCS",
+      "The sensitive compartmented information portion of DISN",
+      "A special-purpose record message system sharing paths with AUTODIN"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 1: NIPRNET supports unclassified DoD data communications.",
+    "tags": [
+      "NIPRNET"
+    ]
+  },
+  {
+    "id": "c45",
+    "prompt": "Which statement best fits JWICS (Lesson 1)?",
+    "options": [
+      "Sensitive compartmented information portion of DISN enabling advanced networking for point-to-point/multipoint exchange",
+      "Unclassified long-haul IP network supporting MILDEPs",
+      "DoD’s largest interoperable C2 data network supporting GCCS",
+      "A worldwide special-purpose system used to process record message traffic"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 1: JWICS is the SCI portion of DISN.",
+    "tags": [
+      "JWICS"
+    ]
+  },
+  {
+    "id": "c46",
+    "prompt": "How many NCTAMS are listed, and what do they do at a high level (Lessons 1–2)?",
+    "options": [
+      "Two; operate/maintain info transfer systems, provide real-time C4I support, and oversee NCTS",
+      "Four; provide regional IP services and DISN gateways",
+      "Seven; provide AOR voice/data comm support and report to NIOC",
+      "Fifteen; provide IO planning and SIGINT support globally"
+    ],
+    "correctIndex": 0,
+    "explanation": "Notes: two NCTAMS (ATL/PAC) provide C4I support and oversee NCTS.",
+    "tags": [
+      "NCTAMS"
+    ]
+  },
+  {
+    "id": "c47",
+    "prompt": "Which set correctly identifies the four FLTNOCs and their locations (Lessons 1–2)?",
+    "options": [
+      "ECRNOC–Naples, Italy; IORNOC–Bahrain; PRNOC–Wahiawa, Hawaii; UARNOC–Norfolk, Virginia",
+      "ECRNOC–Norfolk, Virginia; IORNOC–Naples, Italy; PRNOC–Bahrain; UARNOC–Wahiawa, Hawaii",
+      "ECRNOC–Jacksonville, Florida; IORNOC–Sicily; PRNOC–Guam; UARNOC–San Diego, California",
+      "ECRNOC–Mechanicsburg, PA; IORNOC–Yokosuka, Japan; PRNOC–Naples, Italy; UARNOC–Bahrain"
+    ],
+    "correctIndex": 0,
+    "explanation": "Locations per Lessons 1–2 FLTNOC list.",
+    "tags": [
+      "FLTNOC",
+      "Locations"
+    ]
+  },
+  {
+    "id": "c48",
+    "prompt": "Which is the best description of an NCTS (Lessons 1–2)?",
+    "options": [
+      "Provides Navy IT infrastructure and support services for rapid reliable voice/data comms within an AOR; managed by NCTAMS",
+      "Primary day-to-day operational control point for fleet telecom issues",
+      "Regional IP gateway to DISN providing critical IP services",
+      "An IO/SIGINT command providing EW/EA and CND support"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lessons 1–2 define NCTS as AOR-focused IT infra/support for voice/data, managed by NCTAMS.",
+    "tags": [
+      "NCTS"
+    ]
+  },
+  {
+    "id": "c49",
+    "prompt": "Which item is NOT listed among the seven NCTS locations in Lessons 1–2?",
+    "options": [
+      "NCTS Rota, Spain",
+      "NCTS Guam",
+      "NCTS Naples, IT",
+      "NCTS Bahrain"
+    ],
+    "correctIndex": 0,
+    "explanation": "Listed: Jacksonville, San Diego, Bahrain, Guam, Naples, Far East Yokosuka, Sicily.",
+    "tags": [
+      "NCTS",
+      "Locations"
+    ]
+  },
+  {
+    "id": "c50",
+    "prompt": "Per Lessons 1–2, NIOCs are described as:",
+    "options": [
+      "Fifteen NIOCs with sixteen detachments supporting Navy IO/SIGINT, including four located at NSA",
+      "Four NIOCs total, each co-located with an NCTAMS",
+      "Seven NIOCs, one for each NCTS location",
+      "Sixteen NIOCs providing regional IP gateway services to DISN"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 1–2: 15 NIOCs and 16 detachments; 4 located at NSA.",
+    "tags": [
+      "NIOC"
+    ]
+  },
+  {
+    "id": "c51",
+    "prompt": "In the shipboard communications chain of command (Lesson 2), which sequence is correct?",
+    "options": [
+      "CO → COMMO → (RO on large deck) → CWO → Technical Control Supervisor",
+      "CO → CWO → COMMO → RO → Technical Control Supervisor",
+      "CO → RO → COMMO → Technical Control Supervisor → CWO",
+      "CO → Technical Control Supervisor → CWO → COMMO → RO"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 2 lists CO, COMMO, RO (large deck), CWO, Technical Control Supervisor.",
+    "tags": [
+      "Chain of Command"
+    ]
+  },
+  {
+    "id": "c52",
+    "prompt": "Which role is responsible for the command’s exterior communications organization and coordination (Lesson 2)?",
+    "options": [
+      "COMMO",
+      "RO",
+      "CWO",
+      "Technical Control Supervisor"
+    ],
+    "correctIndex": 0,
+    "explanation": "COMMO oversees exterior comms organization/supervision/coordination.",
+    "tags": [
+      "COMMO"
+    ]
+  },
+  {
+    "id": "c53",
+    "prompt": "Which is a core responsibility of the Communications Watch Officer (CWO) (Lesson 2)?",
+    "options": [
+      "Ensure incoming/outgoing traffic is handled rapidly/accurately per regulations and directives",
+      "Maintain COMSEC account as office of record for all DoN KMI accounts",
+      "Provide regional gateway services into DISN for deployed units",
+      "Publish COMSEC policies and develop EKMS/KMI training"
+    ],
+    "correctIndex": 0,
+    "explanation": "CWO ensures comm capabilities align with mission and traffic is handled correctly; NTP 4 lists duties.",
+    "tags": [
+      "CWO"
+    ]
+  },
+  {
+    "id": "c54",
+    "prompt": "Which duty belongs to the Technical Control Supervisor (Lesson 2)?",
+    "options": [
+      "Maintain a status board showing pertinent equipment information",
+      "Approve message release lists for the command",
+      "Impose MINIMIZE for subordinate units without permission",
+      "Assign AIG/CAG designators for all outgoing messages"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tech Control Supervisor maintains status boards and manages circuits/quality control.",
+    "tags": [
+      "Tech Control"
+    ]
+  },
+  {
+    "id": "c55",
+    "prompt": "Which item is explicitly recorded in the Master Station Log (MSL) (Lesson 2)?",
+    "options": [
+      "Complete system outages and major equipment outages",
+      "AIG and CAG address designators used during the day",
+      "Only classified traffic receipts and deliveries",
+      "Only COMSEC account transactions and key issue records"
+    ],
+    "correctIndex": 0,
+    "explanation": "MSL records outages, impairments, RADAY, turnovers, inventories, significant events, etc.",
+    "tags": [
+      "MSL"
+    ]
+  },
+  {
+    "id": "c56",
+    "prompt": "How long must the Master Station Log (MSL) be maintained (Lesson 2)?",
+    "options": [
+      "12 months",
+      "6 months",
+      "24 months",
+      "Until the next RADAY only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 2: MSL shall be maintained for 12 months.",
+    "tags": [
+      "MSL"
+    ]
+  },
+  {
+    "id": "c57",
+    "prompt": "When are entries signed “on” and “off” in the MSL (Lesson 2)?",
+    "options": [
+      "Shift supervisor signs at start/end of duty at end of the radio day",
+      "COMMO signs each time a message is filed or delivered",
+      "CMS Custodian signs after each COMSEC inventory sheet entry",
+      "JFTOC Watch Officer signs after each COMMSPOT is resolved"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 2: shift sup signs log when logging on/off duty at end of RADAY.",
+    "tags": [
+      "MSL"
+    ]
+  },
+  {
+    "id": "c58",
+    "prompt": "Which statement about log corrections is correct (Lesson 2)?",
+    "options": [
+      "Erasures are not allowed",
+      "Erasures are allowed if witnessed under TPI",
+      "Erasures are allowed only for Routine traffic entries",
+      "Erasures are allowed if replaced by a typed copy at RADAY"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 2: erasures of logs are not allowed.",
+    "tags": [
+      "Logs"
+    ]
+  },
+  {
+    "id": "c59",
+    "prompt": "During COMSEC inventory, which information must the inventory sheet list (Lesson 2)?",
+    "options": [
+      "Short title, edition, accounting number (if applicable), quantity",
+      "Routing indicator, OSRI, SSN, and DTG",
+      "Classification, OPSIG, precedence, and CIC",
+      "Rack location, serial number only, and operator initials"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 2: inventory sheet must list short title, edition, accounting number (if applicable), quantity.",
+    "tags": [
+      "Inventory"
+    ]
+  },
+  {
+    "id": "c60",
+    "prompt": "Which statement best captures Two-Person Integrity (TPI) requirements (Lesson 2)?",
+    "options": [
+      "Two authorized persons must be continuously present when TPI material is handled; dual locks/locking mechanisms prevent single-person access",
+      "Any two personnel may be present as long as one is a supervisor",
+      "Two-person presence is required only for inventories, not routine handling",
+      "TPI applies to all classified material regardless of level"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 2: TPI prevents single-person access to TS and higher; constant presence of two authorized persons and dual-locking measures.",
+    "tags": [
+      "TPI"
+    ]
+  },
+  {
+    "id": "c61",
+    "prompt": "Which best describes MINIMIZE (Lesson 2)?",
+    "options": [
+      "A mandatory reduction of normal message/telephone traffic so vital traffic is not delayed",
+      "A forced upgrade of all traffic to Priority precedence",
+      "A ban on all voice circuits to conserve bandwidth",
+      "A switch from one servicing comm center to another (guard shift)"
+    ],
+    "correctIndex": 0,
+    "explanation": "MINIMIZE reduces normal traffic drastically in emergencies to prioritize vital traffic.",
+    "tags": [
+      "MINIMIZE"
+    ]
+  },
+  {
+    "id": "c62",
+    "prompt": "Subordinate commanders may impose MINIMIZE over elements of their commands only when:",
+    "options": [
+      "They have prior permission from an authorized authority",
+      "They have at least one COMMSPOT in the last 24 hours",
+      "The message center has exceeded 200 words on Immediate traffic",
+      "They are operating on SIPRNET rather than NIPRNET"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 2: subordinate commanders need prior permission from authorized authority.",
+    "tags": [
+      "MINIMIZE",
+      "Authority"
+    ]
+  },
+  {
+    "id": "c63",
+    "prompt": "Which Q-signal pair correctly matches the meaning 'Can you acknowledge receipt?' and 'I acknowledge receipt.' (Lesson 2)?",
+    "options": [
+      "INT QSL / QSL",
+      "INT ZBZ / ZBZ",
+      "INT QRT / QRT",
+      "INT ZUJ / ZUJ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 2: INT QSL asks; QSL acknowledges receipt.",
+    "tags": [
+      "Q Signals"
+    ]
+  },
+  {
+    "id": "c64",
+    "prompt": "What does INT ZBZ ask for (Lesson 2)?",
+    "options": [
+      "Printing acceptability/communications quality of signals (often answered with 5-digit quality)",
+      "Whether you acknowledge receipt of my last transmission",
+      "Whether you will stand-by for a guard shift",
+      "Whether you are under MINIMIZE conditions"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 2: INT ZBZ asks printing acceptability (quality) and may be answered 55555.",
+    "tags": [
+      "Z Signals"
+    ]
+  },
+  {
+    "id": "c65",
+    "prompt": "Which sequence matches QRT signal intelligibility scale from 1 to 5 (Lesson 2)?",
+    "options": [
+      "1 totally corrupt → 2 very corrupt → 3 partly corrupt → 4 occasionally corrupt → 5 no corruption",
+      "1 no corruption → 2 occasionally corrupt → 3 partly corrupt → 4 very corrupt → 5 totally corrupt",
+      "1 acceptable → 2 acceptable → 3 unacceptable → 4 unacceptable → 5 unacceptable",
+      "1 unknown → 2 weak → 3 fair → 4 strong → 5 perfect"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 2 QRT: 1 unacceptable totally corrupt; 2 very corrupt; 3 partly corrupt; 4 acceptable occasionally corrupt; 5 acceptable no corruption.",
+    "tags": [
+      "QRT"
+    ]
+  },
+  {
+    "id": "c66",
+    "prompt": "GENSER message format: which lines comprise the header, body, and footer (Lesson 4)?",
+    "options": [
+      "Header: 1–11 (to first BT); Body: 12; Footer: 13–16 (from second BT to NNNN)",
+      "Header: 1–8; Body: 9–12; Footer: 13–16",
+      "Header: 1–4; Body: 5–11; Footer: 12–16",
+      "Header: 1–12; Body: 13; Footer: 14–16"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 4: Header lines 1–11 to first BT; body line 12; footer lines 13–16 to ending sign.",
+    "tags": [
+      "GENSER"
+    ]
+  },
+  {
+    "id": "c67",
+    "prompt": "In a GENSER header, characters 22–24 represent:",
+    "options": [
+      "Julian date",
+      "Time filed",
+      "Destination routing indicators",
+      "Classification redundancy"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 4: characters 22–24 are Julian date.",
+    "tags": [
+      "GENSER",
+      "Header"
+    ]
+  },
+  {
+    "id": "c68",
+    "prompt": "In a GENSER header, characters 25–28 represent:",
+    "options": [
+      "Time filed (GMT/Zulu)",
+      "Station serial number",
+      "Content indicator code",
+      "Operating signal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 4: 25–28 is the time filed (4-digit GMT/Zulu time).",
+    "tags": [
+      "GENSER",
+      "Header"
+    ]
+  },
+  {
+    "id": "c69",
+    "prompt": "The classification redundancy in the header (e.g., '-UUUU') represents:",
+    "options": [
+      "A repeat of the classification character four times for redundancy",
+      "A four-digit station serial number for validation",
+      "Four routing indicators for the destination",
+      "A four-character content indicator code"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 4: classification redundancy repeats classification char 4 times, preceded by hyphen.",
+    "tags": [
+      "GENSER",
+      "Header"
+    ]
+  },
+  {
+    "id": "c70",
+    "prompt": "In the message header, what does the single space separator (e.g., after the first 8 chars) ensure?",
+    "options": [
+      "The system recognizes transition to the next segment of the header (required separator)",
+      "The message downgrades automatically to UNCLAS after transmission",
+      "The routing indicators begin immediately afterward without a signal start",
+      "The originator’s PLA is properly aligned for printing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 4: separator spaces are required so systems recognize moving between header parts.",
+    "tags": [
+      "GENSER",
+      "Header"
+    ]
+  },
+  {
+    "id": "c71",
+    "prompt": "Format Line 14 (#0001) is derived from which other field (Lesson 4)?",
+    "options": [
+      "The Station Serial Number (SSN) in Format Line 2 positions 17–20",
+      "The Julian date in positions 22–24",
+      "The OPSIG in Format Line 4",
+      "The DTG in Format Line 5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Validation duplicates SSN from header positions 17–20.",
+    "tags": [
+      "GENSER",
+      "Footer"
+    ]
+  },
+  {
+    "id": "c72",
+    "prompt": "COMMSHIFT messages are sent to which recipients (Lesson 3)?",
+    "options": [
+      "The NCTAMS of the comm areas from which the old and new broadcasts originate",
+      "The FLTNOC regional gateways used by the ship",
+      "All INFO addressees listed under AIG/CAG",
+      "The CMS Custodian and COMMO only"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 3: COMMSHIFT sent to NCTAMS of comm areas from which old and new broadcasts originate.",
+    "tags": [
+      "COMMSHIFT"
+    ]
+  },
+  {
+    "id": "c73",
+    "prompt": "When possible, COMMSHIFT takes effect at what time (Lesson 3)?",
+    "options": [
+      "0001Z of the new radio day",
+      "1200Z of the current radio day",
+      "2359Z of the old radio day",
+      "At local midnight (0000L) regardless of Zulu time"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 3: when possible, shift takes effect at 0001Z of new RADAY.",
+    "tags": [
+      "COMMSHIFT"
+    ]
+  },
+  {
+    "id": "c74",
+    "prompt": "Which is the best definition of a message user (Lesson 3)?",
+    "options": [
+      "Anyone authorized to draft, release, or process electronic messages",
+      "Any watchstander assigned to technical control spaces",
+      "Only the CO and COMMO by default",
+      "Only personnel designated under TPI security measures"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 3: a message user is anyone authorized to draft/release/process electronic messages.",
+    "tags": [
+      "Message User"
+    ]
+  },
+  {
+    "id": "c75",
+    "prompt": "Which special category/handling term indicates a classified message identified with special subject/project requiring special procedures (Lesson 3)?",
+    "options": [
+      "SPECAT",
+      "LIMDIS",
+      "EFTO",
+      "FOUO"
+    ],
+    "correctIndex": 0,
+    "explanation": "SPECAT indicates special category messages requiring special procedures beyond normal classification handling.",
+    "tags": [
+      "Handling",
+      "SPECAT"
+    ]
+  },
+  {
+    "id": "c76",
+    "prompt": "Which marker set is included under SPECAT examples in Lesson 3?",
+    "options": [
+      "LIMDIS, Personal For, NATO Restricted, Allied Restricted",
+      "RD, FRD, EFTO, FOUO",
+      "NIPRNET, SIPRNET, JWICS, DSSCS",
+      "CAG, AIG, PLA, OSRI"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 3 lists SPECAT examples including LIMDIS, Personal For, NATO Restricted, Allied Restricted.",
+    "tags": [
+      "SPECAT"
+    ]
+  },
+  {
+    "id": "c77",
+    "prompt": "Which statement best describes NAVMACS (Lesson 3)?",
+    "options": [
+      "Shipboard message processing system; capabilities are based on individual ship/command mission requirements",
+      "A DISN enclave supporting secret C2 data traffic",
+      "A watchfloor role responsible for circuit quality control",
+      "A COMSEC account used to manage EKMS/KMI material"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lesson 3: NAVMACS is shipboard message processing system tailored to mission requirements.",
+    "tags": [
+      "NAVMACS"
+    ]
+  },
+  {
+    "id": "c78",
+    "prompt": "A PLA example that matches the concept in Lesson 3 is:",
+    "options": [
+      "COMSECONDFLT → Commander, Second Fleet",
+      "RHBCYKN → Originating station routing indicator",
+      "NNNN → End-of-message sign",
+      "ZNR UUUUU → OPSIG and classification group"
+    ],
+    "correctIndex": 0,
+    "explanation": "PLA is plain language address designator (e.g., COMSECONDFLT).",
+    "tags": [
+      "PLA"
+    ]
+  },
+  {
+    "id": "c79",
+    "prompt": "AIGs are used primarily to:",
+    "options": [
+      "Address multiple commands via an address designator representing 16+ frequently occurring PLA groups",
+      "Restrict dissemination to specific recipients using handling caveats",
+      "Encode message precedence and classification into a 4-character code",
+      "Validate message completeness by duplicating SSN in footer"
+    ],
+    "correctIndex": 0,
+    "explanation": "AIG represents 16+ frequently occurring PLA groups for addressing multiple commands.",
+    "tags": [
+      "AIG"
+    ]
+  },
+  {
+    "id": "c80",
+    "prompt": "CAGs are used primarily to:",
+    "options": [
+      "Address multiple PLAs (4+) that share common operational/administrative chain of command",
+      "Provide regional IP services and act as DISN gateways",
+      "Identify message types (narrative, service, CASREP) in the header",
+      "Provide printing acceptability ratings for signal quality"
+    ],
+    "correctIndex": 0,
+    "explanation": "CAG represents 4+ PLAs with common chain of command.",
+    "tags": [
+      "CAG"
+    ]
   }
 ];
