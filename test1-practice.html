@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Communications Test Prep</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div class="title">Communications Test Prep</div>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap">
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn" href="subjects.html">Subjects</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div id="app"></div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/comprehensive.js"></script>
+  <script>
+    mountQuiz({
+      rootId: 'app',
+      title: 'Test 1 – Practice',
+      subtitle: 'Procedures, roles, logs, MINIMIZE, special handling, addressing, and applied knowledge. Immediate feedback after each question.',
+      questionBank: COMPREHENSIVE_BANK
+    });
+  </script>
+</body>
+</html>
