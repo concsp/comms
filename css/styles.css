@@ -215,3 +215,34 @@ details.group > summary{
 details.group[open] > summary{border-color:#cfe0f3}
 details.group > summary::-webkit-details-marker{display:none}
 details.group .groupBody{margin-top:12px}
+
+/* Notecards */
+.select{
+  padding:.65rem .8rem;
+  border-radius:14px;
+  border:1px solid rgba(15,23,42,.12);
+  background:rgba(255,255,255,.90);
+  color:var(--text);
+  font-weight:800;
+}
+.select option{background:#fff; color:var(--text)}
+
+.seg{display:inline-flex; border:1px solid rgba(15,23,42,.12); border-radius:999px; background:rgba(255,255,255,.85); overflow:hidden}
+.segBtn{border:0; background:transparent; padding:.6rem .85rem; font-weight:900; color:var(--muted); cursor:pointer}
+.segBtn.active{background:rgba(37,99,235,.10); color:var(--text)}
+
+.answer{
+  margin-top:12px;
+  padding:12px 14px;
+  border-radius:16px;
+  border:1px solid rgba(15,23,42,.10);
+  background:rgba(255,255,255,.92);
+  white-space:pre-wrap;
+  line-height:1.45;
+}
+
+.deckList{display:flex; flex-direction:column; gap:10px; margin-top:10px}
+.deckItem{border:1px solid rgba(15,23,42,.10); background:rgba(255,255,255,.90); border-radius:16px; padding:12px 14px}
+.deckItem summary{cursor:pointer; font-weight:900; color:var(--text)}
+.deckItem summary::-webkit-details-marker{display:none}
+.deckItem .deckAns{margin-top:10px; white-space:pre-wrap; color:var(--text); line-height:1.45}

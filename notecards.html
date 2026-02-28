@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Communications Test Prep</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div class="title">Communications Test Prep</div>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn primary" href="index.html">Home</a>
+        <a class="btn" href="subjects.html">Subjects</a>
+      </div>
+    </div>
+
+    <!-- Change the dropdown for decks to include additional decks -->
+
+    <div class="panel">
+      <div class="panelHeader" style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:space-between">
+        <div>
+          <h1 id="pageTitle" style="margin:0">Notecards</h1>
+          <p id="pageSub" class="muted" style="margin:6px 0 0">Card view (reveal/next) or deck view (all cards).</p>
+        </div>
+
+        <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+          <label class="muted" style="display:flex; gap:8px; align-items:center">
+            Deck
+            <select id="deckSelect" class="select">
+              <option value="2">Deck 2</option>
+	      <!--
+              <option value="3">Deck 3</option>
+              <option value="4">Deck 4</option>
+              <option value="5">Deck 5</option>
+              -->
+            </select>
+          </label>
+
+          <div class="seg" role="tablist" aria-label="View mode">
+            <button id="modeCard" class="segBtn" type="button">Card view</button>
+            <button id="modeDeck" class="segBtn" type="button">Deck view</button>
+          </div>
+
+          <label class="muted" style="display:flex; gap:8px; align-items:center">
+            <input id="shuffleToggle" type="checkbox" />
+            Shuffle
+          </label>
+        </div>
+      </div>
+
+      <div id="cardView" class="panelBody">
+        <div class="quizCard">
+          <div class="quizTop">
+            <div class="muted" id="counter">Card 1 of 1</div>
+            <div class="badge" id="modeBadge">Card view</div>
+          </div>
+
+          <div class="q" id="question">...</div>
+
+          <div class="answer" id="answer" style="display:none"></div>
+
+          <div class="row" style="margin-top:14px; gap:10px; flex-wrap:wrap">
+            <button class="btn" id="prevBtn" type="button">Prev</button>
+            <button class="btn primary" id="revealBtn" type="button">Reveal</button>
+            <button class="btn" id="restartBtn" type="button">Restart</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="deckView" class="panelBody" style="display:none">
+        <div class="quizCard">
+          <div class="quizTop">
+            <div class="muted" id="deckCount">0 cards</div>
+            <div class="badge">Deck view</div>
+          </div>
+          <div id="deckList" class="deckList"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/notecards-data.js"></script>
+  <script src="js/notecards.js"></script>
+</body>
+</html>
