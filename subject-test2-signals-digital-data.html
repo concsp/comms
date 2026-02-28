@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Communications Test Prep</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <div class="brandTitle">Communications Test Prep</div>
+      <div class="brandSub">Study material</div>
+    </div>
+    <nav class="nav">
+      <a class="pill" href="index.html">Home</a>
+      <a class="pill" href="subjects.html">Subjects</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="card prose">
+      <h1>Test 2 – Signals, Digital Data</h1>
+
+      <h2><strong>Introduction</strong></h2>
+      <p>You will learn to describe signals/digital data in naval communications.</p>
+
+      <h2><strong>Objectives</strong></h2>
+      <ul>
+        <li>Describe the types of signals in RF communications</li>
+        <li>Identify the types of digital data</li>
+        <li>Describe importance of timing of digital data</li>
+        <li>Describe importance of handshaking signals for digital data processing</li>
+        <li>Describe difference between AF, IF, and RF signal types</li>
+        <li>Identify types of equipment that convert digital data to RF signals</li>
+      </ul>
+
+      <h2><strong>Analog vs Digital</strong></h2>
+      <p><strong>Analog</strong> is curved/continuous. <strong>Digital</strong> is 1s and 0s.</p>
+
+      <h2><strong>Signals Transmit Data</strong></h2>
+      <p>
+        Signals are the basis of all RF comms. Equipment used in RF (satellites, antennas, modems, transceivers, computers) accepts a signal and transforms it into another format so it can be read by another piece of equipment.
+        Both analog and digital signals are used, but most devices use digital because it is easier to transmit and is more reliable.
+      </p>
+
+      <h2><strong>Analog Signals are Continuous and Constantly Varying</strong></h2>
+      <p>
+        Analog uses electricity to transmit data by creating a continuous/varying wave.
+        Think of a dimmer switch: many variations of brightness.
+        Analog signals are subject to <strong>noise</strong> (unwanted electrical/electromagnetic energy) that degrades signal quality.
+        Noise can come from A/C units, fluorescent lights, and magnetic fields.
+      </p>
+
+      <h3><strong>Equipment – Analog</strong></h3>
+      <ul>
+        <li>High Frequency Radio Group voice circuit</li>
+        <li>Digital to analog converters (DAC)</li>
+        <li>Analog switchboards</li>
+        <li>Ship’s phone lines</li>
+      </ul>
+
+      <h2><strong>Digital Signals are Discrete and Discontinuous</strong></h2>
+      <p>
+        Digital signals are electrical impulses in a discontinuous stream of on/off pulses (1s and 0s).
+        They are generally more accurate/quick than analog.
+        Digital encoding increases the capacity of a given radio frequency.
+      </p>
+
+      <h3><strong>Equipment – Digital</strong></h3>
+      <ul>
+        <li>Multiplexers</li>
+        <li>Data Terminal Equipment (DTE): computer terminal / PC</li>
+        <li>Data Communications Equipment (DCE): modem</li>
+      </ul>
+
+      <h2><strong>Key Differences (Analog vs Digital)</strong></h2>
+      <ul>
+        <li><strong>Signal quality</strong>: analog degrades and picks up static/noise over distance; digital tends to remain “perfect” until drop-out.</li>
+        <li><strong>Infrastructure</strong>: analog often needs complex, high-power amplifiers (can distort); digital can use regenerators to rebuild the signal.</li>
+        <li><strong>Capacity</strong>: digital supports compression and encryption, increasing throughput and security.</li>
+      </ul>
+
+      <h2><strong>Advantages of Digital</strong></h2>
+      <ul>
+        <li>Recordings do not degrade over time; reading the same numbers reproduces the same waveform.</li>
+        <li>Data can often be compressed by finding patterns.</li>
+        <li>Digital data is easily encrypted.</li>
+      </ul>
+
+      <h2><strong>Digital Data is Binary</strong></h2>
+      <p>Digital data is a combination of 1s and 0s.</p>
+
+      <h2><strong>Synchronization of Digital Communications</strong></h2>
+      <p>
+        Computers and comm equipment (modems, multiplexers, etc.) can send/receive digital data in coordinated or uncoordinated methods.
+      </p>
+
+      <h3><strong>Synchronous (SYNC) Data</strong></h3>
+      <p>
+        SYNC data is transmitted at a rate determined by an associated clock.
+        Synchronous transmission is fast and reliable when a sender must have a response before continuing, but “blocking” behavior can be unacceptable in some critical applications.
+      </p>
+
+      <h3><strong>Asynchronous (ASYNC) Data</strong></h3>
+      <p>
+        ASYNC data is transmitted without a clock, but uses start/stop bits (usually low-speed).
+        Receiving equipment detects data using start/stop bits at the beginning and ending of five to eight data bits.
+      </p>
+
+      <h3><strong>Isochronous (ISOC) Data</strong></h3>
+      <p>
+        ISOC data is transmitted without a clock <em>and</em> without start/stop bits.
+        It uses oversampling to ensure proper data bits are received.
+        Multimedia streams often require isochronous transport so audio stays synchronized with video.
+      </p>
+
+      <h3><strong>Digital Transmission Mode – Helper (ISOC, ASYNC, SYNC)</strong></h3>
+      <ul>
+        <li><strong>SYNC</strong>: like a marching band (lockstep, constant external clock).</li>
+        <li><strong>ASYNC</strong>: like people texting (start/stop bits per character; simple but slower due to overhead).</li>
+        <li><strong>ISOC</strong>: like a flowing water pipe (steady stream; essential for real-time voice/video).</li>
+      </ul>
+
+      <h2><strong>Importance of Digital Timing</strong></h2>
+      <p>
+        Data transmitted through SATCOM systems is digital. Before transmission, clock/timing info is associated with data during modulation.
+        Timing info allows transmitting equipment (e.g., modem) to synchronize with receiving equipment (receiving modem).
+      </p>
+      <p>
+        Example: If the record (data) spins at a different speed than the needle (receiver clock), the output is gibberish.
+        Sync ensures both run at the same speed so the message is clear.
+      </p>
+
+      <h2><strong>Clocks in Digital Transmission</strong></h2>
+      <p>
+        Clock sources are typically atomic clocks (e.g., Cesium). The steady decay rate provides a constant reference for accurate timing.
+      </p>
+
+      <h2><strong>Accuracy of Clock Sources (Strata)</strong></h2>
+      <p>
+        To minimize bit errors, all digital devices in a comm network must sync to a master timing source.
+        Accuracy levels are called <strong>strata</strong>.
+      </p>
+      <ul>
+        <li><strong>Stratum 1</strong>: SHF SATCOM systems</li>
+        <li><strong>Stratum 2</strong>: EHF SATCOM systems</li>
+        <li><strong>Stratum 3</strong>: HF and UHF SATCOM systems</li>
+      </ul>
+
+      <h2><strong>Clocks and Data Relationships</strong></h2>
+      <p>
+        Clock pulses are generally half the width of data bits. Clock transitions trigger the digital system to sample the data line and interpret binary 1 or 0.
+      </p>
+      <ul>
+        <li><strong>Co-directional</strong>: clocks and data signals come from the same source.</li>
+        <li><strong>Counter-directional</strong>: clocks and data signals come from opposite sources.</li>
+      </ul>
+
+      <h2><strong>Handshaking Signals Coordinate Data Transfer</strong></h2>
+      <p>
+        Handshaking signals are dedicated lines used to coordinate data transfer (ready/not ready, acknowledgements).
+        In ASYNC, handshaking avoids sending data before the receiver is ready. Handshaking is mandatory.
+      </p>
+
+      <h2><strong>Audio, Intermediate, and Radio Frequencies in SATCOM</strong></h2>
+      <p>
+        Navy SATCOM uses <strong>RF</strong>, <strong>IF</strong>, and <strong>AF</strong> in many circuits.
+        When receiving, the chain typically converts from RF → IF → DC (digital current/data) → AF.
+        When transmitting, the chain is reversed.
+        Data circuits do not contain AF.
+      </p>
+
+      <div class="callout">
+        <table>
+          <thead>
+            <tr><th>Direction</th><th>Path</th><th>Process</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Receive (RX)</td>
+              <td>RF → IF → DC → AF</td>
+              <td>High-speed space waves are stepped down to baseband data or audio.</td>
+            </tr>
+            <tr>
+              <td>Transmit (TX)</td>
+              <td>AF → DC → IF → RF</td>
+              <td>Audio or data is stepped up to high-frequency waves for space travel.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <ul>
+        <li><strong>RF (Radio Frequency)</strong>: high-energy carrier wave for atmosphere/space.</li>
+        <li><strong>IF (Intermediate Frequency)</strong>: “middle” frequency for easier processing and filtering.</li>
+        <li><strong>DC (Digital Current/Data)</strong>: raw 1s and 0s extracted from the signal.</li>
+        <li><strong>AF (Audio Frequency)</strong>: final stage—sound for voice circuits (omitted for pure data circuits).</li>
+      </ul>
+
+      <p><strong>No AF needed</strong>: if sending a file/message (data circuit), the chain stops at DC.</p>
+
+      <h2><strong>Characteristics of Audio Frequency</strong></h2>
+      <ul>
+        <li>AF is <strong>mechanical</strong> (not an electromagnetic wave).</li>
+        <li>AF requires a medium (air, water, conductive wire); it cannot travel through space.</li>
+        <li>AF requires a transmitter and receiver.</li>
+      </ul>
+
+      <h2><strong>Intermediate Frequency as a Processing “Mediator”</strong></h2>
+      <p>
+        IF allows radio systems to process signals more effectively.
+        High frequency signals are often converted to a lower IF for stable amplification/filtering.
+        In tunable receivers, IF converts various station frequencies to a common frequency for processing.
+      </p>
+
+      <h2><strong>Communication Happens Through Frequency Conversions</strong></h2>
+      <p>
+        On ships, digital data passes through ADNS routers to baseband equipment for encryption.
+        Then it goes to Below Deck Equipment (BDE) to be modulated into IF, and then to Above Deck Equipment (ADE) where it is converted to RF for SATCOM.
+        Signals received from SATCOM also convert down to IF before demodulation.
+      </p>
+
+      <h2><strong>Radio Waves Carry Voice or Data</strong></h2>
+      <p>
+        RF is an electromagnetic wave and requires a transmitter (creates RF) and a receiver (receives RF).
+        Navy comms are predominantly RF-based because RF supports long-range, battle group comms, teletype/data/voice/SATCOM, navigation, comms with subs, and mobile comms.
+      </p>
+
+      <h2><strong>DTE and DCE Convert Signals</strong></h2>
+      <h3><strong>Data Terminal Equipment (DTE)</strong></h3>
+      <ul>
+        <li>PC terminals (computers)</li>
+        <li>Multiplexer aggregates</li>
+        <li>Cryptographic equipment transmit interfaces</li>
+      </ul>
+      <p>
+        DTE is the functional unit that serves as a data source or sink and provides data comm control per link protocol.
+      </p>
+
+      <h3><strong>Data Communications Equipment (DCE)</strong></h3>
+      <ul>
+        <li>Modems</li>
+        <li>Multiplexer ports</li>
+        <li>Cryptographic equipment receive interfaces</li>
+      </ul>
+      <p>
+        DCE performs signal conversion, coding, and line clocking. A modem is the most common DCE.
+      </p>
+
+      <h2><strong>Summary</strong></h2>
+      <ul>
+        <li>Analog systems degrade differently than digital; digital can be rebuilt/regenerated.</li>
+        <li>Digital data transmission types: ASYNC, ISOC, SYNC.</li>
+        <li>Clock/timing information synchronizes transmit and receive equipment for accurate communications.</li>
+        <li>Handshaking is mandatory (especially for ASYNC) to coordinate transfer.</li>
+        <li>Understanding AF vs IF vs RF matters because each supports different capabilities in the comm chain.</li>
+        <li>DTE generates outgoing data; DCE accepts signals for transmission and performs conversion/coding/clocking.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

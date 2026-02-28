@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Communications Test Prep</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <div class="brandTitle">Communications Test Prep</div>
+      <div class="brandSub">Study material</div>
+    </div>
+    <nav class="nav">
+      <a class="pill" href="index.html">Home</a>
+      <a class="pill" href="subjects.html">Subjects</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="card prose">
+      <h1>Test 2 – Modulation / Demodulation</h1>
+
+      <h2><strong>Modulation Allows Communications to Happen</strong></h2>
+      <p>
+        Modulation allows for a continuous wave (CW) to carry intelligence (comms and data). A waveform can be interrupted so that the wave becomes a series of pulses.
+      </p>
+
+      <h2><strong>Modulation Encodes the Communications Signal</strong></h2>
+      <p>
+        In RF comms, <strong>modulation</strong> is the process of carrying a message signal inside another signal that can be physically transmitted.
+        A message signal can be a digital bit stream, or an analog audio signal.
+        For RF comms to happen, a signal must be modulated so Sailors can communicate, sending/receiving info to each other thru SATCOM.
+      </p>
+
+      <h2><strong>Demodulation Extracts the Comm Signal from a Modulated Signal</strong></h2>
+      <p>
+        <strong>Demodulation</strong> is the opposite of modulation. Demodulation extracts the original information-bearing signal from a modulated carrier wave.
+        Remember: a modulated signal carries intelligence in a series of pulses. That information needs to be extracted and understood by the receiving equipment.
+      </p>
+
+      <h2><strong>Amplitude, Frequency, and Phase</strong></h2>
+      <p>The three characteristics of a signal.</p>
+
+      <h3><strong>Amplitude is the Size of a Signal</strong></h3>
+      <p>When you think about amplitude think about intensity, strength, or volume. The amplitude of a wave is the distance between the high and low points on a signal or waveform.</p>
+      <figure class="callout">
+        <img src="img/modulation-amplitude.png" alt="Amplitude diagram" style="max-width:100%; height:auto; border-radius:14px;" />
+      </figure>
+
+      <h3><strong>Frequency is the Number of Occurrences in a Unit of Time</strong></h3>
+      <p>When you think about frequency, think about the number of occurrences of the same event during a time period.</p>
+
+      <h3><strong>Phase is a Function of Time</strong></h3>
+      <p>
+        When you think about phase, think about time. More specifically, the fraction of the time a signal requires to complete a full cycle.
+      </p>
+
+      <h3><strong>Understanding Phase</strong></h3>
+      <ul>
+        <li><strong>Phase</strong> is measured in degrees (360°), representing one full cycle of a wave.</li>
+        <li><strong>In-Phase</strong>: When two waves start and peak at the exact same time, they add together to create a stronger signal (constructive interference).</li>
+        <li><strong>Out-of-Phase</strong>: When one wave is delayed (e.g., by 180°), its peak hits at the same time as the other's valley, causing them to cancel (destructive interference).</li>
+      </ul>
+
+      <h2><strong>Carrier Waves Transmit Information</strong></h2>
+      <p>
+        The purpose of carrier waves is to transmit info through space as an electromagnetic wave.
+        A carrier wave also allows several carriers at different frequencies to share a physical transmission medium.
+      </p>
+
+      <h2><strong>Analog and Digital Modulation</strong></h2>
+      <p>
+        Modulation is a process in which a modulator changes some attribute of a higher-frequency carrier signal to carry information.
+        A transmitter sends a carrier signal through the communication medium and a receiver demodulates the signal.
+      </p>
+
+      <h3><strong>Amplitude Modulation (AM)</strong></h3>
+      <p>
+        When the amplitude of a high-frequency (HF) carrier wave is changed in accordance with the intensity of the signal, it is called amplitude modulation.
+        Two major disadvantages:
+      </p>
+      <ul>
+        <li>Changing amplitude speed is limited by bandwidth; noise spikes can interfere with the carrier signal.</li>
+        <li>Small amplitude changes can suffer from unreliable detection.</li>
+      </ul>
+
+      <h3><strong>Frequency Modulation (FM)</strong></h3>
+      <p>
+        Frequency modulation is a process in which carrier wave frequency is varied.
+        An FM signal should remain constant in amplitude and change only in frequency.
+      </p>
+      <ul>
+        <li>FM signals are more robust against noise and interference.</li>
+        <li>FM is more robust against fading.</li>
+        <li>FM was chosen as the modulation standard for HF high-fidelity radio transmission.</li>
+      </ul>
+
+      <h3><strong>Phase Modulation (PM)</strong></h3>
+      <p>
+        Form of modulation where phase of the carrier wave is varied in order to transmit the information.
+        PM is not widely used for radio transmissions; it requires more advanced hardware and phase-change detection can be challenging.
+      </p>
+
+      <h3><strong>Frequency-Shift Keying (FSK)</strong></h3>
+      <p>
+        In FSK, information is transmitted by shifting between two frequencies to represent 0s and 1s (binary).
+        The 0 frequency is different from the 1 frequency.
+        The Navy uses FSK with data circuits at a baud rate (signal speed) of just 75 bits per second (bps).
+      </p>
+      <figure class="callout">
+        <img src="img/modulation-fsk.png" alt="Frequency-shift keying example" style="max-width:100%; height:auto; border-radius:14px;" />
+      </figure>
+
+      <h3><strong>Phase-Shift Keying (PSK)</strong></h3>
+      <p>
+        The phase of a carrier wave is varied between two states to represent 0s and 1s.
+        This type of modulation is widely used in existing tech.
+        The Navy uses PSK with data circuits and allows manual selection of baud rates (bpm) from 75–9600.
+      </p>
+
+      <h3><strong>Quadrature Amplitude Modulation (QAM)</strong></h3>
+      <p>
+        QAM combines two AM signals into a single channel.
+        The two signals have the same frequency but the phase differs by 90 degrees.
+        QAM is capable of high bandwidth speeds and is used for digital communication systems, radar systems, and single baseband modulators.
+      </p>
+
+      <h2><strong>Modulation Types</strong></h2>
+      <div class="callout">
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Full Name</th>
+              <th>What Changes?</th>
+              <th>Typical Use Case</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AM / ASK</td>
+              <td>Amplitude (Shift Keying)</td>
+              <td>Signal Strength (Height)</td>
+              <td>AM Radio, basic digital on/off (OOK)</td>
+            </tr>
+            <tr>
+              <td>FM / FSK</td>
+              <td>Frequency (Shift Keying)</td>
+              <td>Speed of Cycles (Pitch)</td>
+              <td>FM Radio, simple paging, legacy modems</td>
+            </tr>
+            <tr>
+              <td>PM / PSK</td>
+              <td>Phase (Shift Keying)</td>
+              <td>Timing of the Cycle</td>
+              <td>Most SATCOM, GPS, Wi‑Fi</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2><strong>Modulation and DEModulation = MODEM</strong></h2>
+      <p>
+        In a modem the modulation process involves conversion of the digital signals to analog audio frequency (AF) tones.
+        Digital highs are converted to a tone having a certain constant pitch.
+        Digital lows are converted to a tone having a different constant pitch.
+        These states alternate so rapidly that if you listen to the output of a modem, it sounds like a hiss/roar.
+        The demodulation process converts the audio tones back into digital signals that a computer can understand directly.
+      </p>
+
+      <h2><strong>May be Used in Video Teleconferencing</strong></h2>
+      <p>
+        RF modulators convert (modulate) separate audio/video signals (from a DVD or camera, for example) into VHF signals so you can view them on a TV.
+      </p>
+
+      <h2><strong>Importance of Eb/No</strong></h2>
+      <p>
+        <strong>Eb/No</strong> (Energy per bit over noise) is an informal indication of error rate for a digital communications system.
+        As a Sailor you monitor comm systems to watch for increases in error rate while receiving comms.
+        Some modems measure <strong>bit error rate (BER)</strong>; others do not.
+      </p>
+      <ul>
+        <li>There is a direct relationship between signal strength and Eb/No.</li>
+        <li>More power at the receiver modem generally means higher (better) Eb/No.</li>
+      </ul>
+
+      <h2><strong>Synchronization of Digital Communications</strong></h2>
+      <p>
+        <strong>Jitter</strong> occurs when modulated signals are not synchronized.
+        Jitter can cause a display monitor to flicker.
+      </p>
+
+      <h2><strong>Clock Recovery Ensures Data Synchronization</strong></h2>
+      <p>
+        Clocks and data recovery are tightly linked in digital comms. Timing is important for sending and receiving digital communications.
+      </p>
+
+      <h2><strong>Summary</strong></h2>
+      <ul>
+        <li>Modulation encodes a signal with information; demodulation extracts it.</li>
+        <li>Signal characteristics that can be modulated: <strong>amplitude</strong>, <strong>frequency</strong>, and <strong>phase</strong>.</li>
+        <li>Analog modulation examples: AM and FM. Digital modulation examples: FSK, PSK, and QAM.</li>
+        <li>Eb/No provides an informal indication of BER; stronger received signal generally improves Eb/No.</li>
+        <li>Timing matters: synchronization supports reliable receiving/decoding of the transmitted information.</li>
+      </ul>
+
+    </div>
+  </div>
+</body>
+</html>
