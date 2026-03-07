@@ -544,476 +544,761 @@ window.NAVCOMMS_NOTECARDS = {
       }
     ]
   },
+
   "3": {
     "title": "Deck 3",
     "cards": [
       {
         "q": "What is a COMMSPOT report?",
-        "a": "A message submitted by a ship or facility when communications problems lasting longer than 30 minutes occur."
+        "a": "A message submitted by a ship or facility whenever communications problems lasting longer than 30 minutes occur"
       },
       {
-        "q": "What conditions may require a COMMSPOT report?",
-        "a": "Equipment repair or replacement, circuits offline for more than one hour, communications networks down, or other issues expected to cause an outage."
+        "q": "What conditions may cause difficulties with communications, requiring a COMMSPOT report to be sent out?",
+        "a": "Equipment that is being repaired/replaced\nCircuits that are offline for more than one hour\nCommunications networks that are down\nOther difficulties that have caused, or are expected to cause, a communications outage"
       },
       {
         "q": "How are COMMSPOT reports typically received?",
-        "a": "Fleet Broadcast message traffic."
+        "a": "Through Fleet Broadcast Message Traffic"
       },
       {
-        "q": "Where is the word COMMSPOT located in the message?",
-        "a": "In the MSGID line and/or the SUBJ line."
+        "q": "Where in a COMMSPOT report is the word 'COMMSPOT' located?",
+        "a": "In one or both of the following areas:\n1) Message Identification (MSGID) line\n2) Subject (SUBJ) line"
       },
       {
-        "q": "What actions are taken when a COMMSPOT report is received?",
-        "a": "Notify the Watch Officer, acknowledge the sender, and monitor for updates and the final COMMSPOT report."
+        "q": "Which actions should be taken when a COMMSPOT report is received?",
+        "a": "Notify the Watch Officer as soon as a COMMSPOT report arrives and every time an update is received for that report\nTransmit an acknowledgement to the sender of the COMMSPOT report\nContinue monitoring for COMMSPOT report updates and a final COMMSPOT report"
       },
       {
-        "q": "What are the reasons to send a COMMSPOT?",
-        "a": "A communications problem impacting traffic, outages lasting 30 minutes or more, periodic updates every 30–60 minutes, and a final report when resolved."
+        "q": "What are the reasons to send out a COMMSPOT?",
+        "a": "A communications difficulty that directly impacts the communications system's traffic\nAn outage or communications problem lasting 30 minutes or longer\nUpdates for a communications difficulty must be sent every 30 to 60 minutes until the problem is resolved\nA final COMMSPOT report must be sent when the situation has ended or been repaired"
       },
       {
         "q": "Who must a COMMSPOT be sent to?",
-        "a": "Commanding Officer, Area NCTAMS, Numbered Fleet Commander, COMNAVNETWARCOM, and other appropriate addressees."
+        "a": "Commanding Officer\nArea NCTAMS\nNumbered Fleet Commander\nCommander, Naval Network and Warfare Command (COMNAVNETWARCOM) Norfolk, VA\nOther addressees as appropriate (such as ships in the battle group)"
       },
       {
-        "q": "What is the process of writing and submitting a COMMSPOT?",
-        "a": "Obtain CWO permission, open the template, write the report, get approval from the CWO or Radio Officer, then submit to required addressees."
-      },
-      {
-        "q": "What information is included in a COMMSPOT?",
-        "a": "Classification, location, affected customers, outage time, isolation status, ETR, reason, action type, action description, status, assigned group, priority, restoration plan, and POC information."
+        "q": "What is the process of writing/submitting a COMMSPOT?",
+        "a": "1) Obtain permission from your CWO to write a COMMSPOT\n2) Open COMMSPOT template\n3) Write the COMMSPOT report, including\n-Classification, confidential at the minimum\n-Location and affected customers\n-Time out, Isolation (yes/no), and ETR\n-Reason for outage, action type, and action description\n-Status, assigned group, priority, and restoral plans (if implemented)\n-POC information\n4) Obtain approval of the COMMSPOT from the CWO or Radio Officer\n5) Submit the COMMSPOT report to\n-CO\n-NCTAMS\n-Numbered FLTCOMDR\n-COMNAVNETWARCOM\n-Other addresses as appropriate (like ships in the battle group)"
       },
       {
         "q": "What are the basic sections of a COMMSPOT?",
-        "a": "Heading, Mission Information, Remarks/Description of the problem, Ending."
+        "a": "1) Heading\n2) Mission Information\n3) Remarks/Description of problem\n4) Ending"
       },
       {
-        "q": "What is an After Action Report (AAR)?",
-        "a": "A report describing a real-world operation or training exercise and documenting lessons learned."
+        "q": "What is an After Action Report?",
+        "a": "The AAR details a real world operation or training exercise and identifies significant lessons learned. It is normally prepared by the Communications Officer (COMMO) and submitted within ten days of an operation's end."
       },
       {
-        "q": "When is an AAR normally submitted?",
-        "a": "Within 10 days after the operation ends."
+        "q": "What information is contained in an After Action Report?",
+        "a": "Operation name, location, dates, and short description of operation\nAccess time and other numerical data as appropriate for the type of operation\nMission essential training requirements and objectives completed\nOther relevant information"
       },
       {
-        "q": "What information is included in an AAR?",
-        "a": "Operation name, location, dates, description, access time and operational data, training objectives completed, and other relevant information."
+        "q": "How can you recognize an AAR in message traffic?",
+        "a": "An AAR can be recognized by its subject line in the NAVMACS MESSAGE log. The first part will always read \"After Action Report for Mission\" followed by the mission number (e.g., N0808-02) and the satellite area (e.g., 4887). For example the subject will read:\nAFTER ACTION REPORT FOR MISSION N080-02 (4487)"
       },
       {
-        "q": "How can an AAR be identified in message traffic?",
-        "a": "The subject line begins with \"After Action Report for Mission\" followed by the mission number and satellite area."
+        "q": "What two AAR templates are there?",
+        "a": "EHF & SHF"
       },
       {
-        "q": "What AAR templates exist?",
-        "a": "EHF and SHF templates."
+        "q": "What is the process of writing and submitting an AAR?",
+        "a": "1) Identify the template (EHF or SHF)\n2) Locate mission information (SAA, MSL, COMMSPOT)\n3) Write AAR\n4) Route AAR for approval\n5) Submit (COMMO submits AAR and includes any information found in the AAR template, including DSCS Manager, Participating ship(s), Participating shore terminal(s), Supporting NCTAMS"
       },
       {
-        "q": "What is the process for submitting an AAR?",
-        "a": "Select template, gather mission information, write the report, route for approval, then COMMO submits it."
+        "q": "Define Tactical Data Links",
+        "a": "Tactical data links are a series of data inputs, user consoles, converters, adaptors, and radio equipment interconnected with high-speed, general-purpose computers and their stored programs.\nData links provide secure, high-speed, computer-to-computer exchange of digital tactical information among ships, aircraft, and shore stations.\nTactical data is collected, processed, and composed into a picture of the overall combat situation that enables the Force Commander to make rapid, accurate evaluations and decisions."
       },
       {
-        "q": "What are Tactical Data Links?",
-        "a": "Systems that allow secure, high-speed computer-to-computer exchange of tactical information between ships, aircraft, and shore stations."
+        "q": "What comprises tactical data?",
+        "a": "Enemy position\nFriendly position\nTargeting information"
       },
       {
-        "q": "What tactical information is shared through data links?",
-        "a": "Enemy positions, friendly positions, and targeting information."
+        "q": "What data link systems are commonly used by the navy?",
+        "a": "Link 11\nLink 16\nLink 4A\nHawklink"
       },
       {
-        "q": "What are the most common Navy tactical data links?",
-        "a": "Link 11, Link 16, Link 4A, and Hawklink."
+        "q": "What is link 11 (TADIL-A) used for?",
+        "a": "sharing tactical data among:\nAircraft\nSurface ships\nSubsurface ships\nShore stations\nLINK 11 also provides electronic warfare data."
       },
       {
-        "q": "What is Link 11 (TADIL-A)?",
-        "a": "A tactical data link used to share information between aircraft, surface ships, subsurface ships, and shore stations."
+        "q": "Define electronic warfare",
+        "a": "Electronic warfare includes any military action that uses directed electromagnetic energy to control the electromagnetic spectrum or to attack the enemy."
+      },
+      {
+        "q": "What is link 16 used for?",
+        "a": "also known as TADIL-J, was developed to support tactical information among all the Joint Services and NATO.\nThe goal of LINK 16 is to allow all branches of the US military (Navy, Marine Corps, Army, and Air Force) and our allies to link up and share information, so each is aware of the others' movements and actions."
+      },
+      {
+        "q": "What is link 4A used for?",
+        "a": "also known as TADIL-C, supports ship-to-air and air-to-air exchange of near real-time data and provides aircraft control capability. Shipboard computers can control the autopilot in LINK 4A-compatible aircraft.\nThe operational goal of LINK 4A is to reduce the need for voice control of tactical aircraft."
+      },
+      {
+        "q": "What is HAWKLINK used for?",
+        "a": "The Helicopter Hawklink data link (Hawklink) was developed to exchange information between ships and SH-60 Helicopters. Hawklink is found primarily on frigates, cruisers, destroyers, amphibious ships, and aircraft carriers.\nHawklink is used to transmit digital data from helicopter to shipboard computers."
       },
       {
         "q": "What are the characteristics of Link 11?",
-        "a": "Near real-time operation, two-way data communications, and transmission via UHF (LOS), HF (BLOS), or SATCOM."
-      },
-      {
-        "q": "What are the Link 11 waveforms?",
-        "a": "CLEW (Conventional Link Eleven Waveform) and SLEW (Single Tone Link Eleven Waveform)."
-      },
-      {
-        "q": "What is Link 16 (TADIL-J)?",
-        "a": "A joint tactical data link used by U.S. services and NATO for secure tactical information exchange."
+        "a": "Operations in near real-time\nTwo-way data communications\nLINK 11 can be transmitted via:\nUltra high frequency (UHF) for exchange of Line of Sight (LOS) information\nHigh frequency (HF) for over-the-horizon (Beyond Line of Sight (BLOS)) exchange of information\nSatellite Communications (SATCOM) for long distance exchange of information"
       },
       {
         "q": "What are the characteristics of Link 16?",
-        "a": "Real-time communications, two-way data and voice, jam resistance, increased security, high capacity, and LOS/BLOS capability."
-      },
-      {
-        "q": "What is Link 4A (TADIL-C)?",
-        "a": "A data link supporting ship-to-air and air-to-air near real-time data exchange and aircraft control."
-      },
-      {
-        "q": "What is the goal of Link 4A?",
-        "a": "To reduce the need for voice control of tactical aircraft."
+        "a": "Real-time communications\nTwo-way data and voice communications\nJam resistance\nIncreased security over other link circuits\nHigh capacity of information exchange\nLOS and BLOS capabilities\nLINK 16 can be transmitted via:\nUHF for LOS exchange of information\nSATCOM for long distance exchange of information"
       },
       {
         "q": "What are the characteristics of Link 4A?",
-        "a": "Near real-time communications, UHF LOS transmission, and aircraft control capability."
+        "a": "LINK 4A is used for data communications between ships and aircraft, and from aircraft to aircraft.\nLINK 4A is transmitted via UHF for LOS exchange of near real-time information. LOS increases when aircraft are in flight."
       },
       {
-        "q": "What are the operational modes of Link 4A?",
-        "a": "Intercept Vectoring, Air Traffic Control, Automatic Carrier Landing System, and Precision Course Direction."
+        "q": "What are the operational modes of link 4A?",
+        "a": "Intercept Vectoring - the ship guides an aircraft to a specific intercept point\nAir Traffic Control - the ship guides an aircraft in the ship's traffic pattern to coordinate their movements with other aircraft in the area\nAutomatic Carrier Landing System - the ship selects the aircraft in order of priority from the traffic pattern and puts them in a final approach\nPrecision Course Direction - the ship exercises precise control of an aircraft's flight path; this mode is used with bombers, reconnaissance aircraft, and drones"
       },
       {
-        "q": "Is Link 4A secure?",
-        "a": "No, Link 4A is non-secure."
-      },
-      {
-        "q": "What is Hawklink?",
-        "a": "A data link used to exchange information between ships and SH-60 helicopters."
-      },
-      {
-        "q": "What are the characteristics of Hawklink?",
-        "a": "Two-way data and voice, near real-time communications, and UHF LOS transmission."
-      },
-      {
-        "q": "What is electronic warfare?",
-        "a": "Military action using electromagnetic energy to control the spectrum or attack the enemy."
-      },
-      {
-        "q": "What does MTJ stand for?",
-        "a": "Multicast TADIL-J."
+        "q": "What are the characteristics of hawklink?",
+        "a": "Characteristics of Hawklink include:\nTwo-way data and voice communications\nNear real-time communications\nHawklink can be transmitted via UHF for LOS exchange of information."
       },
       {
         "q": "What are the characteristics of MTJ?",
-        "a": "Real-time communications, two-way data and voice, jam resistance, increased security, low latency, and high-capacity multi-point information exchange."
-      },
-      {
-        "q": "What does UTJ stand for?",
-        "a": "Unicast TADIL-J."
+        "a": "Characteristics of MTJ include:\nReal-time communication\nTwo-way data and voice communication\nJam resistance\nIncreased security over other link circuits\nLow latency exchange between joint units\nHigh capacity of information exchange\nMultiple point exchange of information between the Joint Units, NATO, and allied forces\nMTJ can be transmitted via extremely high frequency (EHF)."
       },
       {
         "q": "What are the characteristics of UTJ?",
-        "a": "Near real-time communications, two-way data and voice, and increased security."
+        "a": "Characteristics of UTJ include:\nNear real-time communications\nTwo-way data and voice communications\nIncreased security over other link circuits\nUTJ can be transmitted via:\nWhichever method the ship is using to transmit SIPRNET data\nSuper high frequency (SHF), EHF, International Maritime Satellite Organization (INMARSAT), or landline"
       },
       {
-        "q": "How is UTJ transmitted?",
-        "a": "By the same method the ship uses to transmit SIPRNET data, such as SHF, EHF, INMARSAT, or landline."
+        "q": "What is Aegis Ballistic Missile Defense?",
+        "a": "A sea-based element that detects, tracks, and then destroys ballistic missiles in midcourse\nA complete system, capable of engaging in simultaneous warfare on several fronts—air, surface, subsurface, and strike\nCapable of detecting and tracking ballistic missiles of all ranges, including Intercontinental Ballistic Missiles, and report track data to the BMDS"
       },
       {
-        "q": "What is Aegis Ballistic Missile Defense (BMD)?",
-        "a": "A sea-based system that detects, tracks, and destroys ballistic missiles in midcourse."
+        "q": "What are the communications circuits that support AEGIS BMD?",
+        "a": "Link 11, Link 16, MTJ, UTJ"
       },
       {
-        "q": "What communications circuits support Aegis BMD?",
-        "a": "Link 11, Link 16, MTJ, and UTJ."
+        "q": "What types of waveforms are used by link 11 to exchange data?",
+        "a": "Conventional Link Eleven Waveform (CLEW)\nSingle Tone Link Eleven Waveform (SLEW)"
       },
       {
-        "q": "What are the main Aegis BMD components?",
-        "a": "AN/SPY-1, SBX, SM-3, and SM-2."
+        "q": "What is Joint Reach Extension?",
+        "a": "JRE is a system comprised of a combination of hardware and software that passes information received from one LINK 16 network to another LINK 16 network, creating a wide area network"
       },
       {
-        "q": "What is AN/SPY-1?",
-        "a": "A multifunction phased-array radar that automatically detects and tracks targets."
+        "q": "What are the operating spectrums of JRE?",
+        "a": "EHF, SHF, INMARSAT"
       },
       {
-        "q": "What is SBX?",
-        "a": "Sea-Based X-Band Radar, a mobile floating radar."
+        "q": "What are the component clusters that make up MTJ?",
+        "a": "ADNS, EHF, TIP, CDLMS"
       },
       {
-        "q": "What is SM-3?",
-        "a": "Standard Missile 3, used against ballistic missiles and some LEO satellite threats."
+        "q": "What units comprise CDLMS?",
+        "a": "Embedded System Processor Group (ESPG), Human Machine Interface (HMI), Maintenance Display Unit (MDU)"
       },
       {
-        "q": "What is SM-2?",
-        "a": "Standard Missile 2, used to defend ships and aircraft and to counter short-range ballistic missiles in terminal phase."
+        "q": "What components are in the ESPG rack?",
+        "a": "(upper) C2P rehost, CDLMS processors\n(lower) CSDTS, Adjunct processor"
       },
       {
-        "q": "What is Joint Reach Extension (JRE)?",
-        "a": "A hardware/software system that extends Link 16 networks over a wider area."
+        "q": "Where does CDLMS receive Time Of Day from?",
+        "a": "NAVSSI"
       },
       {
-        "q": "What spectrums can JRE operate over?",
-        "a": "EHF, SHF, and INMARSAT."
+        "q": "What does a transmitting antenna do?",
+        "a": "Takes RF signals from transmitting equipment and then puts them out into the air"
       },
       {
-        "q": "What does CDLMS stand for?",
-        "a": "Common Data Link Management System."
+        "q": "What does a receiving antenna do?",
+        "a": "Collects RF signals from the air and then passes them to receiving equipment."
       },
       {
-        "q": "What is the purpose of CDLMS?",
-        "a": "To reduce the workload of the Tactical Information Coordinator by consolidating tactical data link control and monitoring."
-      },
-      {
-        "q": "What units make up CDLMS?",
-        "a": "ESPG, HMI, and MDU."
-      },
-      {
-        "q": "What does ESPG stand for?",
-        "a": "Embedded System Processor Group."
-      },
-      {
-        "q": "What does HMI stand for?",
-        "a": "Human Machine Interface."
-      },
-      {
-        "q": "What does MDU stand for?",
-        "a": "Maintenance Display Unit."
-      },
-      {
-        "q": "What does ESPG do?",
-        "a": "Receives and transmits data to and from CDS."
-      },
-      {
-        "q": "What does HMI do?",
-        "a": "Exercises overall control of tactical data links and monitors their performance."
-      },
-      {
-        "q": "What does MDU do?",
-        "a": "Provides monitoring, maintenance, and testing functions."
-      },
-      {
-        "q": "What systems does CDLMS manage?",
-        "a": "Link 11, Link 16, Link 4A, MTJ, and UTJ."
-      },
-      {
-        "q": "What components make up MTJ?",
-        "a": "ADNS, EHF, TIP, and CDLMS."
-      },
-      {
-        "q": "What units comprise CDLMS hardware?",
-        "a": "ESPG, HMI, and MDU."
-      },
-      {
-        "q": "Where does CDLMS receive Time of Day from?",
-        "a": "NAVSSI."
-      },
-      {
-        "q": "What is TADIL?",
-        "a": "Tactical Digital Information Link."
-      },
-      {
-        "q": "When were tactical data links initially developed?",
-        "a": "1960."
-      },
-      {
-        "q": "What does tactical data enable commanders to do?",
-        "a": "Make rapid and accurate evaluations and decisions using a common tactical picture."
-      },
-      {
-        "q": "What is Link Coord?",
-        "a": "A non-secure coordination circuit used to coordinate frequency changes, troubleshoot Link 11, and verify received data with allied vessels."
-      },
-      {
-        "q": "What are Link Coord characteristics?",
-        "a": "Non-secure voice, UHF LOS, and HF BLOS communications."
-      },
-      {
-        "q": "What does JTIDS use?",
-        "a": "Link 16 LOS."
-      },
-      {
-        "q": "What is JTIDS?",
-        "a": "The component loaded with crypto to enable secure Link 16 communications."
-      },
-      {
-        "q": "What does KG-40 do?",
-        "a": "Encrypts and decrypts data signals."
-      },
-      {
-        "q": "What does a SA-2121A(v)3 Black Audio Switch do?",
-        "a": "Connects the transmitter and receiver to the CDLMS."
-      },
-      {
-        "q": "What is AS-1735?",
-        "a": "A UHF LOS antenna known as the Plated Pairs antenna."
-      },
-      {
-        "q": "What are the setup requirements for Link 11?",
-        "a": "Set controls on the transmitter, transceiver, and receiver, patch equipment, and load crypto."
-      },
-      {
-        "q": "What is SAS?",
-        "a": "Secured Audio Switch."
-      },
-      {
-        "q": "What does the SB-4124 Red Patch Panel pass?",
-        "a": "Decrypted or unencrypted information."
-      },
-      {
-        "q": "What is CSOSS?",
-        "a": "Combat Systems Operational Sequencing System."
-      },
-      {
-        "q": "What does CSOSS do?",
-        "a": "Controls and configures communications equipment, including TD-1271 DAMA setup."
-      },
-      {
-        "q": "What tells you which crypto key to load?",
-        "a": "OPTASK COMMS."
-      },
-      {
-        "q": "What is an antenna?",
-        "a": "A structure or device used to transmit or receive electromagnetic waves."
-      },
-      {
-        "q": "What mediums can antennas support communications through?",
-        "a": "Atmosphere, space, and underwater."
-      },
-      {
-        "q": "What are the three main antenna characteristics?",
-        "a": "Reciprocity, polarization, and directivity."
-      },
-      {
-        "q": "What is reciprocity?",
-        "a": "The ability of the same antenna to both transmit and receive electromagnetic energy, though not at the same time."
+        "q": "What is Reciprocity?",
+        "a": "Reciprocity is the ability of the same antenna both to transmit and receive electromagnetic energy.\nThe antenna can receive or transmit, but cannot do both at the same time."
       },
       {
         "q": "What is polarization?",
-        "a": "The physical position of the antenna relative to the electric field of an electromagnetic wave."
+        "a": "Polarization refers to the physical position of an antenna with respect to the direction of the electric field of an electromagnetic wave"
       },
       {
-        "q": "What is the most common antenna polarization used by the Navy?",
-        "a": "Vertical polarization."
-      },
-      {
-        "q": "What is directivity?",
-        "a": "The width or pattern of the antenna transmission beam."
-      },
-      {
-        "q": "What are the three types of directivity?",
-        "a": "Bidirectional, unidirectional, and omnidirectional."
-      },
-      {
-        "q": "What is a block zone?",
-        "a": "An area on the ship where the antenna cannot maintain line-of-sight communications with a satellite."
-      },
-      {
-        "q": "Which links are most affected by block zones?",
-        "a": "LOS and SATCOM links."
+        "q": "What are the types of polarization?",
+        "a": "Wave polarization:\nHorizontally polarized waves have horizontal electric fields\nVertically polarized waves have vertical electric fields\nAntenna polarization:\nVertically positioned antennas are polarized vertically\nHorizontally positioned antennas are polarized horizontally"
       },
       {
         "q": "What are the shipboard HF antennas?",
-        "a": "Wire Rope (OE-367) and Whip antennas (AS-3772 / OE-416)."
+        "a": "Wire rope (OE-367)\nWhip (AS-3772 ; OE-416)"
       },
       {
-        "q": "What are the shipboard UHF LOS antennas?",
-        "a": "Spider (AS-390), Plated Pairs (AS-1735), and Stovepipe (AS-4163)."
+        "q": "What are the shipboard UHF Line of Sight antennas?",
+        "a": "Spider (AS-390)\nPlated pairs (AS-1735)\nStovepipe (AS-4163)"
       },
       {
-        "q": "What are the shipboard UHF SATCOM antennas?",
-        "a": "Trash Can (OE-82) and Eggbeater (AS-2815 / SSR-1)."
+        "q": "What are the shipboard UHF SATCOM satellites?",
+        "a": "Trash can (OE-82)\nEggbeater (AS-2815 ; SSR-1)"
       },
       {
-        "q": "What is the shipboard SHF antenna?",
-        "a": "WSC-6."
+        "q": "What are the shipboard SHF satellites?",
+        "a": "WSC-6"
       },
       {
-        "q": "What is the shipboard EHF antenna?",
-        "a": "USC-38."
+        "q": "What are the shipboard EHF antennas?",
+        "a": "USC-38"
       },
       {
-        "q": "What are the capabilities of the HF Wire Rope antenna?",
-        "a": "HF communications, omnidirectional, transmit and receive."
+        "q": "Which transit links are mostly affected by block zones?",
+        "a": "Line Of Sight and SATCOM"
       },
       {
-        "q": "What are the capabilities of HF Whip antennas?",
-        "a": "HF communications, omnidirectional, transmit only."
+        "q": "What is an Antenna?",
+        "a": "- is any structure or device used to transmit or receive electromagnetic waves"
       },
       {
-        "q": "What are the capabilities of the UHF LOS Spider antenna?",
-        "a": "UHF communications, omnidirectional, transmit and receive."
+        "q": "What mediums does an antenna allow radio waves to travel through?",
+        "a": "- Atmosphere\n- Space\n- Underwater"
       },
       {
-        "q": "What are the capabilities of the UHF LOS Plated Pairs antenna?",
-        "a": "UHF communications, omnidirectional, transmit and receive, requires LOS."
+        "q": "What are the three characteristics of Antennas?",
+        "a": "- Reciprocity\n- Polarization\n- Directivity"
       },
       {
-        "q": "What are the capabilities of the UHF LOS Stovepipe antenna?",
-        "a": "UHF communications, omnidirectional, transmit and receive, requires LOS."
+        "q": "What is Polarization?",
+        "a": "- refers to the physical position of an antenna with respect to the direction of the electric field of an electromagnetic wave"
       },
       {
-        "q": "What are the capabilities of the UHF SATCOM Trash Can antenna?",
-        "a": "Unidirectional, rotates 360 degrees, maintains satellite contact with dual antennas, transmits and receives."
+        "q": "What is the most common antenna polarization used in the Navy?",
+        "a": "- Vertically"
       },
       {
-        "q": "What are the capabilities of the UHF SATCOM Eggbeater antenna?",
-        "a": "UHF SATCOM, omnidirectional, receive only, used for broadcast signals."
+        "q": "What is Directivity?",
+        "a": "- refers to the width of the transmission beam pattern"
       },
       {
-        "q": "What are the capabilities of the SHF AN/WSC-6 antenna?",
-        "a": "SHF SATCOM, unidirectional, sends and receives voice and data."
+        "q": "What are the three types of Directivity?",
+        "a": "- Bidirectional\n- Unidirectional\n- Omnidirectional"
       },
       {
-        "q": "What are the capabilities of the EHF AN/WSC-38 antenna?",
-        "a": "EHF SATCOM, unidirectional, sends and receives voice and data."
+        "q": "What is Bidirectional?",
+        "a": "- antennas that transmit narrow beams in two directions"
       },
       {
-        "q": "Antenna PM is part of what program?",
-        "a": "Planned Maintenance System (PMS)."
+        "q": "What is Unidirectional?",
+        "a": "- antennas that transmit narrow beams in one directions"
       },
       {
-        "q": "What are the consequences of not performing antenna PM?",
-        "a": "Failed communications, reduced communications capability, reduced compatibility with end users, and degraded circuit performance."
+        "q": "What is Omnidirectional?",
+        "a": "- antennas that transmit wide beams (multiple directions)"
       },
       {
-        "q": "What are the three main PMS schedules?",
-        "a": "Cycle, Quarterly, and Weekly."
+        "q": "What is a Block Zone?",
+        "a": "- refers to any area on the ship in which the antenna is unable to maintain LOS comms with a satellite\n- typically does not affect comms, as ships will either deploy automatic handover control to the unblocked antenna"
       },
       {
-        "q": "What are the three primary dangers during antenna PM?",
-        "a": "Radiation hazard, high voltage, and hazardous materials."
+        "q": "What is the Nomenclatures for both HF Antennas?",
+        "a": "- Wire Rope (OE-367)\n- Whip Antenna (AS-3772, OE-416)"
       },
       {
-        "q": "What are the steps for obtaining antenna hardware?",
-        "a": "Identify hardware in the MRC, locate it onboard, and replace missing hardware."
+        "q": "What are the Nomenclatures for the three UHF LOS Antennas?",
+        "a": "- Spider (AS-390)\n- Plated Pairs (AS-1735)\n- Stove Pipe (AS-4163)"
+      },
+      {
+        "q": "What is the Nomenclature for the 2 UHF (SATCOM) Antennas?",
+        "a": "- Trash Can (OE-82)\n- Eggbeater (AS-2815/SSR-1)"
+      },
+      {
+        "q": "What is the Nomenclature for SHF Antenna?",
+        "a": "- WSC-6 (AN/WSC 6-38(V)9 APG)"
+      },
+      {
+        "q": "What is the Nomenclature for EHF Antenna?",
+        "a": "- USC-38 (AN/USC-38(V)9 APG)"
+      },
+      {
+        "q": "What are the capabilities of HF Wire Rope?",
+        "a": "- HF Comms\n- Omni\n- Receives and Transmits"
+      },
+      {
+        "q": "What are the capabilities of HF Whip Antennas?",
+        "a": "- HF Comms\n- Omni\n- Transmit Only"
+      },
+      {
+        "q": "What are the capabilities of HF Double Wire Rope?",
+        "a": "- HF Comms\n- Omni"
+      },
+      {
+        "q": "What are the capabilities of UHF LOS Spider Antenna?",
+        "a": "- UHF Comms\n- Omni\n- Receives and Transmits"
+      },
+      {
+        "q": "What are the capabilities of UHF LOS Plated Pairs Antenna?",
+        "a": "- UHF Comms\n- Omni\n- Receives and Transmits\n- Requires LOS"
+      },
+      {
+        "q": "What are the capabilities of UHF LOS Stovepipe Antenna?",
+        "a": "- UHF Comms\n- Omni\n- Receives and Transmits\n- Requires LOS"
+      },
+      {
+        "q": "What are the capabilities of UHF SATCOM Trash Can Antenna?",
+        "a": "- UNI\n- Able to rotate 360 degrees\n- Able to maintain uninterrupted contact with satellite through use of two antennas\n- Receives and Transmits"
+      },
+      {
+        "q": "What are the capabilities of UHF SATCOM Eggbeater Antenna?",
+        "a": "- UHF SATCOM\n- Omni\n- Receives\n- Picks up broadcast signals because of one antenna (4 Onboard)"
+      },
+      {
+        "q": "What are the capabilities of SHF AN/WSC-6 (V)7 APG Antenna?",
+        "a": "- SHF SATCOM\n- Uni\n- Sends and Receives voice and data"
+      },
+      {
+        "q": "What are the capabilities of EHF AN/WSC-38 (V)9 APG Antenna?",
+        "a": "- EHF SATCOM\n- Uni\n- Sends and Receives voice and data"
+      },
+      {
+        "q": "Antenna PM is part of what?",
+        "a": "- Planned Maintenance System (PMS)"
+      },
+      {
+        "q": "What are the primary consequences of not performing antenna PM?",
+        "a": "- Failed Comms due to antenna failure\n- Reduced comms capabilities\n- Reduced compatibles with end users\n- Degraded performance in the circuit"
+      },
+      {
+        "q": "Three Different PMS Schedules?",
+        "a": "- Cycle\n- Quarterly\n- Weekly"
+      },
+      {
+        "q": "What are the 3 Primary dangers when conducting PM?",
+        "a": "- Radiation Hazard\n- High Voltage\n- HazMat"
+      },
+      {
+        "q": "What are the three steps for obtaining hardware?",
+        "a": "- Identify Hardware in MRC\n- Locate hardware on ship\n- Replace missing hardware"
+      },
+      {
+        "q": "What are the 2 Database Managed Fill Devices?",
+        "a": "- AN CYZ-10\n- SKL"
+      },
+      {
+        "q": "What are the three things the SKL can do?",
+        "a": "- can store and manage thousands of key variables\n- operates in windows CE platform\n- data protected by the KOV-21 info security card"
+      },
+      {
+        "q": "Tactical Data Links:",
+        "a": "are used to exchange real time tactical data among air, ground, and afloat units"
+      },
+      {
+        "q": "That data is collected, processed and composed into what",
+        "a": "pictures of the overall combat situation"
+      },
+      {
+        "q": "What uses real-time/ near real-time tactical data among air, ground, and afloat units?",
+        "a": "Tactical data link, it reports enemy/ friendly position and targeting information"
+      },
+      {
+        "q": "True or False",
+        "a": "If one ship can see/detect activity, they can use data link to share info with other allied ships\ntrue"
+      },
+      {
+        "q": "Tactical data increases the Navy's ability to succeed in combat situations due to what three things?",
+        "a": "sharing of sensory information: radar/sonar\nShore base headquarters: receive near real time information through combined use of data links and satellite comms.\nShip to ship communication"
+      },
+      {
+        "q": "collected data is sent to who? to make rapid and accurate evaluations and decisions",
+        "a": "Force Commander"
+      },
+      {
+        "q": "Link 4a is?",
+        "a": "non-secured"
+      },
+      {
+        "q": "TADILs",
+        "a": "Tactical Digital Information Links"
+      },
+      {
+        "q": "what are the most commonly used data link systems?",
+        "a": "Link 11\nLink 16\nLink 4 a\nHawklink"
+      },
+      {
+        "q": "name two tactical data link systems used during ballistic missile defense (BMD)",
+        "a": "(MTJ) multicast, tactical digital information\n(UTJ) unicast tactical digital information"
+      },
+      {
+        "q": "MTJ",
+        "a": "Multicast TADIL J"
+      },
+      {
+        "q": "what does MTJ do?",
+        "a": "support the sharing of tactical information among all joint services and NATO"
+      },
+      {
+        "q": "UTJ",
+        "a": "Unicast TADIL J"
+      },
+      {
+        "q": "What does UTJ do?",
+        "a": "provide direct communication to either the fleet commander, another ship, or to a joint force command center"
+      },
+      {
+        "q": "Link 11",
+        "a": "used for sharing tactical data among surface ships, subsurface ships, shore stations, and aircraft"
+      },
+      {
+        "q": "Link 11 operates.........?",
+        "a": "data communication at near real-time"
+      },
+      {
+        "q": "LINK 11 CHARACTERISTICS",
+        "a": "HF BLOS / UHF LOS / HALF DUPLEX / DNCS / ENCRYPTED / M SERIES MESSAGES"
+      },
+      {
+        "q": "What is Link Coord?",
+        "a": "Coordinate frequency changes\ntroubleshoot Link 11\nVerify data received w/ allied vessels"
+      },
+      {
+        "q": "Link coord characteristics",
+        "a": "no secure voice circuit\nUHF/LOS comms\nHF/BLOS comms"
+      },
+      {
+        "q": "Link 11 does?",
+        "a": "pass data information, voice circuit, and coordinate frequency changes"
+      },
+      {
+        "q": "Link 16 (TADIL J)",
+        "a": "Support tactical information among all joint services and NATO (military branches)"
+      },
+      {
+        "q": "LINK 16 CHARACTERISTICS",
+        "a": "1. Higher jam resistance and real-time communication\n2. Two-way data communication (Data/Voice Comms)\n3. Uses Real Time comms\n4. Increased security over other link circuits\n5. UHF for LOS/Satcom\n6. HF for BLOS"
+      },
+      {
+        "q": "TADIL C is also known as",
+        "a": "Link 4a"
+      },
+      {
+        "q": "Link 4A (TADIL C)",
+        "a": "supports ship-to-air and air-to-air exchange of data"
+      },
+      {
+        "q": "What is the goal of LINK 4A?",
+        "a": "to reduce need for voice control of tactical aircraft"
+      },
+      {
+        "q": "Link 4A characteristics",
+        "a": "near real-time data and provides aircraft control capability\nUHF/LOS\n4 diffrent modes of aircraft control"
+      },
+      {
+        "q": "True or False: Shipboard computers can control autopilot in Link 4A",
+        "a": "True"
+      },
+      {
+        "q": "HAWKLINK",
+        "a": "exchanges information between helicopters and shipboard computers"
+      },
+      {
+        "q": "HAWKLINK characteristics",
+        "a": "two way digital data and voice comms using near real-time communications for navy vessels and SH-60 Helicopters"
+      },
+      {
+        "q": "UTJ characteristics",
+        "a": "near real-time comms, two way data and voice communications, increased security"
+      },
+      {
+        "q": "How is UTJ transmitted?",
+        "a": "whichever method the ship is using to transmit SIPRNET data"
+      },
+      {
+        "q": "MTJ characteristics",
+        "a": "jam resistant, used to address BLOS issues that ships had with Link 16, real-time communications, low latency, multiple joint exchange of communication"
+      },
+      {
+        "q": "BMD",
+        "a": "Ballistic Missile Defense"
+      },
+      {
+        "q": "Who developed and manages BMD",
+        "a": "DoD (Department of Defense)\nMDA (Missile Defense Agency)"
+      },
+      {
+        "q": "what is the Navy's most element",
+        "a": "Ageis BDM"
+      },
+      {
+        "q": "What does BMD do?",
+        "a": "sea-based element that detects, tracks and then destroys ballistic missile in midcourse"
+      },
+      {
+        "q": "Whats system is capable of engaging in simultaneous warfare on multiple fronts and capable of tracking and detecting ballistic missiles of all ranges",
+        "a": "Aegis BMD"
+      },
+      {
+        "q": "The navy uses cruisers (CG's) and destroyers (DDGs) as their.....?",
+        "a": "primary ships involved in BMD-related missions"
+      },
+      {
+        "q": "Four Aegis BMD components",
+        "a": "AN/SPY-1\nSBX\nSM-3\nSM-2"
+      },
+      {
+        "q": "AN/SPY-1",
+        "a": "300 mile range\nautomatically detects and tracks, multifunctional, phased-array radar\n4 antennas that provide 360 degree vision"
+      },
+      {
+        "q": "SBX",
+        "a": "Mobile floating radar\nself propelled\nSea-based X-band Radar- only found in Alaska and California"
+      },
+      {
+        "q": "SM-3",
+        "a": "Standard Missile 3- anti-ballistic, anti-satellite (LEO)"
+      },
+      {
+        "q": "What is missile is primarily used to protect against short/intermediate-range ballistic missiles and used to defend against low earth orbit (LEO) satellites",
+        "a": "SM-3"
+      },
+      {
+        "q": "True or false: SM-3 missiles can defend against unitary, separating, and midcourse phase BDM",
+        "a": "true"
+      },
+      {
+        "q": "SM-2",
+        "a": "Standard Missile 2- used to defend ships and aircraft, used to defeat short range ballistic missiles in the terminal phase"
+      },
+      {
+        "q": "What makes up Aegis?",
+        "a": "Link 11, Link 16, UTJ, MTJ"
+      },
+      {
+        "q": "Link 16 LOS",
+        "a": "Uses (TDMA) protocol to control the joint tactical information distribution system system (JTIDS) participating in large comms networks"
+      },
+      {
+        "q": "SATELLITE LINK 16",
+        "a": "Depending on SATCOM to carry (TADIL-J) message UHF DAMA allows, more satellite circuits per channel increasing efficiency, anywhere from 4-20 times"
+      },
+      {
+        "q": "Time Division Multiple Access (TDMA)",
+        "a": "divides each channel into six time slots. Each user is allocated two slots: one for transmission and one for reception. This method increases efficiency by 300 percent, as it allows carrying three calls on one channel"
+      },
+      {
+        "q": "CDLMS",
+        "a": "Common Data Link Management System"
+      },
+      {
+        "q": "Purpose of CDLMS",
+        "a": "to reduce the workload of TIC\nTransmits and receives data"
+      },
+      {
+        "q": "TIC",
+        "a": "Tactical Information Coordinator"
+      },
+      {
+        "q": "Three Units of CDLMS",
+        "a": "ESPG\nHMI\nMDU"
+      },
+      {
+        "q": "ESPG",
+        "a": "Embedded System Processor Group"
+      },
+      {
+        "q": "HMI",
+        "a": "Human Machine Interface\nremotely controls all TDL's and monitor their status and performance"
+      },
+      {
+        "q": "MDU",
+        "a": "Maintenance Display Unit\nTo provide a workstation for the SYS admin and maintenance tech"
+      },
+      {
+        "q": "What does ESPG do?",
+        "a": "receives and transmits to and from CDS"
+      },
+      {
+        "q": "CDS",
+        "a": "Combat Direction System"
+      },
+      {
+        "q": "What does HMI do?",
+        "a": "Exercises overall control of all TDLs and their performance"
+      },
+      {
+        "q": "What does MDU do?",
+        "a": "monitors system controls, maintenance, and testing"
+      },
+      {
+        "q": "What makes up CDLMS?",
+        "a": "Link 11, Link 16, Link 4A, MTJ, UTJ"
+      },
+      {
+        "q": "Link 11 HF and UHF range",
+        "a": "HF- 30 nautical miles to 300 nautical miles (BLOS)\nUHF- 20 nautical miles to 30 nautical miles (LOS)"
+      },
+      {
+        "q": "Two types of waveforms for Link 11",
+        "a": "CLEW\nSLEW"
+      },
+      {
+        "q": "CLEW",
+        "a": "Conventional Link Eleven Waveform"
+      },
+      {
+        "q": "SLEW",
+        "a": "Single Tone Link Eleven Waveform"
+      },
+      {
+        "q": "(SLEW) single tone link eleven waveform characteristics",
+        "a": "Better than a ECM environment\nDisperses data bit errors uniformly using data\nbeneficial when using HF, in high interference environment"
+      },
+      {
+        "q": "True or false: SLEW and CLEW are not compatible wave forms",
+        "a": "True"
+      },
+      {
+        "q": "KG-40",
+        "a": "encrypts or decrypts data signals"
+      },
+      {
+        "q": "What does a SA-2121A(v)3 Black Audio Switch do?",
+        "a": "connects the transmitter and receiver to the CDLMS"
+      },
+      {
+        "q": "WHAT IS AS-1735?",
+        "a": "Antenna"
+      },
+      {
+        "q": "Setup Requirements For Link 11",
+        "a": "set controls on transmitter/transceiver/receiver\npatch equipment\nload crypto"
+      },
+      {
+        "q": "JTIDS uses?",
+        "a": "Link 16 LOS"
+      },
+      {
+        "q": "What is JTIDS",
+        "a": "the component loaded with crypto to enable secured communications"
+      },
+      {
+        "q": "SAS",
+        "a": "Secured Audio Switch"
+      },
+      {
+        "q": "SB-4124 Red Patch Panel",
+        "a": "passes decrypted or unencrypted information"
+      },
+      {
+        "q": "CSOSS",
+        "a": "Combat Systems Operational Sequencing System"
+      },
+      {
+        "q": "What does CSOSS do?",
+        "a": "controls and configures for the TD-1271 DAMA is sent from NCTAMS in a 2301z"
+      },
+      {
+        "q": "What will tell you which crypto key to load?",
+        "a": "OPTASK COMMS"
+      },
+      {
+        "q": "JRE",
+        "a": "Joint Range Extension"
+      },
+      {
+        "q": "What does JRE do?",
+        "a": "provide near real-time data exchange between units spread over a large area and provide a common tactical picture to the larger network"
+      },
+      {
+        "q": "The three different operating spectrums of JRE",
+        "a": "EHF\nSHF\nINMARSAT"
+      },
+      {
+        "q": "INMARSAT",
+        "a": "International Maritime Satellite (1500-1650)MHz"
+      },
+      {
+        "q": "EHF CSOSS Setup",
+        "a": "conduct EHF pre-setup initialization\nenergize EHF\nenter in Red Unique Keys\nverify EHF follow-on Terminal (FOT) is operational\nacquire a satellite\nactivate and join the Medium Data Rate (MDR) Net"
+      },
+      {
+        "q": "An Antenna can...?",
+        "a": "receive or transmit but cannot do it at the same time (half-duplex)"
+      },
+      {
+        "q": "Reciprocity",
+        "a": "the ability of the same antenna to both transmit and receive electromagnetic energy"
+      },
+      {
+        "q": "PMS",
+        "a": "Planned Maintenance System"
+      },
+      {
+        "q": "what does PMS do?",
+        "a": "manages the maintenance activities of equipment aboard all ships and at applicable shore stations"
+      },
+      {
+        "q": "4 consequences of not performing antenna PM?",
+        "a": "Failed communication due to antenna failure\nReduced communications capability\nReduced compatibility with end users\nDegraded performance in the circuit"
       },
       {
         "q": "What are crypto fill devices?",
-        "a": "Portable handheld devices used to transfer KEYMAT to crypto equipment."
-      },
-      {
-        "q": "What are the two database-managed fill devices?",
-        "a": "AN/CYZ-10 and SKL."
+        "a": "are handheld portable devices used for transferring KEYMAT to other crypto equipment"
       },
       {
         "q": "What will replace the CYZ-10?",
-        "a": "SKL."
+        "a": "SKL"
       },
       {
-        "q": "What can the SKL do?",
-        "a": "Store and manage thousands of key variables and transfer KEYMAT."
+        "q": "SKL components",
+        "a": "400MHz processor, 64MB ram, 64MB flash memory"
       },
       {
-        "q": "What protects data on the SKL?",
-        "a": "The KOV-21 INFOSEC card."
+        "q": "A crypto device must have a ________ to load crypto.",
+        "a": "a fill port"
       },
       {
-        "q": "Does the SKL encrypt or decrypt traffic?",
-        "a": "No. It only stores and transfers KEYMAT."
+        "q": "SKL characteristics",
+        "a": "holds thousands of keys\nuses windows CE\ntouchscreen"
       },
       {
-        "q": "What are the basic SKL characteristics?",
-        "a": "Windows CE platform, touchscreen, stores thousands of keys."
+        "q": "SKL does?",
+        "a": "does not encrypt or decrypt data only holds it"
       },
       {
-        "q": "What are the steps to prepare the SKL?",
-        "a": "Power on, calibrate the stylus, log on, set the equipment profile instruction mode, and gather key tag information."
+        "q": "once in mouse mode use what?",
+        "a": "the 5-way control buttons"
       },
       {
-        "q": "What is a fill port?",
-        "a": "A device port used to accept crypto."
+        "q": "enter mouse mode by clicking?",
+        "a": "button 4"
       },
       {
-        "q": "What does OTAD stand for?",
-        "a": "Over The Air Distribution."
+        "q": "SKL is made for?",
+        "a": "storing and receiving KEYMAT"
       },
       {
-        "q": "What does OTAT stand for?",
-        "a": "Over The Air Transfer."
+        "q": "Steps to prepare SKL",
+        "a": "power on the SKL\ncalibrate the stylus\nlog on\nset the equipment profile instruction mode\ngather the key tag information"
       },
       {
-        "q": "What does OTAR stand for?",
-        "a": "Over The Air Rekey."
+        "q": "Fill port on a device means?",
+        "a": "accepts crypto"
       },
       {
-        "q": "What is the NAG-16F?",
-        "a": "The standard U.S. user manual for planning and conducting field key generation and OTAD in support of tactical activities."
+        "q": "Tactical Data Links",
+        "a": "are used to exchange real time tactical data among air, ground, and afloat units"
+      },
+      {
+        "q": "Aegis",
+        "a": "is the Navy's main element"
+      },
+      {
+        "q": "The navy uses cruisers and destroyers as their.....?",
+        "a": "primary ships involved in BMD-related missions"
+      },
+      {
+        "q": "OTAD",
+        "a": "Over The Air Distribution"
+      },
+      {
+        "q": "OTAT",
+        "a": "Over The Air Transfer"
+      },
+      {
+        "q": "OTAR",
+        "a": "Over The Air Rekey"
+      },
+      {
+        "q": "what is the NAG-16F?",
+        "a": "the standard US user's manual for planning and conducting field key generation and OTAD in support of tactical activities"
       }
     ]
   },
